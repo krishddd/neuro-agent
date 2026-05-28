@@ -1,0 +1,107 @@
+{
+  "stage": 17,
+  "stage_name": "PubMed Evidence Retrieval",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:27:57.568954+00:00",
+  "query_terms": [
+    "glioblastoma",
+    "bevacizumab",
+    "entrectinib"
+  ],
+  "results": [
+    {
+      "pmid": "36260832",
+      "title": "NRG Oncology/RTOG1205: A Randomized Phase II Trial of Concurrent Bevacizumab and Reirradiation Versus Bevacizumab Alone as Treatment for Recurrent Glioblastoma.",
+      "abstract": "PURPOSE: To assess whether reirradiation (re-RT) and concurrent bevacizumab (BEV) improve overall survival (OS) and/or progression-free survival (PFS), compared with BEV alone in recurrent glioblastoma (GBM). The primary objective was OS, and secondary objectives included PFS, response rate, and treatment adverse events (AEs) including delayed CNS toxicities. METHODS: NRG Oncology/RTOG1205 is a prospective, phase II, randomized trial of re-RT and BEV versus BEV alone. Stratification factors included age, resection, and Karnofsky performance status (KPS). Patients with recurrent GBM with ima...",
+      "authors": [
+        "Tsien CI",
+        "Pugh SL",
+        "Dicker AP"
+      ],
+      "pubdate": "2023-02-20",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "publication_types": [
+        "Randomized Controlled Trial",
+        "Clinical Trial, Phase II",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "retrieval_strategy": "drop_last_term"
+    },
+    {
+      "pmid": "37935104",
+      "title": "Bevacizumab Alone and in Combination With Irinotecan in Recurrent Glioblastoma.",
+      "abstract": "PURPOSE: We evaluated the efficacy of bevacizumab, alone and in combination with irinotecan, in patients with recurrent glioblastoma in a phase II, multicenter, open-label, noncomparative trial. PATIENTS AND METHODS: One hundred sixty-seven patients were randomly assigned to receive bevacizumab 10 mg/kg alone or in combination with irinotecan 340 mg/m RESULTS: In the bevacizumab-alone and the bevacizumab-plus-irinotecan groups, estimated 6-month progression-free survival rates were 42.6% and 50.3%, respectively; objective response rates were 28.2% and 37.8%, respectively; and median overall...",
+      "authors": [
+        "Friedman HS",
+        "Prados MD",
+        "Wen PY"
+      ],
+      "pubdate": "2023-11-10",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "publication_types": [
+        "Clinical Trial",
+        "Journal Article"
+      ],
+      "retrieval_strategy": "drop_last_term"
+    },
+    {
+      "pmid": "35806212",
+      "title": "Glioblastoma Treatment: State-of-the-Art and Future Perspectives.",
+      "abstract": "(1) Background: Glioblastoma is the most frequent and lethal primary tumor of the central nervous system. Through many years, research has brought various advances in glioblastoma treatment. At this time, glioblastoma management is based on maximal safe surgical resection, radiotherapy, and chemotherapy with temozolomide. Recently, bevacizumab has been added to the treatment arsenal for the recurrent scenario. Nevertheless, patients with glioblastoma still have a poor prognosis. Therefore, many efforts are being made in different clinical research areas to find a new alternative to improve...",
+      "authors": [
+        "Rodr\u00edguez-Camacho A",
+        "Flores-V\u00e1zquez JG",
+        "Moscardini-Martelli J"
+      ],
+      "pubdate": "2022-06-29",
+      "journal": "International journal of molecular sciences",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "retrieval_strategy": "drop_last_term"
+    },
+    {
+      "pmid": "41057143",
+      "title": "Reirradiation in recurrent glioblastoma.",
+      "abstract": "PURPOSE OF REVIEW: Reirradiation has emerged as a potentially valuable treatment strategy for recurrent glioblastoma, a disease characterized by inevitable local progression despite aggressive multimodal first-line therapy. Recent advances in radiotherapy techniques, improved patient selection, and evolving systemic treatment combinations have renewed clinical interest in this approach. This is reflected by recent publication of the first international consensus guidelines (ESTRO/EANO) and the initiation of an European phase III randomized trial on reirradiation of patients with recurrent g...",
+      "authors": [
+        "Kazda T",
+        "Hnidakova L",
+        "Minniti G"
+      ],
+      "pubdate": "2025-11-01",
+      "journal": "Current opinion in oncology",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "retrieval_strategy": "drop_last_term"
+    },
+    {
+      "pmid": "34559423",
+      "title": "Treatment options for progression or recurrence of glioblastoma: a network meta-analysis.",
+      "abstract": "BACKGROUND: Glioblastoma (GBM) is a highly malignant brain tumour that almost inevitably progresses or recurs after first line standard of care. There is no consensus regarding the best treatment/s to offer people upon disease progression or recurrence. For the purposes of this review, progression and recurrence are considered as one entity. OBJECTIVES: To evaluate the effectiveness of further treatment/s for first and subsequent progression or recurrence of glioblastoma (GBM) among people who have received the standard of care (Stupp protocol) for primary treatment of the disease; and to p...",
+      "authors": [
+        "McBain C",
+        "Lawrie TA",
+        "Rogozi\u0144ska E"
+      ],
+      "pubdate": "2021-05-04",
+      "journal": "The Cochrane database of systematic reviews",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Systematic Review",
+        "Network Meta-Analysis"
+      ],
+      "retrieval_strategy": "drop_last_term"
+    }
+  ],
+  "n_results": 5,
+  "cache_hit": false,
+  "pubmed_unavailable": false,
+  "note": null
+}

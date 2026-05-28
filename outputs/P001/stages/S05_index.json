@@ -1,0 +1,9 @@
+{
+  "stage": 5,
+  "stage_name": "ChromaDB Vector Indexing",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:20:48.523127+00:00",
+  "n_chunks": 12,
+  "collection": "patient_data"
+}

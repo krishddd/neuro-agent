@@ -1,0 +1,5 @@
+Dear Patient,
+
+We are writing to update you about your recent scans and treatment. MRI results show that the tumour in your right parietal lobe has grown since your last scan, and a new area of concern has been found. This suggests the condition is progressing. Due to the tumour's size and location, there is pressure on parts of your brain, which requires urgent attention. Your care team is discussing next steps, including possible surgery to relieve this pressure. Currently, you are receiving medications including Bevacizumab, Lomustine, and Dexamethasone to manage symptoms and slow progression. We are also monitoring for potential drug interactions, which your pharmacist will review with you. Your treatment plan may need adjustments based on upcoming tests. Please ensure you attend all appointments and report any new symptoms promptly. This is a research prototype. Please discuss any questions with your care team.
+
+Research prototype — outputs must be verified by a licensed healthcare professional before clinical use.

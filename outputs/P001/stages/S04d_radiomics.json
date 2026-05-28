@@ -1,0 +1,15 @@
+{
+  "stage": 4,
+  "stage_name": "Radiomic Features Extraction",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:17:00.849759+00:00",
+  "visit": "v2",
+  "radiomics_unavailable": true,
+  "reason": "no_mask_available",
+  "glcm_contrast": null,
+  "glcm_correlation": null,
+  "shape_sphericity": null,
+  "shape_surface_volume_ratio": null,
+  "firstorder_entropy": null
+}

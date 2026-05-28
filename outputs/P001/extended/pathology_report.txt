@@ -1,0 +1,60 @@
+NeuroMed University Hospital NHS Trust Histopathology Report
+Lab Ref: PATH-P001-2023 | NHS: 432
+Department of Neuropathology
+890 1234
+PATIENT & SPECIMEN DETAILS
+Patient Name: James R. Thornton
+Date of Birth: 14 March 1962
+NHS Number: 432 890 1234
+Sex: M
+Specimen Type: Brain tumour biopsy / resection specimen
+Surgery Date: 07 November 2023
+Surgeon: Mr. Jonathan Hale (Consultant Neurosurgeon)
+Specimen Received: 07 November 2023
+Reporting Pathologist: Dr. R. Patel, FRCPath — Consultant Neuropathologist
+Authorised: 07 November 2023
+MACROSCOPIC DESCRIPTION
+Multiple tissue fragments received in formalin, aggregating to approximately 2.1 x 1.8 x 0.9 cm. Tissue is pale grey-white with
+focal areas of haemorrhage. Surgical margins not assessable on submitted fragments.
+HISTOLOGICAL REPORT
+NEUROPATHOLOGY REPORT nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+nnnnnnnnnnnnnnnnnnnnn Patient: James R. Thornton DOB: 1962-03-14 Hospital ID: P001 Specimen type: Brain
+biopsy / resection specimen Date of procedure: 2023-09-26 Reported by: Dr. Idris Okoye, FRCPath — Consultant
+Neuropathologist nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+nnnnnnnnnnnn
+CLINICAL INFORMATION: 63-year-old male presenting with seizures and progressive neurological deficits. MRI
+demonstrated a ring-enhancing mass lesion within the left frontal lobe.
+MACROSCOPIC DESCRIPTION: Received in formalin: Multiple fragments of soft, grey-tan haemorrhagic tissue, aggregate
+2.8 × 1.5 × 0.9 cm. Tissue submitted entirely for processing. Blocks: A1–A4.
+MICROSCOPIC DESCRIPTION: Sections show a highly cellular infiltrating glial neoplasm demonstrating marked nuclear
+pleomorphism, brisk mitotic activity (>10 mitoses/10 HPF), microvascular proliferation (endothelial multi-layering, glomeruloid
+vascular tufts), and geographic necrosis with pseudopalisading. Perineuronal satellitosis and subpial spread are identified.
+The surrounding neuropil shows reactive astrogliosis.
+IMMUNOHISTOCHEMISTRY: GFAP: Strong diffuse positive IDH1 R132H: Negative ATRX: Loss of nuclear expression p53:
+Wild-type pattern Ki-67: Approximately 38.1% positivity in hotspot areas EGFR: Overexpressed (3+) PTEN: Loss of
+expression
+MOLECULAR PROFILE: MGMT promoter methylation (pyrosequencing): Unmethylated IDH1/2 sequencing (next-generation
+sequencing panel): Wild-type TERT promoter mutation: C250T detected CDKN2A/B homozygous deletion (FISH): Not
+detected EGFR amplification (FISH): Detected, copy number 23 PTEN deletion: Heterozygous deletion detected
+DIAGNOSIS: GLIOBLASTOMA MULTIFORME (GBM), WHO CNS Grade IV ICD-O-3: 9440/3 WHO 2021 CNS Tumour
+Classification criteria met.
+SYNOPSIS: The morphological, immunohistochemical, and molecular findings confirm a WHO Grade IV IDH wild-type
+Glioblastoma. The unmethylated MGMT promoter status is an adverse prognostic marker and predicts relative resistance to
+temozolomide chemotherapy. Recommend Stupp protocol discussion at neuro-oncology MDT.
+Signed electronically: Dr. Idris Okoye, FRCPath — Consultant Neuropathologist Date of report: 2023-10-08
+
+MOLECULAR / IHC SUMMARY
+Idh Status: Wild-type
+Mgmt Promoter Methylation: Unmethylated
+Egfr Amplification: True
+Codeletion 1P19Q: False
+Tert Promoter Mutation: Mutant C250T
+Atrx Status: Lost
+Cdkn2A B Homozygous Deletion: False
+Pten Loss: True
+Ki67 Proliferation Index Percent: 66.1
+FINAL DIAGNOSIS
+Glioblastoma Multiforme (GBM) — WHO Grade IV
+ICD-O3: 9440/3 | Location: right parietal | Laterality: right
+This report is issued by the NeuroMed University Hospital NHS Trust Neuropathology Department. Diagnostic queries:
+neuropathology@neuromed.nhs.uk | Ext. 6210. Classification per WHO CNS5 2021.

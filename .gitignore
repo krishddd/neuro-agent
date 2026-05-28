@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+dist/
+build/
+
+# IDE / Claude
+.claude/
+.idea/
+.vscode/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+client_secret*.json
+credentials.json
+token.json
+service-account*.json
+
+# Generated data
+chroma_db/
+data/chroma/
+data/*.db
+data/*.pkl
+data/*.sqlite3
+*.sqlite3
+results/
+logs/
+*.log
+
+# Large docs
+*.docx
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db

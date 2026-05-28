@@ -1,0 +1,14 @@
+[
+  {
+    "visit": 1,
+    "scan_date": null,
+    "report_text": "NeuroMed University Hospital NHS Trust MRI Brain Report\nPatient: P001 | NHS: 432 890 1234\nNeuro-Oncology Department\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nSex / Age: M / 63 yrs at diagnosis\nNHS Number: 432 890 1234\nBlood Group: A+\nReferring GP: Dr. Sarah Patel, The Grange Practice, Leeds\nDiagnosis: Glioblastoma Multiforme (GBM) \u2014 WHO Grade IV\nPrimary Location: right parietal\nReport Date: 21 October 2023\nMRI SEQUENCES ACQUIRED\nT1 post-Gd | T2 FLAIR | DWI/ADC | PWI (DSC-MRI) | MR Spectroscopy | SWI\nVISIT 1 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 2 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 3 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 4 \u2014\n\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nRECIST 1.1 LESION MEASUREMENTS\nVisit \u2014 \u2014 Overall:\nVisit \u2014 \u2014 Overall:\nVisit \u2014 \u2014 Overall:\nThis report is generated for clinical use within NeuroMed University Hospital NHS Trust. Results should be interpreted in conjunction with the\nclinical context. For queries contact the Radiology Department: radiology@neuromed.nhs.uk",
+    "rano_response": null
+  },
+  {
+    "visit": 2,
+    "scan_date": null,
+    "report_text": "NeuroMed University Hospital NHS Trust\nNeuro-Oncology Department\nMRI Brain Report ? VISIT 2 (Follow-up)\nPatient: P001 | NHS: 432 890 1234\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nPatient ID: P001\nDate of Birth: 14 March 1962\nDiagnosis: Glioblastoma Multiforme (GBM) ? WHO Grade IV\nPrimary Location: right parietal\nVisit 1 Date: 21 October 2023\nReport Date: 31 January 2024 (Visit 2)\nScanner: Siemens MAGNETOM Vida 3T\nSequences: T1 post-Gd | T2 FLAIR | DWI/ADC | SWI\nRECIST 1.1 TUMOUR RESPONSE ASSESSMENT\nVisit 1 longest diameter (scan1): 28.4 mm\nVisit 2 longest diameter (scan2): 40.5 mm\nChange: +42.6%\nRECIST Classification: Progressive Disease (PD)\nIMAGING FINDINGS\nEnlargement of the enhancing lesion. New satellite foci of enhancement. Increased perilesional oedema and midline shift.\nCOMPARISON WITH PRIOR IMAGING\nDirect comparison performed with Visit 1 study dated 21 October 2023.\nOverall trend: WORSENED\nReporting Radiologist: Dr. A. Chambers, Consultant Neuroradiologist\nVerified: 31 January 2024",
+    "rano_response": null
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "stage": 3,
+  "stage_name": "Structured Patient Record Extraction",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:19:32.910349+00:00",
+  "patient_name": "James R. Thornton",
+  "age": 63,
+  "sex": "M",
+  "diagnosis": "glioblastoma",
+  "diagnosis_date": "2023-10-21",
+  "findings": [
+    {
+      "description": "Enhancing lesion in the right parietal lobe, showing signs of enlargement and new satellite foci of enhancement. Increased perilesional oedema and midline shift are noted.",
+      "location": "Right parietal lobe",
+      "size_mm": 39.8,
+      "enhancement": "ring"
+    }
+  ],
+  "impression": "The enhancing lesion in the right parietal lobe has progressed, showing enlargement, new satellite foci, and increased perilesional oedema with midline shift, consistent with glioblastoma multiforme (GBM). This represents progressive disease (PD) compared to the prior visit."
+}

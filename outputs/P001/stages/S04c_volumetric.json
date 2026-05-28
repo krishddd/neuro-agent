@@ -1,0 +1,15 @@
+{
+  "stage": 4,
+  "stage_name": "3D Volumetric Tumour Segmentation (BraTS)",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:17:00.837589+00:00",
+  "visit": "v2",
+  "volumetric_unavailable": true,
+  "reason": "no_nifti_files_in_manifest",
+  "backend": "none",
+  "enhancing_volume_mm3": 0.0,
+  "necrotic_volume_mm3": 0.0,
+  "edema_volume_mm3": 0.0,
+  "largest_axial_bidim_mm2": 0.0
+}

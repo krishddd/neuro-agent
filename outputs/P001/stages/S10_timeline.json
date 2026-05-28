@@ -1,0 +1,82 @@
+{
+  "stage": 10,
+  "stage_name": "Longitudinal Timeline",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:51:04.932274+00:00",
+  "events": [
+    {
+      "when": "2023-10-21",
+      "kind": "visit",
+      "label": "Diagnosis: glioblastoma",
+      "source_file": null
+    },
+    {
+      "when": "2023-10-21",
+      "kind": "med_start",
+      "label": "Start Temozolomide 75 mg/m\u00b2",
+      "source_file": null
+    },
+    {
+      "when": "2023-10-21",
+      "kind": "med_start",
+      "label": "Start Temozolomide 150 mg/m\u00b2",
+      "source_file": null
+    },
+    {
+      "when": "2024-01-31",
+      "kind": "med_start",
+      "label": "Start Bevacizumab 10 mg/kg",
+      "source_file": null
+    },
+    {
+      "when": "2024-01-31",
+      "kind": "med_start",
+      "label": "Start Lomustine 90 mg/m\u00b2",
+      "source_file": null
+    },
+    {
+      "when": "2024-01-31",
+      "kind": "med_stop",
+      "label": "Stop Temozolomide",
+      "source_file": null
+    },
+    {
+      "when": "2024-01-31",
+      "kind": "med_stop",
+      "label": "Stop Temozolomide",
+      "source_file": null
+    },
+    {
+      "when": "2026-04-26",
+      "kind": "scan",
+      "label": "MRI v1: Enhancing mass in the right parietal lobe, consistent with Glioblastoma Multiforme (GBM). Significant surrounding edema ",
+      "source_file": null
+    },
+    {
+      "when": "2026-04-26",
+      "kind": "scan",
+      "label": "MRI v2: Enhancement of the right parietal lobe lesion, consistent with Glioblastoma Multiforme (GBM). The lesion shows signs of ",
+      "source_file": null
+    },
+    {
+      "when": "2026-04-26",
+      "kind": "note",
+      "label": "Treatment Optimization: MDT decision=MODIFY \u2014 defer",
+      "source_file": null
+    },
+    {
+      "when": "2026-04-26",
+      "kind": "note",
+      "label": "MDT Board Discussion Required \u2014 escalated for multidisciplinary review",
+      "source_file": null
+    },
+    {
+      "when": "2026-04-26",
+      "kind": "note",
+      "label": "Survival Prediction: PFS=13.0w (CI 1.6\u2013114.9w), RECIST delta predicted=+5.7%, \u03c3=15.343",
+      "source_file": null
+    }
+  ],
+  "narrative": "Patient diagnosed with glioblastoma. Latest RECIST response: PD. Currently on 7 medication(s): Bevacizumab, Lomustine, Dexamethasone, Omeprazole, Fluconazole."
+}

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Neuro-Oncology — Knowledge Graph Viewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  Phase 5.6 / Extra A — Cytoscape.js viewer for LightRAG patient graphs.
+
+  Loads /vendor/cytoscape.min.js when present (air-gapped deployments);
+  falls back to the unpkg CDN for online dev. Polls
+  /api/v1/graph/{pid}/status until ready, then fetches the graph JSON.
+
+  Query string:
+      ?pid=P001          required — patient ID
+      &api=/api/v1       optional — override API prefix
+-->
+<style>
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --good: #3fb950;
+    --warn: #d29922;
+    --bad: #f85149;
+  }
+  html, body {
+    margin: 0; padding: 0;
+    height: 100%; width: 100%;
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+  }
+  #shell {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 56px 1fr;
+    height: 100vh; width: 100vw;
+  }
+  #header {
+    grid-column: 1 / span 2;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 16px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+  }
+  #header h1 {
+    margin: 0; font-size: 15px; font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  #header h1 .pid { color: var(--accent); }
+  #header .right { font-size: 12px; color: var(--muted); }
+  #sidebar {
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+  #sidebar h2 {
+    margin: 16px 0 6px;
+    font-size: 12px; text-transform: uppercase;
+    color: var(--muted); letter-spacing: 0.5px;
+  }
+  #sidebar .stat {
+    display: flex; justify-content: space-between;
+    padding: 3px 0;
+  }
+  #sidebar .stat span:first-child { color: var(--muted); }
+  #status-line {
+    padding: 10px 12px; border-radius: 6px;
+    background: #0d1117; border: 1px solid var(--border);
+    margin-bottom: 12px;
+  }
+  #status-line.ready    { border-color: var(--good); }
+  #status-line.building { border-color: var(--warn); }
+  #status-line.failed   { border-color: var(--bad); }
+  #status-line .label {
+    font-weight: 600; text-transform: uppercase; font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  #status-line.ready    .label { color: var(--good); }
+  #status-line.building .label { color: var(--warn); }
+  #status-line.failed   .label { color: var(--bad); }
+  #status-line.absent   .label { color: var(--muted); }
+  #selection {
+    margin-top: 8px; padding: 10px; border-radius: 6px;
+    background: #0d1117; border: 1px solid var(--border);
+    word-break: break-word; font-size: 12.5px;
+  }
+  #selection .placeholder { color: var(--muted); font-style: italic; }
+  #selection b { color: var(--accent); }
+  #cy {
+    width: 100%; height: 100%;
+    background:
+      radial-gradient(circle at 30% 30%, #1c2330 0%, #0e1116 70%);
+  }
+  .legend {
+    display: flex; align-items: center; gap: 6px;
+    padding: 2px 0; font-size: 12px;
+  }
+  .legend .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    display: inline-block;
+  }
+  button.refresh {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text); border-radius: 4px;
+    padding: 4px 10px; font-size: 12px; cursor: pointer;
+  }
+  button.refresh:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div id="shell">
+  <div id="header">
+    <h1>Knowledge Graph — <span class="pid" id="pid-display">…</span></h1>
+    <div class="right">
+      <button class="refresh" onclick="location.reload()">Refresh</button>
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <div id="status-line">
+      <div class="label" id="status-label">Loading…</div>
+      <div id="status-summary" style="margin-top: 4px; font-size: 12.5px;">
+        Polling…
+      </div>
+    </div>
+
+    <h2>Statistics</h2>
+    <div class="stat"><span>Nodes (total)</span><span id="stat-nodes-total">—</span></div>
+    <div class="stat"><span>Edges (total)</span><span id="stat-edges-total">—</span></div>
+    <div class="stat"><span>Nodes (rendered)</span><span id="stat-nodes-rendered">—</span></div>
+    <div class="stat"><span>Edges (rendered)</span><span id="stat-edges-rendered">—</span></div>
+    <div class="stat"><span>Trimmed</span><span id="stat-trimmed">—</span></div>
+
+    <h2>Legend</h2>
+    <div class="legend"><span class="dot" style="background:#58a6ff"></span> entity</div>
+    <div class="legend"><span class="dot" style="background:#3fb950"></span> drug / treatment</div>
+    <div class="legend"><span class="dot" style="background:#d29922"></span> biomarker / molecule</div>
+    <div class="legend"><span class="dot" style="background:#bc8cff"></span> condition</div>
+
+    <h2>Selection</h2>
+    <div id="selection"><span class="placeholder">Click a node or edge…</span></div>
+  </div>
+
+  <div id="cy"></div>
+</div>
+
+<!--
+  Vendor Cytoscape.js (preferred for air-gapped deployments).
+  Falls back to unpkg CDN if the vendor copy is missing.
+-->
+<script>
+(function loadCytoscape() {
+  var s = document.createElement('script');
+  s.src = 'vendor/cytoscape.min.js';
+  s.onerror = function () {
+    var f = document.createElement('script');
+    f.src = 'https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js';
+    f.onload = init;
+    f.onerror = function () {
+      document.getElementById('status-summary').textContent =
+        'Cytoscape.js failed to load (no vendor copy + no internet). Drop a copy into static/vendor/cytoscape.min.js to enable air-gapped use.';
+    };
+    document.head.appendChild(f);
+  };
+  s.onload = init;
+  document.head.appendChild(s);
+})();
+
+// ── helpers ─────────────────────────────────────────────────────────────
+var qs = new URLSearchParams(location.search);
+var PID = (qs.get('pid') || '').toUpperCase().trim();
+var API = qs.get('api') || '/api/v1';
+document.getElementById('pid-display').textContent = PID || '(no pid)';
+
+function setStatus(state, summary) {
+  var el = document.getElementById('status-line');
+  el.classList.remove('ready', 'building', 'failed', 'absent');
+  if (state) el.classList.add(state);
+  document.getElementById('status-label').textContent = state || 'unknown';
+  document.getElementById('status-summary').textContent = summary || '';
+}
+
+function colorByType(type) {
+  type = (type || '').toLowerCase();
+  if (/drug|treatment|chemo|therap/.test(type))                 return '#3fb950';
+  if (/gene|protein|enzyme|biomarker|molecule|cyp|mgmt|idh/.test(type)) return '#d29922';
+  if (/disease|condition|tumour|tumor|glioma|cancer/.test(type)) return '#bc8cff';
+  return '#58a6ff';
+}
+
+// ── flow: poll status → fetch graph → render ────────────────────────────
+async function init() {
+  if (typeof cytoscape === 'undefined') {
+    setStatus('failed', 'Cytoscape.js not available.');
+    return;
+  }
+  if (!PID) {
+    setStatus('absent', 'Missing ?pid=… in URL.');
+    return;
+  }
+
+  var attempts = 0;
+  async function poll() {
+    attempts += 1;
+    try {
+      var r = await fetch(API + '/graph/' + encodeURIComponent(PID) + '/status');
+      var s = await r.json();
+      setStatus(s.state, s.summary);
+      if (s.state === 'ready') {
+        loadGraph();
+        return;
+      }
+      if (s.state === 'failed') return;
+      // building / absent — keep polling (max ~5 min then stop)
+      if (attempts < 60) setTimeout(poll, 5000);
+    } catch (e) {
+      setStatus('failed', 'Status endpoint error: ' + e.message);
+    }
+  }
+  poll();
+}
+
+async function loadGraph() {
+  try {
+    var r = await fetch(API + '/graph/' + encodeURIComponent(PID));
+    if (!r.ok) {
+      var err = await r.json().catch(function () { return {}; });
+      setStatus('failed', 'Graph fetch failed: ' + (err.detail && err.detail.message || r.status));
+      return;
+    }
+    var data = await r.json();
+
+    document.getElementById('stat-nodes-total').textContent    = data.n_nodes_total ?? '—';
+    document.getElementById('stat-edges-total').textContent    = data.n_edges_total ?? '—';
+    document.getElementById('stat-nodes-rendered').textContent = data.n_nodes_emitted ?? '—';
+    document.getElementById('stat-edges-rendered').textContent = data.n_edges_emitted ?? '—';
+    document.getElementById('stat-trimmed').textContent        = data.trimmed ? 'yes' : 'no';
+
+    render(data.elements);
+  } catch (e) {
+    setStatus('failed', 'Graph fetch threw: ' + e.message);
+  }
+}
+
+function render(elements) {
+  var nodes = (elements.nodes || []).map(function (n) {
+    n.data._color = colorByType(n.data.type);
+    return n;
+  });
+  var edges = elements.edges || [];
+
+  var cy = cytoscape({
+    container: document.getElementById('cy'),
+    elements: nodes.concat(edges),
+    style: [
+      { selector: 'node', style: {
+          'background-color':    'data(_color)',
+          'label':               'data(label)',
+          'color':               '#e6edf3',
+          'font-size':           10,
+          'text-outline-color':  '#0e1116',
+          'text-outline-width':  2,
+          'text-valign':         'center',
+          'text-halign':         'center',
+          'width':               'mapData(weight, 0, 5, 14, 36)',
+          'height':              'mapData(weight, 0, 5, 14, 36)',
+          'border-width':        1,
+          'border-color':        '#30363d',
+        } },
+      { selector: 'edge', style: {
+          'curve-style':       'bezier',
+          'line-color':        '#30363d',
+          'target-arrow-color':'#30363d',
+          'target-arrow-shape':'triangle',
+          'arrow-scale':       0.7,
+          'width':             1,
+          'opacity':           0.7,
+          'label':             'data(label)',
+          'font-size':         8,
+          'color':             '#8b949e',
+          'text-rotation':     'autorotate',
+          'text-background-color': '#0e1116',
+          'text-background-opacity': 0.7,
+          'text-background-padding': '2px',
+        } },
+      { selector: ':selected', style: {
+          'border-width': 3,
+          'border-color': '#58a6ff',
+          'line-color':   '#58a6ff',
+          'target-arrow-color': '#58a6ff',
+        } },
+      { selector: '.dimmed', style: { 'opacity': 0.15 } },
+      { selector: '.highlight', style: { 'opacity': 1, 'z-index': 10 } },
+    ],
+    layout: {
+      name:        'cose',
+      animate:     false,
+      idealEdgeLength: 110,
+      nodeOverlap: 20,
+      nodeRepulsion: function () { return 8000; },
+      edgeElasticity: function () { return 80; },
+      fit:         true,
+      padding:     30,
+    },
+    wheelSensitivity: 0.2,
+  });
+
+  function showSelection(label, kind, extras) {
+    var html = '<b>' + (label || '(unlabeled)') + '</b><br>'
+             + '<span style="color:var(--muted)">' + kind + '</span>';
+    if (extras) {
+      Object.keys(extras).forEach(function (k) {
+        if (extras[k] != null && extras[k] !== '') {
+          html += '<br><span style="color:var(--muted)">' + k + ':</span> '
+               + String(extras[k]);
+        }
+      });
+    }
+    document.getElementById('selection').innerHTML = html;
+  }
+
+  cy.on('tap', 'node', function (evt) {
+    var n = evt.target;
+    showSelection(n.data('label'), 'node — ' + (n.data('type') || 'entity'), {
+      id: n.data('id'),
+      description: n.data('description'),
+    });
+    cy.elements().addClass('dimmed').removeClass('highlight');
+    n.closedNeighborhood().removeClass('dimmed').addClass('highlight');
+  });
+
+  cy.on('tap', 'edge', function (evt) {
+    var e = evt.target;
+    showSelection(e.data('label') || '(unlabeled relation)', 'edge', {
+      source: e.data('source'),
+      target: e.data('target'),
+      weight: e.data('weight'),
+    });
+    cy.elements().addClass('dimmed').removeClass('highlight');
+    e.connectedNodes().union(e).removeClass('dimmed').addClass('highlight');
+  });
+
+  cy.on('tap', function (evt) {
+    if (evt.target === cy) {
+      cy.elements().removeClass('dimmed highlight');
+      document.getElementById('selection').innerHTML =
+        '<span class="placeholder">Click a node or edge…</span>';
+    }
+  });
+}
+</script>
+</body>
+</html>

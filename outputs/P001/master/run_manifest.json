@@ -1,0 +1,331 @@
+{
+  "job_id": "99ebde2bd8a0",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T12:00:54.091107+00:00",
+  "phases": [
+    {
+      "phase": "ingest",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777202165.905021
+    },
+    {
+      "phase": "mri",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777202372.9133334
+    },
+    {
+      "phase": "recist",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777202448.5251253
+    },
+    {
+      "phase": "treatment_opt",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777203342.0892951
+    },
+    {
+      "phase": "pharma",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777204264.9312623
+    },
+    {
+      "phase": "synthesis",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777204839.3869116
+    }
+  ],
+  "output_root": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001",
+  "inventory": {
+    "extended": [
+      {
+        "path": "extended/adverse_events_ctcae.json",
+        "size_bytes": 2721,
+        "mtime": null
+      },
+      {
+        "path": "extended/clinical_trial_eligibility.json",
+        "size_bytes": 2477,
+        "mtime": null
+      },
+      {
+        "path": "extended/laboratory_results.json",
+        "size_bytes": 2796,
+        "mtime": null
+      },
+      {
+        "path": "extended/mrs_spectroscopy.json",
+        "size_bytes": 85,
+        "mtime": null
+      },
+      {
+        "path": "extended/neuropsych_assessments.json",
+        "size_bytes": 50,
+        "mtime": null
+      },
+      {
+        "path": "extended/pathology_report.txt",
+        "size_bytes": 3738,
+        "mtime": null
+      },
+      {
+        "path": "extended/radiology_reports.json",
+        "size_bytes": 2824,
+        "mtime": null
+      }
+    ],
+    "fhir": [
+      {
+        "path": "fhir/fhir_bundle.json",
+        "size_bytes": 12935,
+        "mtime": null
+      }
+    ],
+    "history": [
+      {
+        "path": "history/longitudinal.jsonl",
+        "size_bytes": 581,
+        "mtime": null
+      }
+    ],
+    "images": [
+      {
+        "path": "images/v1/mri_montage_16bit_norm.png",
+        "size_bytes": 828483,
+        "mtime": null
+      },
+      {
+        "path": "images/v1/mri_norm.png",
+        "size_bytes": 42917,
+        "mtime": null
+      },
+      {
+        "path": "images/v1/mri_preview_annotated_norm.png",
+        "size_bytes": 192173,
+        "mtime": null
+      },
+      {
+        "path": "images/v2/mri_montage_16bit_norm.png",
+        "size_bytes": 828083,
+        "mtime": null
+      },
+      {
+        "path": "images/v2/mri_norm.png",
+        "size_bytes": 42789,
+        "mtime": null
+      },
+      {
+        "path": "images/v2/mri_preview_annotated_norm.png",
+        "size_bytes": 193853,
+        "mtime": null
+      }
+    ],
+    "master": [
+      {
+        "path": "master/P001_master.json",
+        "size_bytes": 123798,
+        "mtime": null
+      },
+      {
+        "path": "master/working_memory.json",
+        "size_bytes": 105706,
+        "mtime": null
+      }
+    ],
+    "notifications": [
+      {
+        "path": "notifications/notifications_gmail.json",
+        "size_bytes": 129,
+        "mtime": null
+      },
+      {
+        "path": "notifications/notifications_phase4.json",
+        "size_bytes": 255,
+        "mtime": null
+      },
+      {
+        "path": "notifications/notifications_sync.json",
+        "size_bytes": 253,
+        "mtime": null
+      }
+    ],
+    "_root": [
+      {
+        "path": "P001_full_pipeline.json",
+        "size_bytes": 123798,
+        "mtime": null
+      },
+      {
+        "path": "vision_compare.json",
+        "size_bytes": 280,
+        "mtime": null
+      }
+    ],
+    "plots": [
+      {
+        "path": "plots/bo_convergence.png",
+        "size_bytes": 19596,
+        "mtime": null
+      },
+      {
+        "path": "plots/bo_landscape.png",
+        "size_bytes": 34540,
+        "mtime": null
+      },
+      {
+        "path": "plots/shap_waterfall.png",
+        "size_bytes": 25516,
+        "mtime": null
+      }
+    ],
+    "reports": [
+      {
+        "path": "reports/gp_handover.txt",
+        "size_bytes": 1037,
+        "mtime": null
+      },
+      {
+        "path": "reports/mdt_package.json",
+        "size_bytes": 2111,
+        "mtime": null
+      },
+      {
+        "path": "reports/patient_letter.txt",
+        "size_bytes": 1041,
+        "mtime": null
+      },
+      {
+        "path": "reports/report.md",
+        "size_bytes": 12805,
+        "mtime": null
+      }
+    ],
+    "stages": [
+      {
+        "path": "stages/S01_ingestion.json",
+        "size_bytes": 27259,
+        "mtime": null
+      },
+      {
+        "path": "stages/S02_vision.json",
+        "size_bytes": 1941,
+        "mtime": null
+      },
+      {
+        "path": "stages/S03_record.json",
+        "size_bytes": 941,
+        "mtime": null
+      },
+      {
+        "path": "stages/S04_recist.json",
+        "size_bytes": 652,
+        "mtime": null
+      },
+      {
+        "path": "stages/S04b_rano.json",
+        "size_bytes": 636,
+        "mtime": null
+      },
+      {
+        "path": "stages/S04c_volumetric.json",
+        "size_bytes": 429,
+        "mtime": null
+      },
+      {
+        "path": "stages/S04d_radiomics.json",
+        "size_bytes": 412,
+        "mtime": null
+      },
+      {
+        "path": "stages/S05_index.json",
+        "size_bytes": 220,
+        "mtime": null
+      },
+      {
+        "path": "stages/S06_urgency.json",
+        "size_bytes": 413,
+        "mtime": null
+      },
+      {
+        "path": "stages/S07_medications.json",
+        "size_bytes": 2268,
+        "mtime": null
+      },
+      {
+        "path": "stages/S08_interactions.json",
+        "size_bytes": 17604,
+        "mtime": null
+      },
+      {
+        "path": "stages/S09_correlation.json",
+        "size_bytes": 1447,
+        "mtime": null
+      },
+      {
+        "path": "stages/S10_timeline.json",
+        "size_bytes": 2421,
+        "mtime": null
+      },
+      {
+        "path": "stages/S11_qa_examples.json",
+        "size_bytes": 1818,
+        "mtime": null
+      },
+      {
+        "path": "stages/S12_summary.json",
+        "size_bytes": 2194,
+        "mtime": null
+      },
+      {
+        "path": "stages/S13_export.json",
+        "size_bytes": 618,
+        "mtime": null
+      },
+      {
+        "path": "stages/S14_patient_state.json",
+        "size_bytes": 3113,
+        "mtime": null
+      },
+      {
+        "path": "stages/S15_prediction.json",
+        "size_bytes": 2063,
+        "mtime": null
+      },
+      {
+        "path": "stages/S16_optimization.json",
+        "size_bytes": 3531,
+        "mtime": null
+      },
+      {
+        "path": "stages/S17_shap.json",
+        "size_bytes": 1943,
+        "mtime": null
+      },
+      {
+        "path": "stages/S17b_clinical_trials.json",
+        "size_bytes": 3543,
+        "mtime": null
+      },
+      {
+        "path": "stages/S17c_pubmed.json",
+        "size_bytes": 6175,
+        "mtime": null
+      },
+      {
+        "path": "stages/S17d_faers.json",
+        "size_bytes": 8433,
+        "mtime": null
+      },
+      {
+        "path": "stages/S18_treatment_proposal.json",
+        "size_bytes": 8913,
+        "mtime": null
+      }
+    ]
+  }
+}

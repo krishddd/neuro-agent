@@ -1,0 +1,118 @@
+{"ts": "2026-04-17T16:01:06Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": 138455, "meta": {"error_type": "ValueError"}}
+{"ts": "2026-04-17T16:01:06Z", "stage": "phase.ingest", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": 138459, "meta": {"phase": "ingest", "error_type": "ValueError"}}
+{"ts": "2026-04-17T16:06:43Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 103156, "meta": {"n_files": 20}}
+{"ts": "2026-04-17T16:13:59Z", "stage": "recist.index_rag", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 436392, "meta": {"tool": "index_rag", "ok": true, "n_chunks": 12}}
+{"ts": "2026-04-17T16:13:59Z", "stage": "phase.ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 539566, "meta": {"phase": "ingest", "steps": 1}}
+{"ts": "2026-04-17T16:14:14Z", "stage": "phase.mri.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "mri", "error_type": "ResponseError"}}
+{"ts": "2026-04-17T16:14:14Z", "stage": "phase.mri", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 14314, "meta": {"phase": "mri", "steps": 1, "ok": false}}
+{"ts": "2026-04-17T16:14:14Z", "stage": "phase.mri.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "mri"}}
+{"ts": "2026-04-17T16:14:16Z", "stage": "phase.recist.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "recist", "error_type": "ResponseError"}}
+{"ts": "2026-04-17T16:14:16Z", "stage": "phase.recist", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 2046, "meta": {"phase": "recist", "steps": 1, "ok": false}}
+{"ts": "2026-04-17T16:14:16Z", "stage": "phase.recist.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "recist"}}
+{"ts": "2026-04-17T16:25:44Z", "stage": "phase.treatment_opt", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 688347, "meta": {"phase": "treatment_opt", "steps": 1}}
+{"ts": "2026-04-17T16:32:58Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 147551, "meta": {"n_files": 20}}
+{"ts": "2026-04-17T16:36:11Z", "stage": "recist.index_rag", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 192468, "meta": {"tool": "index_rag", "ok": true, "n_chunks": 12}}
+{"ts": "2026-04-17T16:36:11Z", "stage": "phase.ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 340037, "meta": {"phase": "ingest", "steps": 1}}
+{"ts": "2026-04-17T16:36:13Z", "stage": "phase.mri.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "mri", "error_type": "ResponseError"}}
+{"ts": "2026-04-17T16:36:13Z", "stage": "phase.mri", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 2331, "meta": {"phase": "mri", "steps": 1, "ok": false}}
+{"ts": "2026-04-17T16:36:13Z", "stage": "phase.mri.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "mri"}}
+{"ts": "2026-04-17T16:36:17Z", "stage": "phase.recist.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "recist", "error_type": "ResponseError"}}
+{"ts": "2026-04-17T16:36:17Z", "stage": "phase.recist", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 3414, "meta": {"phase": "recist", "steps": 1, "ok": false}}
+{"ts": "2026-04-17T16:36:17Z", "stage": "phase.recist.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "recist"}}
+{"ts": "2026-04-17T17:00:00Z", "stage": "phase.treatment_opt", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 1423377, "meta": {"phase": "treatment_opt", "steps": 1}}
+{"ts": "2026-04-17T17:00:02Z", "stage": "phase.pharma.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "pharma", "error_type": "ResponseError"}}
+{"ts": "2026-04-17T17:00:02Z", "stage": "phase.pharma", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 1766, "meta": {"phase": "pharma", "steps": 1, "ok": false}}
+{"ts": "2026-04-17T17:00:02Z", "stage": "phase.pharma.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "pharma"}}
+{"ts": "2026-04-17T17:00:02Z", "stage": "synthesis.build_timeline", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 3, "meta": {"tool": "build_timeline", "ok": true}}
+{"ts": "2026-04-17T17:00:04Z", "stage": "synthesis.write_summary", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 2124, "meta": {"tool": "write_summary"}}
+{"ts": "2026-04-17T17:00:07Z", "stage": "synthesis.export_fhir", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 2744, "meta": {"tool": "export_fhir", "ok": true}}
+{"ts": "2026-04-17T17:00:07Z", "stage": "phase.synthesis", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 4876, "meta": {"phase": "synthesis", "steps": 1}}
+{"ts": "2026-04-18T04:02:42Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 21204, "meta": {"n_files": 20}}
+{"ts": "2026-04-18T04:15:43Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 44991, "meta": {"n_files": 20}}
+{"ts": "2026-04-18T08:12:20Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 10842, "meta": {"n_files": 20}}
+{"ts": "2026-04-18T08:13:22Z", "stage": "recist.index_rag", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 61837, "meta": {"tool": "index_rag", "ok": true, "n_chunks": 12}}
+{"ts": "2026-04-18T08:13:22Z", "stage": "phase.ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 72688, "meta": {"phase": "ingest", "steps": 1}}
+{"ts": "2026-04-18T08:13:23Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 984, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T08:13:24Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 916, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T08:13:24Z", "stage": "phase.mri.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "mri", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:13:24Z", "stage": "phase.mri", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 139, "meta": {"phase": "mri", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:13:24Z", "stage": "phase.mri.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "mri"}}
+{"ts": "2026-04-18T08:13:24Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 375, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T08:13:25Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 370, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T08:13:25Z", "stage": "phase.recist.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "recist", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:13:25Z", "stage": "phase.recist", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 61, "meta": {"phase": "recist", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:13:25Z", "stage": "phase.recist.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "recist"}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "phase.treatment_opt", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 63145, "meta": {"phase": "treatment_opt", "steps": 1}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "phase.pharma.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "pharma", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "phase.pharma", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 39, "meta": {"phase": "pharma", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "phase.pharma.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "pharma"}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "synthesis.build_timeline", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 9, "meta": {"tool": "build_timeline", "ok": true}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "synthesis.write_summary", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 52, "meta": {"tool": "write_summary"}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "synthesis.export_fhir", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 210, "meta": {"tool": "export_fhir", "ok": true}}
+{"ts": "2026-04-18T08:14:28Z", "stage": "phase.synthesis", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 277, "meta": {"phase": "synthesis", "steps": 1}}
+{"ts": "2026-04-18T08:17:18Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 6053, "meta": {"n_files": 20}}
+{"ts": "2026-04-18T08:18:05Z", "stage": "recist.index_rag", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 47287, "meta": {"tool": "index_rag", "ok": true, "n_chunks": 12}}
+{"ts": "2026-04-18T08:18:05Z", "stage": "phase.ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 53344, "meta": {"phase": "ingest", "steps": 1}}
+{"ts": "2026-04-18T08:18:05Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 364, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T08:18:06Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 464, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T08:18:06Z", "stage": "phase.mri.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "mri", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:18:06Z", "stage": "phase.mri", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 79, "meta": {"phase": "mri", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:18:06Z", "stage": "phase.mri.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "mri"}}
+{"ts": "2026-04-18T08:18:06Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 259, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T08:18:06Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 295, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T08:18:07Z", "stage": "phase.recist.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "recist", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:18:07Z", "stage": "phase.recist", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 57, "meta": {"phase": "recist", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:18:07Z", "stage": "phase.recist.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "recist"}}
+{"ts": "2026-04-18T08:18:34Z", "stage": "phase.treatment_opt", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 27869, "meta": {"phase": "treatment_opt", "steps": 1}}
+{"ts": "2026-04-18T08:18:34Z", "stage": "phase.pharma.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "pharma", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:18:34Z", "stage": "phase.pharma", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 54, "meta": {"phase": "pharma", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:18:34Z", "stage": "phase.pharma.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "pharma"}}
+{"ts": "2026-04-18T08:18:34Z", "stage": "synthesis.build_timeline", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 8, "meta": {"tool": "build_timeline", "ok": true}}
+{"ts": "2026-04-18T08:18:34Z", "stage": "synthesis.write_summary", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 40, "meta": {"tool": "write_summary"}}
+{"ts": "2026-04-18T08:18:35Z", "stage": "synthesis.export_fhir", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 188, "meta": {"tool": "export_fhir", "ok": true}}
+{"ts": "2026-04-18T08:18:35Z", "stage": "phase.synthesis", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 245, "meta": {"phase": "synthesis", "steps": 1}}
+{"ts": "2026-04-18T08:20:37Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 6602, "meta": {"n_files": 20}}
+{"ts": "2026-04-18T08:21:10Z", "stage": "recist.index_rag", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 33635, "meta": {"tool": "index_rag", "ok": true, "n_chunks": 12}}
+{"ts": "2026-04-18T08:21:10Z", "stage": "phase.ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 40240, "meta": {"phase": "ingest", "steps": 1}}
+{"ts": "2026-04-18T08:21:10Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 190, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 192, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "phase.mri.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "mri", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "phase.mri", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 40, "meta": {"phase": "mri", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "phase.mri.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "mri"}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 143, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 110, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "phase.recist.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "recist", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "phase.recist", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 23, "meta": {"phase": "recist", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:21:11Z", "stage": "phase.recist.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "recist"}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "phase.treatment_opt", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 26851, "meta": {"phase": "treatment_opt", "steps": 1}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "phase.pharma.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "pharma", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "phase.pharma", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 28, "meta": {"phase": "pharma", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "phase.pharma.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "pharma"}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "synthesis.build_timeline", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 2, "meta": {"tool": "build_timeline", "ok": true}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "synthesis.write_summary", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 36, "meta": {"tool": "write_summary"}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "synthesis.export_fhir", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 105, "meta": {"tool": "export_fhir", "ok": true}}
+{"ts": "2026-04-18T08:21:38Z", "stage": "phase.synthesis", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 147, "meta": {"phase": "synthesis", "steps": 1}}
+{"ts": "2026-04-18T15:03:20Z", "stage": "ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 7751, "meta": {"n_files": 20}}
+{"ts": "2026-04-18T15:04:09Z", "stage": "recist.index_rag", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 48452, "meta": {"tool": "index_rag", "ok": true, "n_chunks": 12}}
+{"ts": "2026-04-18T15:04:09Z", "stage": "phase.ingest", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 56211, "meta": {"phase": "ingest", "steps": 1}}
+{"ts": "2026-04-18T15:04:09Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 256, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T15:04:09Z", "stage": "mri.analyze_scan", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 250, "meta": {"tool": "analyze_scan", "ok": false}}
+{"ts": "2026-04-18T15:04:09Z", "stage": "phase.mri.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "mri", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T15:04:09Z", "stage": "phase.mri", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 73, "meta": {"phase": "mri", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T15:04:09Z", "stage": "phase.mri.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "mri"}}
+{"ts": "2026-04-18T15:04:10Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 211, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T15:04:10Z", "stage": "recist.measure_lesions", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 219, "meta": {"tool": "measure_lesions", "ok": false}}
+{"ts": "2026-04-18T15:04:10Z", "stage": "phase.recist.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "recist", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T15:04:10Z", "stage": "phase.recist", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 52, "meta": {"phase": "recist", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T15:04:10Z", "stage": "phase.recist.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "recist"}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "phase.treatment_opt", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 2035, "meta": {"phase": "treatment_opt", "steps": 1}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "phase.pharma.llm_error", "pid_hash": "87097cb2ed5d1c19", "status": "error", "duration_ms": null, "meta": {"phase": "pharma", "error_type": "ResponseError"}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "phase.pharma", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 51, "meta": {"phase": "pharma", "steps": 1, "ok": false}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "phase.pharma.continued_after_failure", "pid_hash": "87097cb2ed5d1c19", "status": "warning", "duration_ms": null, "meta": {"phase": "pharma"}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "synthesis.build_timeline", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 6, "meta": {"tool": "build_timeline", "ok": true}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "synthesis.write_summary", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 54, "meta": {"tool": "write_summary"}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "synthesis.export_fhir", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 114, "meta": {"tool": "export_fhir", "ok": true}}
+{"ts": "2026-04-18T15:04:12Z", "stage": "phase.synthesis", "pid_hash": "87097cb2ed5d1c19", "status": "ok", "duration_ms": 178, "meta": {"phase": "synthesis", "steps": 1}}
+{"ts": "2026-04-25T08:17:08Z", "stage": "treatment_opt.pubmed_evidence", "pid_hash": "86f2c0b9b0dc8df3", "status": "ok", "duration_ms": 4795, "meta": {"tool": "retrieve_pubmed_evidence", "ok": true}}
+{"ts": "2026-04-25T12:32:25Z", "stage": "treatment_opt.faers", "pid_hash": "5a56217eacaccae5", "status": "ok", "duration_ms": 2205, "meta": {"tool": "check_adverse_events", "ok": true}}
+{"ts": "2026-04-25T12:33:57Z", "stage": "treatment_opt.faers", "pid_hash": "add418a69cfda708", "status": "ok", "duration_ms": 3478, "meta": {"tool": "check_adverse_events", "ok": true}}

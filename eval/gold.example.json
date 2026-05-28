@@ -1,0 +1,26 @@
+{
+  "patients": [
+    {
+      "patient_id": "P001",
+      "expected": {
+        "diagnosis_substring": "glioblastoma",
+        "recist_response": "PD",
+        "urgency_min_score": 3,
+        "interactions_min_severity": "moderate",
+        "must_contain_meds": ["Temozolomide"],
+        "must_have_visits": ["v1", "v2"]
+      },
+      "qa": [
+        {
+          "question": "What was the RECIST response between the two scans?",
+          "must_contain": ["PD"],
+          "must_cite_any": ["mri_brain_report.pdf"]
+        },
+        {
+          "question": "Is there a clinically significant drug interaction?",
+          "must_contain_any": ["major", "moderate"]
+        }
+      ]
+    }
+  ]
+}

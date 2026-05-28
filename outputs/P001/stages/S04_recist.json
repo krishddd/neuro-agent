@@ -1,0 +1,24 @@
+{
+  "stage": 4,
+  "stage_name": "RECIST 1.1 / RANO Lesion Measurement",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:20:46.851430+00:00",
+  "baseline_sum_mm": null,
+  "current_sum_mm": 10.8,
+  "pct_change": null,
+  "response": "PD",
+  "lesions_baseline": [],
+  "lesions_current": [
+    {
+      "lesion_id": "L1",
+      "location": "right parietal",
+      "longest_diameter_mm": 10.8,
+      "visit": "v2",
+      "target": true
+    }
+  ],
+  "rationale": "New lesion detected \u2014 automatic Progressive Disease per RECIST 1.1.",
+  "new_lesion_detected": true,
+  "confirmation_required": false
+}

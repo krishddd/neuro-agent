@@ -1,0 +1,2017 @@
+{
+  "job_id": "99ebde2bd8a0",
+  "patient_id": "P001",
+  "phases": [
+    {
+      "phase": "ingest",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777202165.905021
+    },
+    {
+      "phase": "mri",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777202372.9133334
+    },
+    {
+      "phase": "recist",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777202448.5251253
+    },
+    {
+      "phase": "treatment_opt",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777203342.0892951
+    },
+    {
+      "phase": "pharma",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777204264.9312623
+    },
+    {
+      "phase": "synthesis",
+      "status": "ok",
+      "steps": 1,
+      "ts": 1777204839.3869116
+    }
+  ],
+  "store": {
+    "ingestion": {
+      "patient_id": "P001",
+      "files": [
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\brain_axial.dcm",
+          "kind": "mri_image",
+          "visit": "v1",
+          "mime": "application/octet-stream",
+          "size_bytes": 131868,
+          "text": null,
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\brain_axial.dcm",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\discharge_summary.pdf",
+          "kind": "discharge",
+          "visit": "v1",
+          "mime": "application/pdf",
+          "size_bytes": 6065,
+          "text": "NeuroMed University Hospital NHS Trust Discharge Summary\nPatient: P001 | NHS: 432 890 1234\nNeurosurgery Ward / Neuro-Oncology\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nAge: 63 years\nSex: M\nNHS Number: 432 890 1234\nBlood Group: A+\nHeight / Weight: 183.2 cm / 63.4 kg\nBSA: 1.61 m\u00b2\nEthnicity: White British\nReferring GP: Dr. Sarah Patel, The Grange Practice, Leeds\nDIAGNOSIS\nHistology: Glioblastoma Multiforme (GBM)\nWHO Grade: IV\nICD-O3 Code: 9440/3\nPrimary Location: right parietal\nLaterality: right\nSurgery Date: 07 November 2023\nSurgeon: Mr. Jonathan Hale (Consultant Neurosurgeon)\nExtent of Resection: Gross Total Resection (GTR) \u2014 >98% EOR\nMOLECULAR PROFILE\nIdh Status: Wild-type\nMgmt Promoter Methylation: Unmethylated\nEgfr Amplification: True\nCodeletion 1P19Q: False\nTert Promoter Mutation: Mutant C250T\nAtrx Status: Lost\nCdkn2A B Homozygous Deletion: False\nPten Loss: True\nKi67 Proliferation Index Percent: 66.1\nCLINICAL PRESENTATION\nSymptom Duration: 15 weeks\nPresenting Symptoms: papilloedema, Cushing's triad, headache (worse in morning)\nKPS at Triage: 90\nECOG at Triage: 1\n\nUrgency: URGENT (score 3/5)\nTREATMENT & CLINICAL COURSE\nPatient James R. Thornton was diagnosed with Glioblastoma Multiforme (GBM) WHO Grade IV on 2023-10-21. Following\nGross Total Resection (GTR) \u2014 >98% EOR, the patient commenced concurrent chemoradiotherapy with Temozolomide\n(TMZ). Over 4 imaging time-points, the overall radiological trajectory demonstrates True Progression.\nMEDICATIONS ON DISCHARGE\nDrug Name Dose Route Schedule\nTemozolomide (TMZ) 75 mg/m\u00b2 PO Daily concurrent with RT\nTemozolomide (TMZ) adjuvant 150 mg/m\u00b2 PO Days 1-5 of 28-day cycle\nStupp protocol RT mg/m\u00b2\nLow-molecular-weight heparin (LMWH) mg/m\u00b2\nValproate sodium mg/m\u00b2 PO\nDexamethasone mg/m\u00b2\nOmeprazole mg/m\u00b2\nFluconazole mg/m\u00b2\nGP HANDOVER NOTE\nDear Dr. Sarah Patel,\nRe: James R. Thornton, DOB: 1962-03-14, NHS: 432 890 1234\nThank you for continuing to support this patient in the community. James was diagnosed with Glioblastoma Multiforme (GBM)\nWHO Grade IV (MGMT Unmethylated, IDH Wild-type) on 2023-10-21. They underwent Gross Total Resection (GTR) \u2014\n>98% EOR followed by Temozolomide (TMZ).\nCurrent medications: Temozolomide (TMZ), Temozolomide (TMZ) adjuvant, Stupp protocol RT, Low-molecular-weight\nheparin (LMWH) \u2014 please review for community prescribing.\nCurrent performance status: KPS 90 / ECOG 1.\nURGENT: Please contact neuro-oncology if the patient presents with new neurological symptoms, seizure, or sudden\ndeterioration.\nYours sincerely,\nNeuro-Oncology MDT\nFOLLOW-UP PLAN\nRecommended Action: Urgent MDT review within 72 hours\nTriage Alerts: Steroid dose may need escalation \u2014 current 4mg dexamethasone,\nConsider re-biopsy or liquid biopsy if progression confirmed\nNext Review: As per oncology MDT schedule\nUrgent Contact: On-call Neuro-Oncology: 0800 123 4567\nDischarge summary prepared by NeuroMed University Hospital NHS Trust Neuro-Oncology Team. Please file in patient records. For clinical\nqueries: neurooncology@neuromed.nhs.uk",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\discharge_summary.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\laboratory_results.pdf",
+          "kind": "lab",
+          "visit": "v1",
+          "mime": "application/pdf",
+          "size_bytes": 10706,
+          "text": "NeuroMed University Hospital NHS Trust Laboratory Results Report\nPatient: P001 | NHS: 432 890 1234\nHaematology & Biochemistry Laboratory\nPATIENT DETAILS\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nBlood Group: A+\nVISIT 1 \u2014 21 October 2023\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 12.4 g/dL 13.5\u201317.5 LOW\nWBC 7.5 10^9/L 4.0\u201311.0\nNeutrophils 6.84 10^9/L 2.0\u20137.5\nLymphocytes 3.25 10^9/L 1.0\u20134.0\nMonocytes 0.3 10^9/L 0.2\u20131.0\nPlatelets 185.0 10^9/L 150\u2013400\nMCV 93.4 fL 80\u2013100\nMCH 30.2 pg 27\u201333\nUREA & ELECTROLYTES\nTest Result Unit Ref Range Flag\nSodium 142.0 mmol/L 135\u2013145\nPotassium 4.19 mmol/L 3.5\u20135.0\nChloride 102.8 mmol/L 98\u2013107\nBicarbonate 23.3 mmol/L 22\u201329\nUrea 8.5 mmol/L 2.5\u20137.8 HIGH\nCreatinine 66.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 17.9 umol/L 0\u201321\nALT 13.0 U/L 0\u201341\nAST 15.0 U/L 0\u201340\nALP 101.0 U/L 30\u2013130\nGGT 37.0 U/L 0\u201350\nTotal Protein 69.7 g/L 60\u201380\nAlbumin 43.9 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 23.3 HIGH\n\nLDH (U/L): 218.0\nVISIT 2 \u2014 24 December 2023\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 13.7 g/dL 13.5\u201317.5\nWBC 10.15 10^9/L 4.0\u201311.0\nNeutrophils 5.68 10^9/L 2.0\u20137.5\nLymphocytes 1.4 10^9/L 1.0\u20134.0\nMonocytes 0.82 10^9/L 0.2\u20131.0\nPlatelets 338.0 10^9/L 150\u2013400\nMCV 93.8 fL 80\u2013100\nMCH 29.0 pg 27\u201333\nUREA & ELECTROLYTES\nTest Result Unit Ref Range Flag\nSodium 136.5 mmol/L 135\u2013145\nPotassium 3.75 mmol/L 3.5\u20135.0\nChloride 97.0 mmol/L 98\u2013107 LOW\nBicarbonate 26.5 mmol/L 22\u201329\nUrea 7.1 mmol/L 2.5\u20137.8\nCreatinine 113.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 18.7 umol/L 0\u201321\nALT 40.0 U/L 0\u201341\nAST 19.0 U/L 0\u201340\nALP 98.0 U/L 30\u2013130\nGGT 37.0 U/L 0\u201350\nTotal Protein 65.1 g/L 60\u201380\nAlbumin 46.4 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 26.7 HIGH\nLDH (U/L): 381.0 HIGH\nVISIT 3 \u2014 24 February 2024\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 13.6 g/dL 13.5\u201317.5\nWBC 4.5 10^9/L 4.0\u201311.0\n\nNeutrophils 3.65 10^9/L 2.0\u20137.5\nLymphocytes 1.07 10^9/L 1.0\u20134.0\nMonocytes 0.85 10^9/L 0.2\u20131.0\nPlatelets 370.0 10^9/L 150\u2013400\nMCV 95.0 fL 80\u2013100\nMCH 28.8 pg 27\u201333\nUREA & ELECTROLYTES\nTest Result Unit Ref Range Flag\nSodium 133.7 mmol/L 135\u2013145 LOW\nPotassium 4.9 mmol/L 3.5\u20135.0\nChloride 106.5 mmol/L 98\u2013107\nBicarbonate 20.8 mmol/L 22\u201329 LOW\nUrea 5.9 mmol/L 2.5\u20137.8\nCreatinine 62.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 58.0 umol/L 0\u201321 HIGH\nALT 336.0 U/L 0\u201341 HIGH\nAST 105.0 U/L 0\u201340 HIGH\nALP 277.0 U/L 30\u2013130 HIGH\nGGT 205.0 U/L 0\u201350 HIGH\nTotal Protein 74.4 g/L 60\u201380\nAlbumin 37.3 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 36.9 HIGH\nLDH (U/L): 354.0 HIGH\nVISIT 4 \u2014 27 April 2024\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 9.8 g/dL 13.5\u201317.5 LOW\nWBC 2.44 10^9/L 4.0\u201311.0 LOW\nNeutrophils 1.1 10^9/L 2.0\u20137.5 LOW\nLymphocytes 0.52 10^9/L 1.0\u20134.0 LOW\nMonocytes 0.47 10^9/L 0.2\u20131.0\nPlatelets 74.0 10^9/L 150\u2013400 LOW\nMCV 83.0 fL 80\u2013100\nMCH 25.4 pg 27\u201333 LOW\nUREA & ELECTROLYTES\n\nTest Result Unit Ref Range Flag\nSodium 133.3 mmol/L 135\u2013145 LOW\nPotassium 4.39 mmol/L 3.5\u20135.0\nChloride 102.9 mmol/L 98\u2013107\nBicarbonate 20.1 mmol/L 22\u201329 LOW\nUrea 7.0 mmol/L 2.5\u20137.8\nCreatinine 61.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 6.1 umol/L 0\u201321\nALT 16.0 U/L 0\u201341\nAST 30.0 U/L 0\u201340\nALP 59.0 U/L 30\u2013130\nGGT 16.0 U/L 0\u201350\nTotal Protein 80.7 g/L 60\u201380 HIGH\nAlbumin 43.6 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 23.6 HIGH\nLDH (U/L): 383.0 HIGH\nResults validated by NeuroMed University Hospital NHS Trust Laboratory Services. Pathologist on call: lab.urgent@neuromed.nhs.uk | Ext.\n5001",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\laboratory_results.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri.png",
+          "kind": "mri_image",
+          "visit": "v1",
+          "mime": "image/png",
+          "size_bytes": 95859,
+          "text": null,
+          "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v1\\mri_norm.png",
+          "meta": {
+            "rel": "clinical\\mri.png",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri_brain_report.pdf",
+          "kind": "mri_report",
+          "visit": "v1",
+          "mime": "application/pdf",
+          "size_bytes": 4073,
+          "text": "NeuroMed University Hospital NHS Trust MRI Brain Report\nPatient: P001 | NHS: 432 890 1234\nNeuro-Oncology Department\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nSex / Age: M / 63 yrs at diagnosis\nNHS Number: 432 890 1234\nBlood Group: A+\nReferring GP: Dr. Sarah Patel, The Grange Practice, Leeds\nDiagnosis: Glioblastoma Multiforme (GBM) \u2014 WHO Grade IV\nPrimary Location: right parietal\nReport Date: 21 October 2023\nMRI SEQUENCES ACQUIRED\nT1 post-Gd | T2 FLAIR | DWI/ADC | PWI (DSC-MRI) | MR Spectroscopy | SWI\nVISIT 1 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 2 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 3 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 4 \u2014\n\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nRECIST 1.1 LESION MEASUREMENTS\nVisit \u2014 \u2014 Overall:\nVisit \u2014 \u2014 Overall:\nVisit \u2014 \u2014 Overall:\nThis report is generated for clinical use within NeuroMed University Hospital NHS Trust. Results should be interpreted in conjunction with the\nclinical context. For queries contact the Radiology Department: radiology@neuromed.nhs.uk",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\mri_brain_report.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri_montage_16bit.png",
+          "kind": "mri_image",
+          "visit": "v1",
+          "mime": "image/png",
+          "size_bytes": 1820087,
+          "text": null,
+          "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v1\\mri_montage_16bit_norm.png",
+          "meta": {
+            "rel": "clinical\\mri_montage_16bit.png",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri_preview_annotated.png",
+          "kind": "mri_image",
+          "visit": "v1",
+          "mime": "image/png",
+          "size_bytes": 219174,
+          "text": null,
+          "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v1\\mri_preview_annotated_norm.png",
+          "meta": {
+            "rel": "clinical\\mri_preview_annotated.png",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\pathology_report.pdf",
+          "kind": "pathology",
+          "visit": "v1",
+          "mime": "application/pdf",
+          "size_bytes": 5906,
+          "text": "NeuroMed University Hospital NHS Trust Histopathology Report\nLab Ref: PATH-P001-2023 | NHS: 432\nDepartment of Neuropathology\n890 1234\nPATIENT & SPECIMEN DETAILS\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nSex: M\nSpecimen Type: Brain tumour biopsy / resection specimen\nSurgery Date: 07 November 2023\nSurgeon: Mr. Jonathan Hale (Consultant Neurosurgeon)\nSpecimen Received: 07 November 2023\nReporting Pathologist: Dr. R. Patel, FRCPath \u2014 Consultant Neuropathologist\nAuthorised: 07 November 2023\nMACROSCOPIC DESCRIPTION\nMultiple tissue fragments received in formalin, aggregating to approximately 2.1 x 1.8 x 0.9 cm. Tissue is pale grey-white with\nfocal areas of haemorrhage. Surgical margins not assessable on submitted fragments.\nHISTOLOGICAL REPORT\nNEUROPATHOLOGY REPORT nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnnnnnnn Patient: James R. Thornton DOB: 1962-03-14 Hospital ID: P001 Specimen type: Brain\nbiopsy / resection specimen Date of procedure: 2023-09-26 Reported by: Dr. Idris Okoye, FRCPath \u2014 Consultant\nNeuropathologist nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\nnnnnnnnnnnnn\nCLINICAL INFORMATION: 63-year-old male presenting with seizures and progressive neurological deficits. MRI\ndemonstrated a ring-enhancing mass lesion within the left frontal lobe.\nMACROSCOPIC DESCRIPTION: Received in formalin: Multiple fragments of soft, grey-tan haemorrhagic tissue, aggregate\n2.8 \u00d7 1.5 \u00d7 0.9 cm. Tissue submitted entirely for processing. Blocks: A1\u2013A4.\nMICROSCOPIC DESCRIPTION: Sections show a highly cellular infiltrating glial neoplasm demonstrating marked nuclear\npleomorphism, brisk mitotic activity (>10 mitoses/10 HPF), microvascular proliferation (endothelial multi-layering, glomeruloid\nvascular tufts), and geographic necrosis with pseudopalisading. Perineuronal satellitosis and subpial spread are identified.\nThe surrounding neuropil shows reactive astrogliosis.\nIMMUNOHISTOCHEMISTRY: GFAP: Strong diffuse positive IDH1 R132H: Negative ATRX: Loss of nuclear expression p53:\nWild-type pattern Ki-67: Approximately 38.1% positivity in hotspot areas EGFR: Overexpressed (3+) PTEN: Loss of\nexpression\nMOLECULAR PROFILE: MGMT promoter methylation (pyrosequencing): Unmethylated IDH1/2 sequencing (next-generation\nsequencing panel): Wild-type TERT promoter mutation: C250T detected CDKN2A/B homozygous deletion (FISH): Not\ndetected EGFR amplification (FISH): Detected, copy number 23 PTEN deletion: Heterozygous deletion detected\nDIAGNOSIS: GLIOBLASTOMA MULTIFORME (GBM), WHO CNS Grade IV ICD-O-3: 9440/3 WHO 2021 CNS Tumour\nClassification criteria met.\nSYNOPSIS: The morphological, immunohistochemical, and molecular findings confirm a WHO Grade IV IDH wild-type\nGlioblastoma. The unmethylated MGMT promoter status is an adverse prognostic marker and predicts relative resistance to\ntemozolomide chemotherapy. Recommend Stupp protocol discussion at neuro-oncology MDT.\nSigned electronically: Dr. Idris Okoye, FRCPath \u2014 Consultant Neuropathologist Date of report: 2023-10-08\n\nMOLECULAR / IHC SUMMARY\nIdh Status: Wild-type\nMgmt Promoter Methylation: Unmethylated\nEgfr Amplification: True\nCodeletion 1P19Q: False\nTert Promoter Mutation: Mutant C250T\nAtrx Status: Lost\nCdkn2A B Homozygous Deletion: False\nPten Loss: True\nKi67 Proliferation Index Percent: 66.1\nFINAL DIAGNOSIS\nGlioblastoma Multiforme (GBM) \u2014 WHO Grade IV\nICD-O3: 9440/3 | Location: right parietal | Laterality: right\nThis report is issued by the NeuroMed University Hospital NHS Trust Neuropathology Department. Diagnostic queries:\nneuropathology@neuromed.nhs.uk | Ext. 6210. Classification per WHO CNS5 2021.",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\pathology_report.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\prescription_oncology_clinic.pdf",
+          "kind": "prescription",
+          "visit": "v1",
+          "mime": "application/pdf",
+          "size_bytes": 4214,
+          "text": "NeuroMed University Hospital NHS Trust Prescription Record\nPatient: P001 | Date: 21 October 2023\nOncology Outpatient Clinic\nPRESCRIPTION DETAILS\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nWeight (kg): 63.4\nBSA (m\u00b2): 1.61\nPrescribing Clinician: Dr. Paul Osei (Consultant Oncologist)\nPrescription Date: 21 October 2023\nAllergies: Codeine (Severe nausea/vomiting)\nPRESCRIBED MEDICATIONS\n1. Temozolomide (TMZ)\nDose: 75 mg/m\u00b2\nRoute: PO\nSchedule: Daily concurrent with RT\nCycle: 42 days\nBrand: Temodal\nMonitor for: myelosuppression, nausea, fatigue, MGMT-dependent efficacy\n2. Temozolomide (TMZ) adjuvant\nDose: 150 mg/m\u00b2\nRoute: PO\nSchedule: Days 1-5 of 28-day cycle\nCycle: 28 days\nBrand: Temodal\nMonitor for: thrombocytopenia, lymphopenia, hepatotoxicity\n3. Stupp protocol RT\n4. Low-molecular-weight heparin (LMWH)\nBrand: Clexane\nIndication: VTE prophylaxis\n5. Valproate sodium\nRoute: PO\nBrand: Epilim Chrono\n6. Dexamethasone\nIndication: Maintenance \u2014 peritumoral oedema\n7. Omeprazole\nIndication: Gastric protection on dexamethasone\n8. Fluconazole\nIndication: Candida prophylaxis \u2014 immunosuppressed\n\nPRESCRIBER AUTHORISATION\nPrescriber: Dr. Paul Osei (Consultant Oncologist)\nGMC Number: 7654321\nDate: 21 October 2023\nSignature: _________________________________\nContact: oncology.clinic@neuromed.nhs.uk | Ext. 4421\nFP10 Prescription \u2014 NeuroMed University Hospital NHS Trust. Dispense as written. Contact prescriber before any substitution. Store per\nBNF guidelines.",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\prescription_oncology_clinic.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\treatment_protocol.pdf",
+          "kind": "protocol",
+          "visit": "v1",
+          "mime": "application/pdf",
+          "size_bytes": 4742,
+          "text": "NeuroMed University Hospital NHS Trust Treatment Protocol\nPatient: P001 | Protocol ref:\nChemotherapy / Radiotherapy Scheduling Unit\nNOM-P001-TMZ\nTREATMENT PROTOCOL HEADER\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nDiagnosis: Glioblastoma Multiforme (GBM)\nWHO Grade: IV\nIDH Status: Wild-type\nMGMT Status: Unmethylated\nProtocol Name: Stupp Protocol (RT + Concurrent TMZ fi Adjuvant TMZ)\nProtocol Version: v4.1 \u2014 NCRI Neuro-Oncology Guidelines 2023\nResponsible Oncologist: Dr. Paul Osei (Consultant Oncologist)\nTREATMENT PHASES\nPhase 1:\nPhase 2:\nPhase 3:\nPhase 4:\nCHEMOTHERAPY REGIMEN\nDrug Dose Route Schedule Cycle\nTemozolomide (TMZ) 75 mg/m\u00b2 PO Daily concurrent with RT 42d\nTemozolomide (TMZ) adjuvant 150 mg/m\u00b2 PO Days 1-5 of 28-day cycle 28d\nStupp protocol RT mg/m\u00b2 d\nLow-molecular-weight heparin (LMWH) mg/m\u00b2 d\nValproate sodium mg/m\u00b2 PO d\nDexamethasone mg/m\u00b2 d\nOmeprazole mg/m\u00b2 d\nFluconazole mg/m\u00b2 d\nLONGITUDINAL TREATMENT TIMELINE\nDate Event Detail\n21 October 2023\n21 October 2023\n07 November 2023\n24 December 2023\n24 February 2024\n\n27 April 2024\nTreatment protocol document \u2014 NeuroMed University Hospital NHS Trust. All dose modifications must be authorised by the responsible\noncologist. Protocol queries: chemotherapy.unit@neuromed.nhs.uk",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\treatment_protocol.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\brain_axial_v2.dcm",
+          "kind": "mri_image",
+          "visit": "v2",
+          "mime": "application/octet-stream",
+          "size_bytes": 131868,
+          "text": null,
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\visit2\\brain_axial_v2.dcm",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\longitudinal_timeline.pdf",
+          "kind": "timeline",
+          "visit": "v2",
+          "mime": "application/pdf",
+          "size_bytes": 1607,
+          "text": "NeuroMed University Hospital NHS Trust\nLONGITUDINAL PATIENT TIMELINE (Stage 10 Input)\nPatient: James R. Thornton | ID: P001\nDiagnosis: Glioblastoma Multiforme (GBM) ? WHO Grade IV | Site: right parietal\n--- VISIT 1 ---\nDate: 21 October 2023\nLesion Size: 28.4 mm (longest diameter)\nTreatment: Temozolomide 75mg/m2 concurrent + RT 60Gy/30fr\nStatus: Baseline\n--- VISIT 2 ---\nDate: 31 January 2024\nLesion Size: 40.5 mm (longest diameter)\nChange: +42.6% from baseline\nRECIST: Progressive Disease (PD)\nFinding: WORSENED\nDiscontinue Temozolomide. Initiate Bevacizumab 10 mg/kg IV q2w + Lomustine 90 mg/m2 q6w.\nTREATMENT HISTORY SUMMARY\nStart of treatment: 21 October 2023\nCycles completed: 3\nResponse observed: Progressive Disease\nGenerated: 31 January 2024",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\visit2\\longitudinal_timeline.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri.png",
+          "kind": "mri_image",
+          "visit": "v2",
+          "mime": "image/png",
+          "size_bytes": 95958,
+          "text": null,
+          "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v2\\mri_norm.png",
+          "meta": {
+            "rel": "clinical\\visit2\\mri.png",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri_brain_report_v2.pdf",
+          "kind": "mri_report",
+          "visit": "v2",
+          "mime": "application/pdf",
+          "size_bytes": 1903,
+          "text": "NeuroMed University Hospital NHS Trust\nNeuro-Oncology Department\nMRI Brain Report ? VISIT 2 (Follow-up)\nPatient: P001 | NHS: 432 890 1234\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nPatient ID: P001\nDate of Birth: 14 March 1962\nDiagnosis: Glioblastoma Multiforme (GBM) ? WHO Grade IV\nPrimary Location: right parietal\nVisit 1 Date: 21 October 2023\nReport Date: 31 January 2024 (Visit 2)\nScanner: Siemens MAGNETOM Vida 3T\nSequences: T1 post-Gd | T2 FLAIR | DWI/ADC | SWI\nRECIST 1.1 TUMOUR RESPONSE ASSESSMENT\nVisit 1 longest diameter (scan1): 28.4 mm\nVisit 2 longest diameter (scan2): 40.5 mm\nChange: +42.6%\nRECIST Classification: Progressive Disease (PD)\nIMAGING FINDINGS\nEnlargement of the enhancing lesion. New satellite foci of enhancement. Increased perilesional oedema and midline shift.\nCOMPARISON WITH PRIOR IMAGING\nDirect comparison performed with Visit 1 study dated 21 October 2023.\nOverall trend: WORSENED\nReporting Radiologist: Dr. A. Chambers, Consultant Neuroradiologist\nVerified: 31 January 2024",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\visit2\\mri_brain_report_v2.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri_montage_16bit.png",
+          "kind": "mri_image",
+          "visit": "v2",
+          "mime": "image/png",
+          "size_bytes": 1822209,
+          "text": null,
+          "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v2\\mri_montage_16bit_norm.png",
+          "meta": {
+            "rel": "clinical\\visit2\\mri_montage_16bit.png",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri_preview_annotated.png",
+          "kind": "mri_image",
+          "visit": "v2",
+          "mime": "image/png",
+          "size_bytes": 220725,
+          "text": null,
+          "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v2\\mri_preview_annotated_norm.png",
+          "meta": {
+            "rel": "clinical\\visit2\\mri_preview_annotated.png",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\prescription_v2.pdf",
+          "kind": "prescription",
+          "visit": "v2",
+          "mime": "application/pdf",
+          "size_bytes": 1202,
+          "text": "NeuroMed University Hospital NHS Trust\nNeuro-Oncology Outpatient Clinic\nPRESCRIPTION ? VISIT 2 FOLLOW-UP\nPatient: James R. Thornton | ID: P001 | NHS: 432 890 1234\nDate: 31 January 2024\nDiagnosis: Glioblastoma Multiforme (GBM) ? WHO Grade IV\nRECIST Response at V2: Progressive Disease (PD)\nTREATMENT DECISION:\nDiscontinue Temozolomide. Initiate Bevacizumab 10 mg/kg IV q2w + Lomustine 90 mg/m2 q6w.\nPrescriber: Dr. R. Okafor, Consultant Neuro-Oncologist\nNext review: 8 weeks post this date",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\visit2\\prescription_v2.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\treatment_response_correlation.pdf",
+          "kind": "correlation",
+          "visit": "v2",
+          "mime": "application/pdf",
+          "size_bytes": 1424,
+          "text": "NeuroMed University Hospital NHS Trust\nTREATMENT-RESPONSE CORRELATION REPORT (Stage 9 Input)\nPatient: James R. Thornton | ID: P001 | Date: 31 January 2024\nTREATMENT vs. TUMOUR RESPONSE CORRELATION\nV1 Lesion Diameter: 28.4 mm | V2 Lesion Diameter: 40.5 mm\nChange: +42.6% | RECIST: PD ? Progressive Disease\nCLINICAL INTERPRETATION:\nProgressive disease detected. Prior regimen ineffective. Treatment escalation to salvage therapy initiated.\nBIOMARKER CORRELATION:\nMGMT promoter methylation: Tested at V1. Results available in pathology_report.pdf.\nIDH mutation status: See pathology_report.pdf (V1).\nOncologist: Dr. R. Okafor | Radiologist: Dr. A. Chambers\nVerified: 31 January 2024",
+          "image_path": null,
+          "meta": {
+            "rel": "clinical\\visit2\\treatment_response_correlation.pdf",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\phase4\\patient_intake_form.json",
+          "kind": "other",
+          "visit": "v1",
+          "mime": "application/json",
+          "size_bytes": 2600,
+          "text": null,
+          "image_path": null,
+          "meta": {
+            "rel": "phase4\\patient_intake_form.json",
+            "is_nifti": false
+          }
+        },
+        {
+          "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\phase4\\wearable_data.json",
+          "kind": "other",
+          "visit": "v1",
+          "mime": "application/json",
+          "size_bytes": 2208,
+          "text": null,
+          "image_path": null,
+          "meta": {
+            "rel": "phase4\\wearable_data.json",
+            "is_nifti": false
+          }
+        }
+      ],
+      "visits": [
+        "v1",
+        "v2"
+      ],
+      "has_prior_scans": true
+    },
+    "rag": {
+      "n_chunks": 12,
+      "collection": "patient_data"
+    },
+    "vision": {
+      "v1": {
+        "visit": "v1",
+        "findings": [
+          {
+            "description": "Large, heterogeneous mass in the right parietal lobe, consistent with Glioblastoma Multiforme (GBM). The mass exhibits significant surrounding edema.",
+            "location": "Right parietal lobe",
+            "size_mm": 50.0,
+            "enhancement": "heterogeneous"
+          }
+        ],
+        "impression": "Enhancing mass in the right parietal lobe, consistent with Glioblastoma Multiforme (GBM). Significant surrounding edema and mass effect are present.",
+        "mass_effect": true,
+        "hemorrhage": false,
+        "discrepancy_with_report": true,
+        "discrepancy_notes": "The provided radiology report is incomplete and contains no specific findings for Visit 1 (v1). The image shows a large, enhancing, heterogeneous mass in the right parietal lobe, which is consistent with the diagnosis stated in the report header (GBM, right parietal), but the specific findings and measurements are not documented in the body of the report."
+      },
+      "v2": {
+        "visit": "v2",
+        "findings": [
+          {
+            "description": "Enhancing lesion in the right parietal lobe, showing signs of enlargement and new satellite foci of enhancement. Increased perilesional oedema and midline shift are noted.",
+            "location": "Right parietal lobe",
+            "size_mm": 39.8,
+            "enhancement": "ring"
+          }
+        ],
+        "impression": "Enhancement of the right parietal lobe lesion, consistent with Glioblastoma Multiforme (GBM). The lesion shows signs of progression (Progressive Disease, PD) compared to Visit 1, with increased perilesional oedema and midline shift.",
+        "mass_effect": true,
+        "hemorrhage": false,
+        "discrepancy_with_report": false,
+        "discrepancy_notes": null
+      }
+    },
+    "volumetric": {
+      "stage": 4,
+      "stage_name": "3D Volumetric Tumour Segmentation (BraTS)",
+      "patient_id": "P001",
+      "visit": "v2",
+      "volumetric_unavailable": true,
+      "reason": "no_nifti_files_in_manifest",
+      "backend": "none",
+      "enhancing_volume_mm3": 0.0,
+      "necrotic_volume_mm3": 0.0,
+      "edema_volume_mm3": 0.0,
+      "largest_axial_bidim_mm2": 0.0
+    },
+    "radiomics": {
+      "stage": 4,
+      "stage_name": "Radiomic Features Extraction",
+      "patient_id": "P001",
+      "visit": "v2",
+      "radiomics_unavailable": true,
+      "reason": "no_mask_available",
+      "glcm_contrast": null,
+      "glcm_correlation": null,
+      "shape_sphericity": null,
+      "shape_surface_volume_ratio": null,
+      "firstorder_entropy": null
+    },
+    "vision_compare": {
+      "v1->v2": {
+        "visit": "v1->v2",
+        "findings": [],
+        "impression": "stable \u2014 No interval change observed in the provided images.",
+        "mass_effect": false,
+        "hemorrhage": false,
+        "discrepancy_with_report": false,
+        "discrepancy_notes": null
+      }
+    },
+    "record": {
+      "patient_id": "P001",
+      "patient_name": "James R. Thornton",
+      "age": 63,
+      "sex": "M",
+      "diagnosis": "glioblastoma",
+      "diagnosis_date": "2023-10-21",
+      "findings": [
+        {
+          "description": "Enhancing lesion in the right parietal lobe, showing signs of enlargement and new satellite foci of enhancement. Increased perilesional oedema and midline shift are noted.",
+          "location": "Right parietal lobe",
+          "size_mm": 39.8,
+          "enhancement": "ring"
+        }
+      ],
+      "impression": "The enhancing lesion in the right parietal lobe has progressed, showing enlargement, new satellite foci, and increased perilesional oedema with midline shift, consistent with glioblastoma multiforme (GBM). This represents progressive disease (PD) compared to the prior visit."
+    },
+    "recist_lesions": {
+      "v1": [],
+      "v2": [
+        {
+          "lesion_id": "L1",
+          "location": "right parietal",
+          "longest_diameter_mm": 10.8,
+          "visit": "v2",
+          "target": true
+        }
+      ]
+    },
+    "recist": {
+      "baseline_sum_mm": null,
+      "current_sum_mm": 10.8,
+      "pct_change": null,
+      "response": "PD",
+      "lesions_baseline": [],
+      "lesions_current": [
+        {
+          "lesion_id": "L1",
+          "location": "right parietal",
+          "longest_diameter_mm": 10.8,
+          "visit": "v2",
+          "target": true
+        }
+      ],
+      "rationale": "New lesion detected \u2014 automatic Progressive Disease per RECIST 1.1.",
+      "new_lesion_detected": true,
+      "confirmation_required": false
+    },
+    "rano": {
+      "bidirectional_product_mm2": 81.6,
+      "baseline_product_mm2": null,
+      "delta_product_pct": null,
+      "t2_flair_change": "stable",
+      "corticosteroid_dose_mg_per_day": null,
+      "corticosteroid_dose_change": "none",
+      "neurologic_status": "worsened",
+      "new_enhancing_lesion": true,
+      "nonmeasurable_disease_progression": false,
+      "response": "PD",
+      "criteria_used": "RANO",
+      "rationale": "New enhancing lesion \u2014 automatic PD per RANO."
+    },
+    "urgency": {
+      "score": 5,
+      "level": "critical",
+      "drivers": [
+        "critical:midline shift"
+      ],
+      "rationale": "Critical keywords: ['midline shift']; high keywords: ['mass effect', 'edema', 'enhancement', 'progression']; RECIST PD: True."
+    },
+    "patient_state": {
+      "patient_id": "P001",
+      "cancer_type": "glioblastoma",
+      "sum_of_diameters_mm": 10.8,
+      "delta_sod_pct": 0.0,
+      "lesion_count": 1,
+      "new_lesion_flag": 1,
+      "ldh_u_per_l": 0.0,
+      "crp_mg_per_l": 0.0,
+      "nlr": 0.0,
+      "hemoglobin_g_per_dl": 0.0,
+      "albumin_g_per_dl": 0.0,
+      "egfr_ml_per_min": 103.99075900909794,
+      "daily_steps_7d_avg": 1988.8,
+      "resting_hr_bpm": 84.3,
+      "sleep_hours_7d_avg": 4.97,
+      "hrv_ms": 16.5,
+      "ecog_ps_score": 2.0,
+      "treatment_cycles_completed": 3.0,
+      "days_since_last_dose": 7.0,
+      "total_prior_lines": 1.0,
+      "dose_reduction_flag": 1,
+      "treatment_duration_weeks": 129.4,
+      "sod_growth_rate_mm_per_week": 0.0,
+      "pfs_trajectory_slope": 0.0,
+      "treatment_response_streak": 0,
+      "visit_count": 0,
+      "glcm_contrast": 0.0,
+      "glcm_correlation": 0.0,
+      "shape_sphericity": 0.0,
+      "shape_surface_volume_ratio": 0.0,
+      "firstorder_entropy": 0.0,
+      "pgx_profile": {
+        "cyp2d6": "normal_metabolizer",
+        "cyp2c19": "normal_metabolizer",
+        "cyp2c9": "normal_metabolizer",
+        "cyp3a4": "normal_metabolizer",
+        "cyp2b6": "normal_metabolizer",
+        "cyp2c8": "normal_metabolizer",
+        "tpmt": "normal_metabolizer",
+        "dpyd": "normal_metabolizer",
+        "ugt1a1": "normal_metabolizer",
+        "mthfr": "normal_metabolizer",
+        "gstp1": "normal_metabolizer",
+        "cbr3": "normal_metabolizer",
+        "hla_b": "normal_metabolizer",
+        "pgx_unavailable": true,
+        "raw": {}
+      },
+      "mgmt_methylation": "unmethylated",
+      "idh_mutation": "wildtype",
+      "biomarker_hard_stop": false,
+      "biomarker_hard_stop_reason": null,
+      "normalized": [
+        0.05043478260869566,
+        0.5,
+        0.0,
+        1.0,
+        0.245,
+        0.13924050632911392,
+        0.25,
+        0.5,
+        0.47058823529411775,
+        0.9075501386015068,
+        0.22377464788732393,
+        0.8074999999999999,
+        0.1044444444444444,
+        0.10465116279069768,
+        0.5,
+        0.18181818181818182,
+        0.07777777777777778,
+        0.25,
+        1.0,
+        1.0,
+        0.16853932584269662,
+        0.43750000000000006,
+        0.4999999999999999,
+        0.3181818181818182,
+        0.5,
+        0.42857142857142855,
+        0.6571428571428571,
+        0.16666666666666666,
+        0.0
+      ],
+      "imputation_mask": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "raw_values": {
+        "ecog_ps_score": 2.0,
+        "treatment_cycles_completed": 3.0,
+        "treatment_duration_weeks": 129.4,
+        "days_since_last_dose": 7.0,
+        "dose_reduction_flag": 1.0,
+        "total_prior_lines": 1.0,
+        "egfr_ml_per_min": 103.99075900909794,
+        "daily_steps_7d_avg": 1988.8,
+        "resting_hr_bpm": 84.3,
+        "sleep_hours_7d_avg": 4.97,
+        "hrv_ms": 16.5,
+        "sum_of_diameters_mm": 10.8,
+        "delta_sod_pct": 0.0,
+        "lesion_count": 1.0,
+        "new_lesion_flag": 1.0,
+        "visit_count": 0.0
+      }
+    },
+    "pre_extracted_meds": [
+      "bevacizumab",
+      "lomustine"
+    ],
+    "prediction": {
+      "recist_delta_pred": 5.71,
+      "recist_sigma": 15.343,
+      "pfs_median_weeks": 13.0,
+      "pfs_ci_low": 1.6,
+      "pfs_ci_high": 114.9,
+      "survival_curve": [
+        {
+          "week": 1.0,
+          "prob": 0.9738316834183544
+        },
+        {
+          "week": 2.7846001105272906,
+          "prob": 0.8979123015766269
+        },
+        {
+          "week": 4.38295968191144,
+          "prob": 0.8243214177412302
+        },
+        {
+          "week": 6.056587841881318,
+          "prob": 0.7619684015960903
+        },
+        {
+          "week": 7.789352555481968,
+          "prob": 0.6503410127199704
+        },
+        {
+          "week": 9.901637623625392,
+          "prob": 0.5811731883539744
+        },
+        {
+          "week": 12.293629847306695,
+          "prob": 0.515383472583983
+        },
+        {
+          "week": 15.065599775469382,
+          "prob": 0.4681090900958394
+        },
+        {
+          "week": 17.92419732871018,
+          "prob": 0.4054303882630766
+        },
+        {
+          "week": 21.5827777286704,
+          "prob": 0.3477827381350753
+        },
+        {
+          "week": 25.889941847341063,
+          "prob": 0.30439548860470866
+        },
+        {
+          "week": 30.71168693613466,
+          "prob": 0.256814773279552
+        },
+        {
+          "week": 38.525703024999785,
+          "prob": 0.21862837057143608
+        },
+        {
+          "week": 47.12994612375672,
+          "prob": 0.1685445726663957
+        },
+        {
+          "week": 57.80053433443705,
+          "prob": 0.12284947454502572
+        },
+        {
+          "week": 73.65977366225376,
+          "prob": 0.09365859939971397
+        },
+        {
+          "week": 95.66399269743377,
+          "prob": 0.062048509764163956
+        },
+        {
+          "week": 135.04666867879328,
+          "prob": 0.03811562478187412
+        },
+        {
+          "week": 222.2548751149625,
+          "prob": 0.014950041823834104
+        },
+        {
+          "week": 597.1998002358745,
+          "prob": 0.0
+        }
+      ],
+      "optimization_triggered": true,
+      "trigger_reason": "RANO=PD (progressive disease)"
+    },
+    "optimization": {
+      "triggered": true,
+      "n_iterations": 5,
+      "top_3_candidates": [
+        {
+          "rank": 1,
+          "primary_drug": "bevacizumab",
+          "combo_drug": "entrectinib",
+          "dose_fraction": 0.995,
+          "cycle_weeks": 4,
+          "route": "iv",
+          "predicted_pfs_weeks": 14.7,
+          "recist_delta_pred": -14.9,
+          "rag_penalty": 0.0,
+          "ei_score": 0.0,
+          "pred_score": 14.039,
+          "pool": "PRED",
+          "predicted_toxicity_score": 0.1124,
+          "top_aes": [
+            "Hypertension G3/4 (~33%)",
+            "Fatigue G3/4 (~17%)",
+            "Neutropenia G3/4 (~16%)",
+            "Proteinuria G3/4 (~13%)",
+            "Thrombocytopenia G3/4 (~13%)"
+          ],
+          "pgx_adjusted": false,
+          "pgx_notes": [],
+          "off_label": false,
+          "novel_combo": true
+        },
+        {
+          "rank": 2,
+          "primary_drug": "bevacizumab",
+          "combo_drug": "carmustine",
+          "dose_fraction": 0.988,
+          "cycle_weeks": 4,
+          "route": "iv",
+          "predicted_pfs_weeks": 14.7,
+          "recist_delta_pred": -14.7,
+          "rag_penalty": 0.0,
+          "ei_score": 0.0,
+          "pred_score": 13.766,
+          "pool": "PRED",
+          "predicted_toxicity_score": 0.1436,
+          "top_aes": [
+            "Hypertension G3/4 (~31%)",
+            "Neutropenia G3/4 (~27%)",
+            "Thrombocytopenia G3/4 (~26%)",
+            "Fatigue G3/4 (~17%)",
+            "Nausea/Vomiting G3/4 (~14%)"
+          ],
+          "pgx_adjusted": false,
+          "pgx_notes": [],
+          "off_label": false,
+          "novel_combo": true
+        },
+        {
+          "rank": 3,
+          "primary_drug": "bevacizumab",
+          "combo_drug": "pembrolizumab",
+          "dose_fraction": 0.927,
+          "cycle_weeks": 2,
+          "route": "iv",
+          "predicted_pfs_weeks": 14.4,
+          "recist_delta_pred": -12.8,
+          "rag_penalty": 0.0,
+          "ei_score": 0.0,
+          "pred_score": 12.809,
+          "pool": "PRED",
+          "predicted_toxicity_score": 0.0944,
+          "top_aes": [
+            "Hypertension G3/4 (~30%)",
+            "Fatigue G3/4 (~14%)",
+            "Proteinuria G3/4 (~12%)",
+            "Neutropenia G3/4 (~11%)",
+            "Opportunistic Infection G3/4 (~9%)"
+          ],
+          "pgx_adjusted": false,
+          "pgx_notes": [],
+          "off_label": false,
+          "novel_combo": true
+        }
+      ],
+      "convergence_plot_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\plots\\bo_convergence.png",
+      "landscape_plot_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\plots\\bo_landscape.png",
+      "final_best": {
+        "rank": 1,
+        "primary_drug": "bevacizumab",
+        "combo_drug": "entrectinib",
+        "dose_fraction": 0.995,
+        "cycle_weeks": 4,
+        "route": "iv",
+        "predicted_pfs_weeks": 14.7,
+        "recist_delta_pred": -14.9,
+        "rag_penalty": 0.0,
+        "ei_score": 0.0,
+        "pred_score": 14.039,
+        "pool": "PRED",
+        "predicted_toxicity_score": 0.1124,
+        "top_aes": [
+          "Hypertension G3/4 (~33%)",
+          "Fatigue G3/4 (~17%)",
+          "Neutropenia G3/4 (~16%)",
+          "Proteinuria G3/4 (~13%)",
+          "Thrombocytopenia G3/4 (~13%)"
+        ],
+        "pgx_adjusted": false,
+        "pgx_notes": [],
+        "off_label": false,
+        "novel_combo": true
+      },
+      "sigma_at_convergence": 1.1976,
+      "early_stopped": true,
+      "warm_start_anchors": [
+        "bevacizumab+lomustine",
+        "lomustine+none",
+        "regorafenib+none",
+        "bevacizumab+irinotecan"
+      ]
+    },
+    "shap": {
+      "base_value": 23.73,
+      "top_5_drivers": [
+        {
+          "feature": "ecog_ps_score",
+          "shap_value": -4.318,
+          "direction": "-"
+        },
+        {
+          "feature": "egfr_ml_per_min",
+          "shap_value": -3.307,
+          "direction": "-"
+        },
+        {
+          "feature": "new_lesion_flag",
+          "shap_value": -1.906,
+          "direction": "-"
+        },
+        {
+          "feature": "treatment_duration_weeks",
+          "shap_value": -1.07,
+          "direction": "-"
+        },
+        {
+          "feature": "dose_reduction_flag",
+          "shap_value": -0.97,
+          "direction": "-"
+        }
+      ],
+      "waterfall_plot_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\plots\\shap_waterfall.png",
+      "all_shap_values": {
+        "sum_of_diameters_mm": -0.5972,
+        "delta_sod_pct": 0.0,
+        "lesion_count": 0.0,
+        "new_lesion_flag": -1.906,
+        "ldh_u_per_l": 0.0,
+        "crp_mg_per_l": 0.0,
+        "nlr": 0.0,
+        "hemoglobin_g_per_dl": 0.0,
+        "albumin_g_per_dl": 0.0,
+        "egfr_ml_per_min": -3.3074,
+        "daily_steps_7d_avg": -0.3764,
+        "resting_hr_bpm": -0.3771,
+        "sleep_hours_7d_avg": 0.0,
+        "hrv_ms": 0.0,
+        "ecog_ps_score": -4.3179,
+        "treatment_cycles_completed": -0.5235,
+        "days_since_last_dose": 0.0,
+        "total_prior_lines": 0.0,
+        "dose_reduction_flag": -0.9697,
+        "treatment_duration_weeks": -1.0703,
+        "glcm_contrast": 0.0,
+        "glcm_correlation": -0.4032,
+        "shape_sphericity": 0.0,
+        "shape_surface_volume_ratio": 0.0,
+        "firstorder_entropy": 0.0,
+        "sod_growth_rate_mm_per_week": 0.0,
+        "pfs_trajectory_slope": 0.0,
+        "treatment_response_streak": 0.0,
+        "visit_count": 0.0
+      },
+      "narrative": "The patient's predicted progression-free survival is shorter than the population baseline due to factors"
+    },
+    "pubmed_evidence": {
+      "query_terms": [
+        "glioblastoma",
+        "bevacizumab",
+        "entrectinib"
+      ],
+      "results": [
+        {
+          "pmid": "36260832",
+          "title": "NRG Oncology/RTOG1205: A Randomized Phase II Trial of Concurrent Bevacizumab and Reirradiation Versus Bevacizumab Alone as Treatment for Recurrent Glioblastoma.",
+          "abstract": "PURPOSE: To assess whether reirradiation (re-RT) and concurrent bevacizumab (BEV) improve overall survival (OS) and/or progression-free survival (PFS), compared with BEV alone in recurrent glioblastoma (GBM). The primary objective was OS, and secondary objectives included PFS, response rate, and treatment adverse events (AEs) including delayed CNS toxicities. METHODS: NRG Oncology/RTOG1205 is a prospective, phase II, randomized trial of re-RT and BEV versus BEV alone. Stratification factors included age, resection, and Karnofsky performance status (KPS). Patients with recurrent GBM with ima...",
+          "authors": [
+            "Tsien CI",
+            "Pugh SL",
+            "Dicker AP"
+          ],
+          "pubdate": "2023-02-20",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "publication_types": [
+            "Randomized Controlled Trial",
+            "Clinical Trial, Phase II",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ],
+          "retrieval_strategy": "drop_last_term"
+        },
+        {
+          "pmid": "37935104",
+          "title": "Bevacizumab Alone and in Combination With Irinotecan in Recurrent Glioblastoma.",
+          "abstract": "PURPOSE: We evaluated the efficacy of bevacizumab, alone and in combination with irinotecan, in patients with recurrent glioblastoma in a phase II, multicenter, open-label, noncomparative trial. PATIENTS AND METHODS: One hundred sixty-seven patients were randomly assigned to receive bevacizumab 10 mg/kg alone or in combination with irinotecan 340 mg/m RESULTS: In the bevacizumab-alone and the bevacizumab-plus-irinotecan groups, estimated 6-month progression-free survival rates were 42.6% and 50.3%, respectively; objective response rates were 28.2% and 37.8%, respectively; and median overall...",
+          "authors": [
+            "Friedman HS",
+            "Prados MD",
+            "Wen PY"
+          ],
+          "pubdate": "2023-11-10",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "publication_types": [
+            "Clinical Trial",
+            "Journal Article"
+          ],
+          "retrieval_strategy": "drop_last_term"
+        },
+        {
+          "pmid": "35806212",
+          "title": "Glioblastoma Treatment: State-of-the-Art and Future Perspectives.",
+          "abstract": "(1) Background: Glioblastoma is the most frequent and lethal primary tumor of the central nervous system. Through many years, research has brought various advances in glioblastoma treatment. At this time, glioblastoma management is based on maximal safe surgical resection, radiotherapy, and chemotherapy with temozolomide. Recently, bevacizumab has been added to the treatment arsenal for the recurrent scenario. Nevertheless, patients with glioblastoma still have a poor prognosis. Therefore, many efforts are being made in different clinical research areas to find a new alternative to improve...",
+          "authors": [
+            "Rodr\u00edguez-Camacho A",
+            "Flores-V\u00e1zquez JG",
+            "Moscardini-Martelli J"
+          ],
+          "pubdate": "2022-06-29",
+          "journal": "International journal of molecular sciences",
+          "publication_types": [
+            "Journal Article",
+            "Review"
+          ],
+          "retrieval_strategy": "drop_last_term"
+        },
+        {
+          "pmid": "41057143",
+          "title": "Reirradiation in recurrent glioblastoma.",
+          "abstract": "PURPOSE OF REVIEW: Reirradiation has emerged as a potentially valuable treatment strategy for recurrent glioblastoma, a disease characterized by inevitable local progression despite aggressive multimodal first-line therapy. Recent advances in radiotherapy techniques, improved patient selection, and evolving systemic treatment combinations have renewed clinical interest in this approach. This is reflected by recent publication of the first international consensus guidelines (ESTRO/EANO) and the initiation of an European phase III randomized trial on reirradiation of patients with recurrent g...",
+          "authors": [
+            "Kazda T",
+            "Hnidakova L",
+            "Minniti G"
+          ],
+          "pubdate": "2025-11-01",
+          "journal": "Current opinion in oncology",
+          "publication_types": [
+            "Journal Article",
+            "Review"
+          ],
+          "retrieval_strategy": "drop_last_term"
+        },
+        {
+          "pmid": "34559423",
+          "title": "Treatment options for progression or recurrence of glioblastoma: a network meta-analysis.",
+          "abstract": "BACKGROUND: Glioblastoma (GBM) is a highly malignant brain tumour that almost inevitably progresses or recurs after first line standard of care. There is no consensus regarding the best treatment/s to offer people upon disease progression or recurrence. For the purposes of this review, progression and recurrence are considered as one entity. OBJECTIVES: To evaluate the effectiveness of further treatment/s for first and subsequent progression or recurrence of glioblastoma (GBM) among people who have received the standard of care (Stupp protocol) for primary treatment of the disease; and to p...",
+          "authors": [
+            "McBain C",
+            "Lawrie TA",
+            "Rogozi\u0144ska E"
+          ],
+          "pubdate": "2021-05-04",
+          "journal": "The Cochrane database of systematic reviews",
+          "publication_types": [
+            "Journal Article",
+            "Research Support, Non-U.S. Gov't",
+            "Systematic Review",
+            "Network Meta-Analysis"
+          ],
+          "retrieval_strategy": "drop_last_term"
+        }
+      ],
+      "n_results": 5,
+      "cache_hit": false,
+      "pubmed_unavailable": false,
+      "note": null
+    },
+    "trial_matches": {
+      "triggered": true,
+      "trigger_reason": "RANO=PD (progressive disease)",
+      "n_searched": 20,
+      "top_matches": [
+        {
+          "nct_id": "NCT06810544",
+          "title": "Safety and Tolerability of TNG456 Alone and in Combination With Abemaciclib in Patients With Solid Tumors With MTAP Loss",
+          "phase": "Phase 1/Phase 2",
+          "status": "RECRUITING",
+          "interventions": [
+            "TNG456",
+            "abemaciclib"
+          ],
+          "eligibility_summary": "Negative serum pregnancy test result at screening | Has an ECOG performance status score of 0 to 1 | Has measurable disease based on RECIST v1.1 or a confirmed glioblastoma (IDH-wildtype) with radiographic evidence of disease progression or recurrence defined by RANO 2.0. | Has an ECOG performance score of 0 to 1 or for GBM has a Karnofsky performance status score \u226570. | A female patient is who is pregnant or breastfeeding | Has impaired GI function or disease that may significantly alter the...",
+          "distance_km": null,
+          "match_score": 0.9,
+          "match_reasoning": "diagnosis match; IDH wildtype eligible; novel intervention; Phase 1/Phase 2"
+        },
+        {
+          "nct_id": "NCT04765514",
+          "title": "Chemoradiotherapy Versus Chemotherapy for Elderly and Frail GBM Patients",
+          "phase": "Phase 2",
+          "status": "RECRUITING",
+          "interventions": [
+            "Temozolomide monotherapy",
+            "Chemo-Radiotherapy with concurrent temozolomide."
+          ],
+          "eligibility_summary": "Newly-diagnosed, histologically proven, intracranial glioblastoma with maximal safe resection. | MGMT promoter methylation status must be tested and the results positive (defined as all non-negative MGMT status, including intermediate or indeterminate status (i.e., with cutoff higher than the MGMT negative threshold). | Age \u2265 65 \\& KPS of 60 - 70 | Stable or decreasing dose of corticosteroids for at least 14 days prior to randomization. | ANC \u2265 1.5 x 109/L | Platelets \u2265 100 x 109/L | Serum cr...",
+          "distance_km": null,
+          "match_score": 0.8,
+          "match_reasoning": "diagnosis match; biomarker-stratified; novel intervention; Phase 2"
+        },
+        {
+          "nct_id": "NCT06558214",
+          "title": "OPTIMUS PRIME: Safety and Feasibility of OPTune GIO\u00ae Integrated With MRI-gUided Laser Ablation Surgery and Pembrolizumab for Recurrent GlIoblastoMa, A randomizEd Trial",
+          "phase": "Phase 2",
+          "status": "RECRUITING",
+          "interventions": [
+            "Pembrolizumab",
+            "Optune GIO\u00ae",
+            "NeuroBlate\u00ae"
+          ],
+          "eligibility_summary": "Patient must be at least 18 years of age. | Diagnosis of recurrent or progressive glioblastoma, WHO Grade IV, IDH wild-Type or astrocytoma WHO grade IV. | Unequivocal evidence of tumor progression by brain MRI scan per RANO criteria. | Patients who experience a second disease progression are eligible provided that they have not been previously treated with anti-angiogenic agents including bevacizumab (at the exception of bevacizumab radiation necrotic protocol) | A diagnostic contrast-enhance...",
+          "distance_km": null,
+          "match_score": 0.8,
+          "match_reasoning": "diagnosis match; biomarker-stratified; novel intervention; Phase 2"
+        }
+      ],
+      "search_query": "glioblastoma",
+      "retrieved_at": "2026-04-26T11:27:58.007090+00:00"
+    },
+    "faers_signals": {
+      "n_candidates_queried": 3,
+      "reports": [
+        {
+          "rank": 1,
+          "primary_drug": "bevacizumab",
+          "combo_drug": "entrectinib",
+          "triggered_by": [
+            "novel_combo"
+          ],
+          "n_total_reports": 36193,
+          "signals": [
+            {
+              "reaction": "Off Label Use",
+              "n_reports": 6283,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Diarrhoea",
+              "n_reports": 4348,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Nausea",
+              "n_reports": 3580,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Hypertension",
+              "n_reports": 3514,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Death",
+              "n_reports": 3354,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Fatigue",
+              "n_reports": 3303,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Anaemia",
+              "n_reports": 3060,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Disease Progression",
+              "n_reports": 3006,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Neutropenia",
+              "n_reports": 2910,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Vomiting",
+              "n_reports": 2835,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            }
+          ],
+          "cache_hit": false,
+          "note": "pair query empty \u2014 counts shown are for bevacizumab alone (single-drug fallback)",
+          "faers_unavailable": false,
+          "fallback_used": true
+        },
+        {
+          "rank": 2,
+          "primary_drug": "bevacizumab",
+          "combo_drug": "carmustine",
+          "triggered_by": [
+            "novel_combo"
+          ],
+          "n_total_reports": 36193,
+          "signals": [
+            {
+              "reaction": "Off Label Use",
+              "n_reports": 6283,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Diarrhoea",
+              "n_reports": 4348,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Nausea",
+              "n_reports": 3580,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Hypertension",
+              "n_reports": 3514,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Death",
+              "n_reports": 3354,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Fatigue",
+              "n_reports": 3303,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Anaemia",
+              "n_reports": 3060,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Disease Progression",
+              "n_reports": 3006,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Neutropenia",
+              "n_reports": 2910,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Vomiting",
+              "n_reports": 2835,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            }
+          ],
+          "cache_hit": false,
+          "note": "pair query empty \u2014 counts shown are for bevacizumab alone (single-drug fallback)",
+          "faers_unavailable": false,
+          "fallback_used": true
+        },
+        {
+          "rank": 3,
+          "primary_drug": "bevacizumab",
+          "combo_drug": "pembrolizumab",
+          "triggered_by": [
+            "novel_combo"
+          ],
+          "n_total_reports": 36193,
+          "signals": [
+            {
+              "reaction": "Off Label Use",
+              "n_reports": 6283,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Diarrhoea",
+              "n_reports": 4348,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Nausea",
+              "n_reports": 3580,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Hypertension",
+              "n_reports": 3514,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Death",
+              "n_reports": 3354,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Fatigue",
+              "n_reports": 3303,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Anaemia",
+              "n_reports": 3060,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Disease Progression",
+              "n_reports": 3006,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Neutropenia",
+              "n_reports": 2910,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            },
+            {
+              "reaction": "Vomiting",
+              "n_reports": 2835,
+              "serious_pct": 14.6,
+              "outcomes": [
+                "unknown",
+                "resolved",
+                "fatal"
+              ]
+            }
+          ],
+          "cache_hit": false,
+          "note": "pair query empty \u2014 counts shown are for bevacizumab alone (single-drug fallback)",
+          "faers_unavailable": false,
+          "fallback_used": true
+        }
+      ],
+      "faers_unavailable": false,
+      "note": null
+    },
+    "treatment_proposal": {
+      "decision": "MODIFY",
+      "reason": "Neurosurgeon's urgent concern about midline shift requiring decompression takes precedence over systemic therapy, while neuro-oncologist and pharmacist highlight guideline non-concordance and toxicity risks. Neuroradiologist's uncertainty about pseudoprogression adds imaging urgency.",
+      "proposed_regimen": "defer",
+      "modifications": [
+        "Defer systemic therapy until post-surgical imaging confirms true progression",
+        "Refer to NCT06558214 trial (if ECOG improves) or consider bevacizumab monotherapy per NCCN guidelines",
+        "Implement PJP prophylaxis if bevacizumab resumes"
+      ],
+      "contraindications_checked": [],
+      "guideline_alignment": null,
+      "mdt_discussion_required": true,
+      "rag_interaction_flags": [],
+      "clinical_narrative": "The patient requires urgent neurosurgical evaluation for decompression due to critical midline shift, which cannot safely await systemic therapy. Bevacizumab must be paused pre-operatively due to wound-healing risks. Post-surgery, imaging must confirm true progression before resuming therapy. Given ECOG 2 status and toxicity concerns, bevacizumab monotherapy (NCCN-recommended) or trial referral (if ECOG improves) should be prioritized over high-toxicity combos.",
+      "audit_concerns": [],
+      "audit_recommendation": "APPROVE",
+      "audit_rationale": "",
+      "debate_transcript": [
+        {
+          "persona": "neuroradiologist",
+          "round": 1,
+          "statement": "The RANO criteria classification of PD relies on RECIST data, but critical imaging details (T2/FLAIR changes, enhancing lesion characteristics, perfusion/MRS data) are absent to distinguish pseudoprogression from true progression. The new lesion flag in RECIST may represent treatment effect rather than tumor growth, requiring advanced imaging confirmation.",
+          "concerns": [
+            "Inability to differentiate pseudoprogression from true progression without advanced imaging (perfusion/MRS/PET)",
+            "RECIST new lesion flag may overestimate tumor burden in the context of bevacizumab treatment"
+          ],
+          "agreement_with_proposal": "modify"
+        },
+        {
+          "persona": "neurosurgeon",
+          "round": 1,
+          "statement": "The patient's critical midline shift necessitates urgent surgical decompression to prevent herniation, which cannot safely be delayed for systemic therapy. Bevacizumab's use concurrent with planned surgery is contraindicated due to its wound-healing impairment.",
+          "concerns": [
+            "Midline shift requiring immediate decompressive intervention",
+            "Bevacizumab use concurrent with planned surgery"
+          ],
+          "agreement_with_proposal": "disagree"
+        },
+        {
+          "persona": "neurooncologist",
+          "round": 1,
+          "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) are not aligned with current NCCN/EANO guidelines for recurrent glioblastoma, which prioritize reirradiation + bevacizumab (PMID:36260832) or trials with novel agents (e.g., NCT06810544). The patient\u2019s ECOG 2 (severely limited activity) precludes most systemic therapies, and the lack of MGMT/IDH biomarker data limits precision in selecting salvage options.",
+          "concerns": [
+            "ECOG 2 performance status makes most systemic therapies (including proposed regimens) too toxic per NCCN guidelines",
+            "No MGMT promoter methylation or IDH mutation data to guide bevacizumab efficacy or alternative therapies",
+            "Clinical trial NCT06810544 requires ECOG 0-1, which this patient does not meet"
+          ],
+          "agreement_with_proposal": "disagree"
+        },
+        {
+          "persona": "pharmacist",
+          "round": 1,
+          "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) carry significant toxicity risks. FAERS data shows bevacizumab alone has 3,354 reports of death (14.6% serious) and frequent grade 3/4 diarrhea/nausea. Given the patient's ECOG 2 performance status, prior dose reduction, and cumulative lomustine exposure, these combos may be too toxic. Consider substituting carmustine with a less myelosuppressive agent.",
+          "concerns": [
+            "FDA-FAERS: 3,354 reports of death (14.6% serious) with bevacizumab combinations",
+            "Bevacizumab + carmustine may exacerbate myelosuppression (patient has prior dose reduction)",
+            "ECOG 2 performance status may limit tolerance of novel combos with high-grade toxicity"
+          ],
+          "agreement_with_proposal": "disagree"
+        },
+        {
+          "persona": "neuroradiologist",
+          "round": 2,
+          "statement": "The critical midline shift and new enhancing lesion on RECIST PD classification require urgent differentiation between pseudoprogression (common post-bevacizumab) and true progression. RANO criteria should be applied, as glioblastoma response assessment depends on T2/FLAIR changes and contrast-enhancing lesion dynamics, not RECIST. Current imaging lacks perfusion/MRS data to confirm tumor viability vs. treatment effect.",
+          "concerns": [
+            "Inadequate imaging to distinguish pseudoprogression from true progression",
+            "RECIST criteria misapplied for glioblastoma; RANO assessment required"
+          ],
+          "agreement_with_proposal": "modify"
+        },
+        {
+          "persona": "neurosurgeon",
+          "round": 2,
+          "statement": "The critical midline shift indicates urgent need for decompressive surgery to prevent herniation, but bevacizumab use contraindicates elective surgery due to impaired wound healing. Surgical resection/biopsy should precede systemic therapy to address mass effect and confirm tumor biology, though ECOG 2 status limits surgical tolerance.",
+          "concerns": [
+            "Midline shift requires urgent decompression before initiating or continuing bevacizumab-based therapy",
+            "Bevacizumab use precludes safe surgical intervention due to wound healing complications"
+          ],
+          "agreement_with_proposal": "modify"
+        },
+        {
+          "persona": "neurooncologist",
+          "round": 2,
+          "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) lack NCCN/EANO guideline support for recurrent glioblastoma. Bevacizumab monotherapy remains a standard second-line option (PMID:37935104), but combinations with entrectinib or pembrolizumab are not endorsed. The patient\u2019s ECOG 2 status and prior dose reduction raise significant concerns about tolerability of these high-toxicity regimens (PMID:34559423). Clinical trial referral (e.g., NCT06558214) should be prioritized given the absence of biomarker data (MGMT/IDH) and limited evidence for proposed combos.",
+          "concerns": [
+            "Proposed regimens not aligned with NCCN/EANO guidelines for recurrent GBM",
+            "ECOG 2 performance status may limit tolerance of high-toxicity combinations",
+            "Lack of molecular biomarker data (MGMT/IDH) to guide therapy",
+            "FAERS data highlights bevacizumab combo toxicity risks (3,354 death reports, 14.6% serious)"
+          ],
+          "agreement_with_proposal": "disagree"
+        },
+        {
+          "persona": "pharmacist",
+          "round": 2,
+          "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) pose significant toxicity risks given the patient's ECOG 2 performance status, prior dose reductions, and FAERS signals of severe adverse events (e.g., 3,354 reports of death with bevacizumab alone). Bevacizumab's hypertension risk synergizes with carmustine, and myelosuppression from lomustine + carmustine/pembrolizumab could worsen platelet/ANC deficits. Dose reductions or substitutions are urgently needed.",
+          "concerns": [
+            "ECOG 2 performance status incompatible with high-toxicity regimens (FAERS: 3,354 death reports with bevacizumab alone)",
+            "Bevacizumab + carmustine combo risks additive myelosuppression and nephrotoxicity (FAERS: 4,348 diarrhea, 3,580 nausea reports)",
+            "Lack of MGMT/IDH biomarker data to justify bevacizumab use in recurrent GBM",
+            "No PJP prophylaxis planned despite bevacizumab's immunosuppressive effects"
+          ],
+          "agreement_with_proposal": "disagree"
+        },
+        {
+          "persona": "chair",
+          "round": 3,
+          "statement": "Urgent surgical decompression required pre-therapy; systemic regimen deferred pending post-op imaging and ECOG reassessment.",
+          "concerns": [
+            "Midline shift requiring immediate decompression precludes safe bevacizumab use",
+            "ECOG 2 status limits tolerance of high-toxicity regimens (FAERS: 3,354 death reports with bevacizumab combos)"
+          ],
+          "agreement_with_proposal": "modify"
+        }
+      ],
+      "consensus_score": 0.0
+    },
+    "notifications_phase4": {
+      "mdt_email": {
+        "ok": true
+      },
+      "mdt_calendar": {
+        "ok": true
+      },
+      "drive": {
+        "ok": true,
+        "uploaded": 3,
+        "failed": 0,
+        "folder_url": "https://drive.google.com/drive/folders/1berLBbuVqPem9rLhOAEwYnfF4tFbGrk7"
+      }
+    },
+    "medications": {
+      "current": [
+        {
+          "name": "Bevacizumab",
+          "dose": "10 mg/kg",
+          "frequency": "every 2 weeks",
+          "route": "IV",
+          "start_date": "2024-01-31",
+          "stop_date": null,
+          "indication": "GBM"
+        },
+        {
+          "name": "Lomustine",
+          "dose": "90 mg/m\u00b2",
+          "frequency": "every 6 weeks",
+          "route": "PO",
+          "start_date": "2024-01-31",
+          "stop_date": null,
+          "indication": "GBM"
+        },
+        {
+          "name": "Dexamethasone",
+          "dose": "mg/m\u00b2",
+          "frequency": null,
+          "route": "PO",
+          "start_date": null,
+          "stop_date": null,
+          "indication": "peritumoral oedema"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "mg/m\u00b2",
+          "frequency": null,
+          "route": "PO",
+          "start_date": null,
+          "stop_date": null,
+          "indication": "gastric protection on dexamethasone"
+        },
+        {
+          "name": "Fluconazole",
+          "dose": "mg/m\u00b2",
+          "frequency": null,
+          "route": "PO",
+          "start_date": null,
+          "stop_date": null,
+          "indication": "Candida prophylaxis \u2014 immunosuppressed"
+        },
+        {
+          "name": "Valproate sodium",
+          "dose": "mg/m\u00b2",
+          "frequency": null,
+          "route": "PO",
+          "start_date": null,
+          "stop_date": null,
+          "indication": null
+        },
+        {
+          "name": "Low-molecular-weight heparin (LMWH)",
+          "dose": "mg/m\u00b2",
+          "frequency": null,
+          "route": "IV",
+          "start_date": null,
+          "stop_date": null,
+          "indication": "VTE prophylaxis"
+        }
+      ],
+      "historical": [
+        {
+          "name": "Temozolomide",
+          "dose": "75 mg/m\u00b2",
+          "frequency": "daily x1/28d",
+          "route": "PO",
+          "start_date": "2023-10-21",
+          "stop_date": "2024-01-31",
+          "indication": "GBM"
+        },
+        {
+          "name": "Temozolomide",
+          "dose": "150 mg/m\u00b2",
+          "frequency": "daily x5/28d",
+          "route": "PO",
+          "start_date": "2023-10-21",
+          "stop_date": "2024-01-31",
+          "indication": "GBM"
+        }
+      ]
+    },
+    "interactions": {
+      "interactions": [
+        {
+          "drug_a": "Dexamethasone",
+          "drug_b": "Bevacizumab",
+          "severity": "moderate",
+          "mechanism": "Steroid-induced hypertension may compound bevacizumab hypertensive effect",
+          "recommendation": "Monitor BP; antihypertensive therapy may be required",
+          "source": "kb"
+        },
+        {
+          "drug_a": "bevacizumab",
+          "drug_b": "fluconazole",
+          "severity": "none",
+          "mechanism": "No known pharmacokinetic or pharmacodynamic interactions between bevacizumab (a VEGF inhibitor) and fluconazole (a CYP450 inhibitor). Bevacizumab is not metabolized by CYP enzymes, and fluconazole does not significantly alter bevacizumab's clearance. Both drugs are generally well-tolerated together in clinical practice.",
+          "recommendation": "No dose adjustment or additional monitoring is required for this combination. Continue both medications as prescribed, and monitor for standard adverse effects of each drug (e.g., hypertension, nephrotoxicity for bevacizumab; gastrointestinal effects for fluconazole).",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "bevacizumab",
+          "drug_b": "lomustine",
+          "severity": "moderate",
+          "mechanism": "Both bevacizumab and lomustine may contribute to myelosuppression, potentially increasing the risk of hematologic toxicity (e.g., neutropenia, thrombocytopenia) when used concurrently. There is no direct pharmacokinetic or pharmacodynamic interaction, but additive effects on bone marrow function are possible.",
+          "recommendation": "Monitor complete blood counts frequently during combination therapy. Consider dose adjustments or delays based on hematologic parameters. No definitive contraindication exists, but caution is advised due to overlapping myelosuppressive risks.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "bevacizumab",
+          "drug_b": "low-molecular-weight heparin (lmwh)",
+          "severity": "major",
+          "mechanism": "Bevacizumab increases the risk of thromboembolic events due to anti-angiogenic effects, while LMWH is an anticoagulant. Concurrent use may paradoxically increase bleeding risk (due to LMWH's anticoagulant effect) or thrombosis risk (due to bevacizumab's pro-thrombotic effects), depending on the balance between anticoagulation and vascular integrity.",
+          "recommendation": "Avoid concomitant use if possible. If required, closely monitor for signs of bleeding or thrombosis, and adjust LMWH dosing based on clinical response and coagulation parameters. Consult hematology/oncology for risk-benefit evaluation.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "bevacizumab",
+          "drug_b": "omeprazole",
+          "severity": "minor",
+          "mechanism": "Omeprazole may increase the risk of gastrointestinal perforation when used with bevacizumab, though the evidence is not definitive. This could be related to bevacizumab's anti-angiogenic effects and potential interactions with gastric mucosal integrity.",
+          "recommendation": "Monitor for signs of gastrointestinal perforation (e.g., abdominal pain, perforation symptoms). Consider alternative acid suppression strategies (e.g., H2 receptor antagonists) if clinically appropriate, but no absolute contraindication exists.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "Bevacizumab",
+          "drug_b": "Temozolomide",
+          "severity": "none",
+          "mechanism": "Standard combination in recurrent GBM; no adverse PK interaction",
+          "recommendation": "Standard of care combination",
+          "source": "kb"
+        },
+        {
+          "drug_a": "bevacizumab",
+          "drug_b": "valproate sodium",
+          "severity": "major",
+          "mechanism": "Bevacizumab may inhibit the metabolism of valproate sodium, leading to increased plasma concentrations of valproate and a heightened risk of valproate toxicity (e.g., encephalopathy, hepatotoxicity).",
+          "recommendation": "Avoid concomitant use if possible. If co-administration is necessary, closely monitor valproate levels and consider dose reduction of valproate. Consult a specialist for risk-benefit evaluation.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "dexamethasone",
+          "drug_b": "fluconazole",
+          "severity": "moderate",
+          "mechanism": "Fluconazole inhibits CYP3A4 and CYP2C9, which are involved in the metabolism of dexamethasone, leading to increased dexamethasone plasma concentrations.",
+          "recommendation": "Monitor for signs of dexamethasone toxicity (e.g., hyperglycemia, immunosuppression, osteoporosis). Consider dose adjustment of dexamethasone if clinically indicated. Use alternative antifungal agents if feasible, but ensure close monitoring if fluconazole is required.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "dexamethasone",
+          "drug_b": "lomustine",
+          "severity": "minor",
+          "mechanism": "Dexamethasone may induce hepatic enzymes (e.g., CYP3A4), potentially altering lomustine metabolism. However, lomustine is primarily metabolized via non-CYP pathways, and clinical evidence of significant interaction is limited.",
+          "recommendation": "Monitor for lomustine efficacy (e.g., tumor response) and dexamethasone-related adverse effects (e.g., immunosuppression). No dose adjustment is typically required, but consider close follow-up in patients with suboptimal lomustine response.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "dexamethasone",
+          "drug_b": "low-molecular-weight heparin (lmwh)",
+          "severity": "minor",
+          "mechanism": "Pharmacodynamic interaction: Dexamethasone may increase the risk of gastrointestinal bleeding, which could be additive to the bleeding risk associated with low-molecular-weight heparin (LMWH). However, no direct metabolic or pharmacokinetic interaction is established between the two drugs.",
+          "recommendation": "Monitor for signs of bleeding (e.g., gastrointestinal symptoms, bruising) and adjust LMWH dose if clinically indicated. No dose adjustment of dexamethasone or LMWH is required based on current evidence, but caution is advised in patients with a history of bleeding or thrombocytopenia.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "dexamethasone",
+          "drug_b": "omeprazole",
+          "severity": "minor",
+          "mechanism": "Omeprazole may inhibit CYP3A4, a metabolic pathway for dexamethasone, potentially increasing dexamethasone plasma concentrations. However, the clinical significance of this interaction is limited due to the weak inhibitory effect of omeprazole on CYP3A4 and the wide therapeutic index of dexamethasone.",
+          "recommendation": "Monitor for increased corticosteroid effects (e.g., hyperglycemia, fluid retention). No dose adjustment is typically required, but consider alternative PPIs (e.g., pantoprazole) if clinically appropriate to minimize interaction risk.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "Dexamethasone",
+          "drug_b": "Temozolomide",
+          "severity": "minor",
+          "mechanism": "Corticosteroids may reduce temozolomide oral bioavailability",
+          "recommendation": "Separate administration by at least 1 hour",
+          "source": "kb"
+        },
+        {
+          "drug_a": "dexamethasone",
+          "drug_b": "valproate sodium",
+          "severity": "moderate",
+          "mechanism": "Dexamethasone may increase the hepatic metabolism of valproate sodium via induction of CYP enzymes (e.g., CYP2C9), potentially reducing valproate plasma concentrations and efficacy.",
+          "recommendation": "Monitor valproate levels closely and consider dose adjustment if subtherapeutic levels are detected. Avoid abrupt discontinuation of either drug. Use alternative corticosteroids if feasible, but prioritize clinical judgment based on patient-specific factors.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "fluconazole",
+          "drug_b": "lomustine",
+          "severity": "minor",
+          "mechanism": "Fluconazole is a CYP3A4 inhibitor, but lomustine is primarily metabolized via non-CYP pathways (e.g., hydrolysis). However, both drugs may contribute to myelosuppression, increasing the risk of hematologic toxicity.",
+          "recommendation": "Monitor blood counts closely and consider dose adjustment of lomustine if significant myelosuppression occurs. No routine dose adjustment of fluconazole is required.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "fluconazole",
+          "drug_b": "low-molecular-weight heparin (lmwh)",
+          "severity": "minor",
+          "mechanism": "Fluconazole may reduce renal clearance of low-molecular-weight heparin (LMWH) by impairing renal function, potentially increasing LMWH plasma concentrations and bleeding risk. However, this interaction is not well-established and depends on individual renal function.",
+          "recommendation": "Monitor renal function and LMWH anti-Xa levels closely. Adjust LMWH dose if renal impairment develops. Consider alternative antifungal agents if significant renal dysfunction is present or if bleeding risk is high.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "fluconazole",
+          "drug_b": "omeprazole",
+          "severity": "minor",
+          "mechanism": "Fluconazole inhibits CYP3A4, which is involved in the metabolism of omeprazole, potentially increasing omeprazole plasma concentrations.",
+          "recommendation": "Monitor for omeprazole-related adverse effects (e.g., hypomagnesemia, gastrointestinal symptoms). Consider alternative proton pump inhibitors (e.g., pantoprazole) if clinically feasible, as they have less CYP3A4 dependence.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "fluconazole",
+          "drug_b": "temozolomide",
+          "severity": "contraindicated",
+          "mechanism": "Fluconazole inhibits CYP2C9, the primary metabolic enzyme for temozolomide, leading to increased plasma concentrations of temozolomide and heightened risk of toxicity.",
+          "recommendation": "Avoid concomitant use of fluconazole and temozolomide. If antifungal therapy is required, consider alternative agents with minimal CYP2C9 inhibition (e.g., itraconazole, posaconazole) and monitor temozolomide levels if co-administration is unavoidable.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "fluconazole",
+          "drug_b": "valproate sodium",
+          "severity": "major",
+          "mechanism": "Fluconazole inhibits hepatic metabolism of valproate sodium, potentially increasing valproate plasma concentrations and risk of toxicity (e.g., hepatotoxicity, encephalopathy).",
+          "recommendation": "Avoid concomitant use if possible. If required, closely monitor valproate levels and consider dose reduction of valproate sodium. Alternative antifungal agents (e.g., itraconazole) may be considered if feasible.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "lomustine",
+          "drug_b": "low-molecular-weight heparin (lmwh)",
+          "severity": "minor",
+          "mechanism": "Lomustine may cause myelosuppression, including thrombocytopenia, which could increase the risk of bleeding when combined with anticoagulation from low-molecular-weight heparin (LMWH). However, there is no direct pharmacokinetic or pharmacodynamic interaction between the two drugs.",
+          "recommendation": "Monitor for signs of bleeding and platelet counts. Adjust LMWH dose if thrombocytopenia is severe or if bleeding risk is elevated. No absolute contraindication, but caution is advised.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "lomustine",
+          "drug_b": "omeprazole",
+          "severity": "none",
+          "mechanism": "No significant drug-drug interaction mechanism identified between lomustine and omeprazole. Lomustine is not a substrate for CYP2C19 or CYP3A4, which are inhibited by omeprazole, and no evidence suggests omeprazole affects lomustine absorption or metabolism.",
+          "recommendation": "No dose adjustment or monitoring is required for concurrent use of lomustine and omeprazole in neuro-oncology patients.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "Lomustine",
+          "drug_b": "Temozolomide",
+          "severity": "major",
+          "mechanism": "Additive myelosuppression; both agents are alkylating",
+          "recommendation": "Requires dose reduction and close haematologic monitoring",
+          "source": "kb"
+        },
+        {
+          "drug_a": "lomustine",
+          "drug_b": "valproate sodium",
+          "severity": "contraindicated",
+          "mechanism": "Lomustine inhibits the hepatic metabolism of valproate sodium, leading to increased plasma concentrations of valproate and a heightened risk of valproate toxicity, including fatal hepatotoxicity.",
+          "recommendation": "Avoid concomitant use of lomustine and valproate sodium. If co-administration is unavoidable, closely monitor valproate levels and consider dose reduction of valproate, but this combination is generally contraindicated due to the significant risk of severe toxicity.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "low-molecular-weight heparin (lmwh)",
+          "drug_b": "omeprazole",
+          "severity": "minor",
+          "mechanism": "Omeprazole may increase the risk of gastrointestinal bleeding when used with anticoagulants like LMWH, though there is no direct pharmacokinetic or pharmacodynamic interaction between the two drugs. The increased bleeding risk is due to the combined effects of anticoagulation and potential gastric mucosal protection from omeprazole, which may mask early signs of bleeding.",
+          "recommendation": "Monitor the patient closely for signs of bleeding. Consider alternative proton pump inhibitors (e.g., pantoprazole) if clinically feasible, as some evidence suggests they may have a lower risk of interacting with anticoagulants. If omeprazole is necessary, ensure appropriate bleeding precautions are in place.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "low-molecular-weight heparin (lmwh)",
+          "drug_b": "temozolomide",
+          "severity": "moderate",
+          "mechanism": "Additive risk of bleeding due to the anticoagulant effect of low-molecular-weight heparin (LMWH) and the myelosuppressive effects of temozolomide, which may reduce platelet counts and increase hemorrhagic risk.",
+          "recommendation": "Monitor for signs of bleeding (e.g., bruising, hematuria, gastrointestinal bleeding) and assess platelet counts regularly. Adjust LMWH dose based on renal function and platelet levels if indicated. Consider alternative anticoagulation strategies if bleeding risk is high.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "low-molecular-weight heparin (lmwh)",
+          "drug_b": "valproate sodium",
+          "severity": "minor",
+          "mechanism": "Valproate sodium may cause thrombocytopenia, which, when combined with the anticoagulant effects of low-molecular-weight heparin (LMWH), could increase the risk of bleeding due to additive effects on hemostasis.",
+          "recommendation": "Monitor for signs of bleeding (e.g., bruising, hematuria, gastrointestinal bleeding). Consider adjusting LMWH dose or valproate if bleeding occurs, and ensure coagulation parameters (e.g., platelet count, INR) are closely followed.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "Omeprazole",
+          "drug_b": "Temozolomide",
+          "severity": "none",
+          "mechanism": "No clinically significant interaction",
+          "recommendation": "May be used for GI protection",
+          "source": "kb"
+        },
+        {
+          "drug_a": "omeprazole",
+          "drug_b": "valproate sodium",
+          "severity": "moderate",
+          "mechanism": "Omeprazole may inhibit hepatic metabolism of valproate sodium, potentially increasing valproate plasma concentrations via CYP2C19 inhibition and/or reduced renal clearance. This could increase risk of valproate toxicity (e.g., encephalopathy, hepatotoxicity).",
+          "recommendation": "Monitor valproate levels closely; consider dose reduction of valproate or alternative PPI (e.g., H2 receptor antagonist) if feasible. Avoid concurrent use in patients with renal impairment or those at higher risk for valproate toxicity.",
+          "source": "llm_inferred"
+        },
+        {
+          "drug_a": "temozolomide",
+          "drug_b": "valproate sodium",
+          "severity": "major",
+          "mechanism": "Valproate sodium inhibits carboxylesterase 1 (CES1), an enzyme involved in the metabolic activation of temozolomide, leading to increased plasma concentrations of temozolomide and potential toxicity.",
+          "recommendation": "Avoid concomitant use if possible. If co-administration is necessary, closely monitor for temozolomide-related toxicity (e.g., myelosuppression, neurotoxicity) and consider dose reduction of temozolomide. Alternative anticonvulsants (e.g., levetiracetam) may be preferred.",
+          "source": "llm_inferred"
+        }
+      ],
+      "highest_severity": "contraindicated",
+      "flags": [
+        "bevacizumab+low-molecular-weight heparin (lmwh):major",
+        "bevacizumab+valproate sodium:major",
+        "fluconazole+temozolomide:contraindicated",
+        "fluconazole+valproate sodium:major",
+        "Lomustine+Temozolomide:major",
+        "lomustine+valproate sodium:contraindicated",
+        "temozolomide+valproate sodium:major"
+      ]
+    },
+    "correlation": {
+      "summary": "RECIST response: PD | Sum change: n/a | Treatment started: 2023-10-21 | Nearest preceding drug event: Temozolomide stop (2024-01-31) | New lesion: True | Confirmation required: False",
+      "treatment_started": "2023-10-21",
+      "response_observed": null,
+      "lag_days": null,
+      "consistent": false,
+      "notes": "New lesion detected \u2014 automatic Progressive Disease per RECIST 1.1.",
+      "med_events": [
+        {
+          "drug": "Temozolomide",
+          "event_type": "start",
+          "event_date": "2023-10-21",
+          "dose": "75 mg/m\u00b2"
+        },
+        {
+          "drug": "Temozolomide",
+          "event_type": "dose_change",
+          "event_date": "2023-10-21",
+          "dose": "150 mg/m\u00b2"
+        },
+        {
+          "drug": "Bevacizumab",
+          "event_type": "start",
+          "event_date": "2024-01-31",
+          "dose": "10 mg/kg"
+        },
+        {
+          "drug": "Lomustine",
+          "event_type": "start",
+          "event_date": "2024-01-31",
+          "dose": "90 mg/m\u00b2"
+        },
+        {
+          "drug": "Temozolomide",
+          "event_type": "stop",
+          "event_date": "2024-01-31",
+          "dose": "75 mg/m\u00b2"
+        },
+        {
+          "drug": "Temozolomide",
+          "event_type": "stop",
+          "event_date": "2024-01-31",
+          "dose": "150 mg/m\u00b2"
+        }
+      ]
+    },
+    "timeline": {
+      "events": [
+        {
+          "when": "2023-10-21",
+          "kind": "visit",
+          "label": "Diagnosis: glioblastoma",
+          "source_file": null
+        },
+        {
+          "when": "2023-10-21",
+          "kind": "med_start",
+          "label": "Start Temozolomide 75 mg/m\u00b2",
+          "source_file": null
+        },
+        {
+          "when": "2023-10-21",
+          "kind": "med_start",
+          "label": "Start Temozolomide 150 mg/m\u00b2",
+          "source_file": null
+        },
+        {
+          "when": "2024-01-31",
+          "kind": "med_start",
+          "label": "Start Bevacizumab 10 mg/kg",
+          "source_file": null
+        },
+        {
+          "when": "2024-01-31",
+          "kind": "med_start",
+          "label": "Start Lomustine 90 mg/m\u00b2",
+          "source_file": null
+        },
+        {
+          "when": "2024-01-31",
+          "kind": "med_stop",
+          "label": "Stop Temozolomide",
+          "source_file": null
+        },
+        {
+          "when": "2024-01-31",
+          "kind": "med_stop",
+          "label": "Stop Temozolomide",
+          "source_file": null
+        },
+        {
+          "when": "2026-04-26",
+          "kind": "scan",
+          "label": "MRI v1: Enhancing mass in the right parietal lobe, consistent with Glioblastoma Multiforme (GBM). Significant surrounding edema ",
+          "source_file": null
+        },
+        {
+          "when": "2026-04-26",
+          "kind": "scan",
+          "label": "MRI v2: Enhancement of the right parietal lobe lesion, consistent with Glioblastoma Multiforme (GBM). The lesion shows signs of ",
+          "source_file": null
+        },
+        {
+          "when": "2026-04-26",
+          "kind": "note",
+          "label": "Treatment Optimization: MDT decision=MODIFY \u2014 defer",
+          "source_file": null
+        },
+        {
+          "when": "2026-04-26",
+          "kind": "note",
+          "label": "MDT Board Discussion Required \u2014 escalated for multidisciplinary review",
+          "source_file": null
+        },
+        {
+          "when": "2026-04-26",
+          "kind": "note",
+          "label": "Survival Prediction: PFS=13.0w (CI 1.6\u2013114.9w), RECIST delta predicted=+5.7%, \u03c3=15.343",
+          "source_file": null
+        }
+      ],
+      "narrative": "Patient diagnosed with glioblastoma. Latest RECIST response: PD. Currently on 7 medication(s): Bevacizumab, Lomustine, Dexamethasone, Omeprazole, Fluconazole."
+    },
+    "summary": {
+      "patient_letter": "Dear Patient,\n\nWe are writing to update you about your recent scans and treatment. MRI results show that the tumour in your right parietal lobe has grown since your last scan, and a new area of concern has been found. This suggests the condition is progressing. Due to the tumour's size and location, there is pressure on parts of your brain, which requires urgent attention. Your care team is discussing next steps, including possible surgery to relieve this pressure. Currently, you are receiving medications including Bevacizumab, Lomustine, and Dexamethasone to manage symptoms and slow progression. We are also monitoring for potential drug interactions, which your pharmacist will review with you. Your treatment plan may need adjustments based on upcoming tests. Please ensure you attend all appointments and report any new symptoms promptly. This is a research prototype. Please discuss any questions with your care team.",
+      "gp_handover_letter": "Diagnosis: Glioblastoma multiforme (GBM) with progressive disease (PD) per RECIST 1.1. Imaging: Right parietal lobe enhancing lesion with increased perilesional edema and mass effect; new lesion detected. RECIST: PD confirmed by new lesion (automatic classification). Medications: Bevacizumab, Lomustine, Dexamethasone, Omeprazole, Fluconazole, Valproate sodium. Interactions: Major interactions include bevacizumab+valproate sodium, bevacizumab+LMWH, fluconazole+valproate sodium; contraindications include lomustine+valproate sodium, temozolomide+valproate sodium, fluconazole+temozolomide. Plan: Urgent neurosurgical evaluation required for decompression due to critical midline shift. Defer systemic therapy until post-surgical imaging confirms true progression. Consider bevacizumab monotherapy (NCCN) or trial referral (NCT06558214) if ECOG improves. Initiate PJP prophylaxis if bevacizumab resumes. Monitor for toxicity; MDT discussion required for treatment optimization. Survival prediction: PFS median 13 weeks (CI 1.6-114.9w)."
+    },
+    "notifications_gmail": {
+      "patient_letter": "sent_to_doctor_for_review",
+      "gp_handover": "sent",
+      "chat_welcome_dm": "suppressed_spikes_policy"
+    },
+    "qa_examples": {
+      "stage": 11,
+      "stage_name": "Clinical Q&A (RAG + Citations)",
+      "model": "qwen3:14b + ChromaDB",
+      "patient_id": "P001",
+      "generated_at": "2026-04-26T11:58:24.885702+00:00",
+      "qa_pairs": [
+        {
+          "question": "What is the current assessment of the tumor's progression based on the MRI findings?",
+          "answer": "The MRI report indicates progressive disease (PD) with enlargement of the enhancing lesion, new satellite foci, and increased perilesional oedema, consistent with glioblastoma multiforme (GBM).",
+          "citations": [
+            "P001_mri_report"
+          ]
+        },
+        {
+          "question": "What is the significance of the RANO criteria response being classified as PD?",
+          "answer": "The RANO criteria response of PD, along with worsened neurologic status, suggests disease progression despite treatment. This may necessitate a modification of the current regimen.",
+          "citations": [
+            "P001_rano"
+          ]
+        },
+        {
+          "question": "What is the rationale for modifying the current treatment regimen?",
+          "answer": "The treatment proposal suggests modifying the regimen due to progressive disease (PD) and the need for further optimization, potentially involving clinical trials such as NCT06810544.",
+          "citations": [
+            "P001_treatment_proposal"
+          ]
+        },
+        {
+          "question": "Are there any new lesions detected, and how does this affect the treatment plan?",
+          "answer": "Yes, a new lesion was detected, and this, combined with the PD classification, indicates a need for urgent intervention. The treatment plan may involve deferring current therapies and exploring alternative options.",
+          "citations": [
+            "P001_recist_s4"
+          ]
+        }
+      ],
+      "top_k_retrieval": 6,
+      "retrieval_score_threshold": 0.72
+    },
+    "notifications_sync": {
+      "drive_folder": "https://drive.google.com/drive/folders/1D72P4IjjgukZ0ElrbDH9L-gQmXdc7rS2",
+      "calendar_proposed_events": "suppressed_pending_mdt_consent",
+      "calendar_med_events": 7,
+      "calendar_therapy_events": 0,
+      "calendar": "scheduled"
+    },
+    "export": {
+      "fhir_bundle_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\fhir\\fhir_bundle.json",
+      "mdt_package_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\reports\\mdt_package.json",
+      "patient_letter_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\reports\\patient_letter.txt",
+      "gp_handover_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\reports\\gp_handover.txt"
+    }
+  }
+}

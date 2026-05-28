@@ -1,0 +1,68 @@
+{
+  "stage": 17,
+  "stage_name": "SHAP Explainability",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:27:52.984946+00:00",
+  "base_value": 23.73,
+  "top_5_drivers": [
+    {
+      "feature": "ecog_ps_score",
+      "shap_value": -4.318,
+      "direction": "-"
+    },
+    {
+      "feature": "egfr_ml_per_min",
+      "shap_value": -3.307,
+      "direction": "-"
+    },
+    {
+      "feature": "new_lesion_flag",
+      "shap_value": -1.906,
+      "direction": "-"
+    },
+    {
+      "feature": "treatment_duration_weeks",
+      "shap_value": -1.07,
+      "direction": "-"
+    },
+    {
+      "feature": "dose_reduction_flag",
+      "shap_value": -0.97,
+      "direction": "-"
+    }
+  ],
+  "waterfall_plot_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\plots\\shap_waterfall.png",
+  "all_shap_values": {
+    "sum_of_diameters_mm": -0.5972,
+    "delta_sod_pct": 0.0,
+    "lesion_count": 0.0,
+    "new_lesion_flag": -1.906,
+    "ldh_u_per_l": 0.0,
+    "crp_mg_per_l": 0.0,
+    "nlr": 0.0,
+    "hemoglobin_g_per_dl": 0.0,
+    "albumin_g_per_dl": 0.0,
+    "egfr_ml_per_min": -3.3074,
+    "daily_steps_7d_avg": -0.3764,
+    "resting_hr_bpm": -0.3771,
+    "sleep_hours_7d_avg": 0.0,
+    "hrv_ms": 0.0,
+    "ecog_ps_score": -4.3179,
+    "treatment_cycles_completed": -0.5235,
+    "days_since_last_dose": 0.0,
+    "total_prior_lines": 0.0,
+    "dose_reduction_flag": -0.9697,
+    "treatment_duration_weeks": -1.0703,
+    "glcm_contrast": 0.0,
+    "glcm_correlation": -0.4032,
+    "shape_sphericity": 0.0,
+    "shape_surface_volume_ratio": 0.0,
+    "firstorder_entropy": 0.0,
+    "sod_growth_rate_mm_per_week": 0.0,
+    "pfs_trajectory_slope": 0.0,
+    "treatment_response_streak": 0.0,
+    "visit_count": 0.0
+  },
+  "narrative": "The patient's predicted progression-free survival is shorter than the population baseline due to factors"
+}

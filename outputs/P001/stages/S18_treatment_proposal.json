@@ -1,0 +1,122 @@
+{
+  "stage": 18,
+  "stage_name": "MDT Treatment Proposal",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:35:23.469218+00:00",
+  "decision": "MODIFY",
+  "reason": "Neurosurgeon's urgent concern about midline shift requiring decompression takes precedence over systemic therapy, while neuro-oncologist and pharmacist highlight guideline non-concordance and toxicity risks. Neuroradiologist's uncertainty about pseudoprogression adds imaging urgency.",
+  "proposed_regimen": "defer",
+  "modifications": [
+    "Defer systemic therapy until post-surgical imaging confirms true progression",
+    "Refer to NCT06558214 trial (if ECOG improves) or consider bevacizumab monotherapy per NCCN guidelines",
+    "Implement PJP prophylaxis if bevacizumab resumes"
+  ],
+  "contraindications_checked": [],
+  "guideline_alignment": null,
+  "mdt_discussion_required": true,
+  "rag_interaction_flags": [],
+  "clinical_narrative": "The patient requires urgent neurosurgical evaluation for decompression due to critical midline shift, which cannot safely await systemic therapy. Bevacizumab must be paused pre-operatively due to wound-healing risks. Post-surgery, imaging must confirm true progression before resuming therapy. Given ECOG 2 status and toxicity concerns, bevacizumab monotherapy (NCCN-recommended) or trial referral (if ECOG improves) should be prioritized over high-toxicity combos.",
+  "audit_concerns": [],
+  "audit_recommendation": "APPROVE",
+  "audit_rationale": "",
+  "debate_transcript": [
+    {
+      "persona": "neuroradiologist",
+      "round": 1,
+      "statement": "The RANO criteria classification of PD relies on RECIST data, but critical imaging details (T2/FLAIR changes, enhancing lesion characteristics, perfusion/MRS data) are absent to distinguish pseudoprogression from true progression. The new lesion flag in RECIST may represent treatment effect rather than tumor growth, requiring advanced imaging confirmation.",
+      "concerns": [
+        "Inability to differentiate pseudoprogression from true progression without advanced imaging (perfusion/MRS/PET)",
+        "RECIST new lesion flag may overestimate tumor burden in the context of bevacizumab treatment"
+      ],
+      "agreement_with_proposal": "modify"
+    },
+    {
+      "persona": "neurosurgeon",
+      "round": 1,
+      "statement": "The patient's critical midline shift necessitates urgent surgical decompression to prevent herniation, which cannot safely be delayed for systemic therapy. Bevacizumab's use concurrent with planned surgery is contraindicated due to its wound-healing impairment.",
+      "concerns": [
+        "Midline shift requiring immediate decompressive intervention",
+        "Bevacizumab use concurrent with planned surgery"
+      ],
+      "agreement_with_proposal": "disagree"
+    },
+    {
+      "persona": "neurooncologist",
+      "round": 1,
+      "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) are not aligned with current NCCN/EANO guidelines for recurrent glioblastoma, which prioritize reirradiation + bevacizumab (PMID:36260832) or trials with novel agents (e.g., NCT06810544). The patient\u2019s ECOG 2 (severely limited activity) precludes most systemic therapies, and the lack of MGMT/IDH biomarker data limits precision in selecting salvage options.",
+      "concerns": [
+        "ECOG 2 performance status makes most systemic therapies (including proposed regimens) too toxic per NCCN guidelines",
+        "No MGMT promoter methylation or IDH mutation data to guide bevacizumab efficacy or alternative therapies",
+        "Clinical trial NCT06810544 requires ECOG 0-1, which this patient does not meet"
+      ],
+      "agreement_with_proposal": "disagree"
+    },
+    {
+      "persona": "pharmacist",
+      "round": 1,
+      "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) carry significant toxicity risks. FAERS data shows bevacizumab alone has 3,354 reports of death (14.6% serious) and frequent grade 3/4 diarrhea/nausea. Given the patient's ECOG 2 performance status, prior dose reduction, and cumulative lomustine exposure, these combos may be too toxic. Consider substituting carmustine with a less myelosuppressive agent.",
+      "concerns": [
+        "FDA-FAERS: 3,354 reports of death (14.6% serious) with bevacizumab combinations",
+        "Bevacizumab + carmustine may exacerbate myelosuppression (patient has prior dose reduction)",
+        "ECOG 2 performance status may limit tolerance of novel combos with high-grade toxicity"
+      ],
+      "agreement_with_proposal": "disagree"
+    },
+    {
+      "persona": "neuroradiologist",
+      "round": 2,
+      "statement": "The critical midline shift and new enhancing lesion on RECIST PD classification require urgent differentiation between pseudoprogression (common post-bevacizumab) and true progression. RANO criteria should be applied, as glioblastoma response assessment depends on T2/FLAIR changes and contrast-enhancing lesion dynamics, not RECIST. Current imaging lacks perfusion/MRS data to confirm tumor viability vs. treatment effect.",
+      "concerns": [
+        "Inadequate imaging to distinguish pseudoprogression from true progression",
+        "RECIST criteria misapplied for glioblastoma; RANO assessment required"
+      ],
+      "agreement_with_proposal": "modify"
+    },
+    {
+      "persona": "neurosurgeon",
+      "round": 2,
+      "statement": "The critical midline shift indicates urgent need for decompressive surgery to prevent herniation, but bevacizumab use contraindicates elective surgery due to impaired wound healing. Surgical resection/biopsy should precede systemic therapy to address mass effect and confirm tumor biology, though ECOG 2 status limits surgical tolerance.",
+      "concerns": [
+        "Midline shift requires urgent decompression before initiating or continuing bevacizumab-based therapy",
+        "Bevacizumab use precludes safe surgical intervention due to wound healing complications"
+      ],
+      "agreement_with_proposal": "modify"
+    },
+    {
+      "persona": "neurooncologist",
+      "round": 2,
+      "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) lack NCCN/EANO guideline support for recurrent glioblastoma. Bevacizumab monotherapy remains a standard second-line option (PMID:37935104), but combinations with entrectinib or pembrolizumab are not endorsed. The patient\u2019s ECOG 2 status and prior dose reduction raise significant concerns about tolerability of these high-toxicity regimens (PMID:34559423). Clinical trial referral (e.g., NCT06558214) should be prioritized given the absence of biomarker data (MGMT/IDH) and limited evidence for proposed combos.",
+      "concerns": [
+        "Proposed regimens not aligned with NCCN/EANO guidelines for recurrent GBM",
+        "ECOG 2 performance status may limit tolerance of high-toxicity combinations",
+        "Lack of molecular biomarker data (MGMT/IDH) to guide therapy",
+        "FAERS data highlights bevacizumab combo toxicity risks (3,354 death reports, 14.6% serious)"
+      ],
+      "agreement_with_proposal": "disagree"
+    },
+    {
+      "persona": "pharmacist",
+      "round": 2,
+      "statement": "The proposed regimens (bevacizumab + entrectinib/carmustine/pembrolizumab) pose significant toxicity risks given the patient's ECOG 2 performance status, prior dose reductions, and FAERS signals of severe adverse events (e.g., 3,354 reports of death with bevacizumab alone). Bevacizumab's hypertension risk synergizes with carmustine, and myelosuppression from lomustine + carmustine/pembrolizumab could worsen platelet/ANC deficits. Dose reductions or substitutions are urgently needed.",
+      "concerns": [
+        "ECOG 2 performance status incompatible with high-toxicity regimens (FAERS: 3,354 death reports with bevacizumab alone)",
+        "Bevacizumab + carmustine combo risks additive myelosuppression and nephrotoxicity (FAERS: 4,348 diarrhea, 3,580 nausea reports)",
+        "Lack of MGMT/IDH biomarker data to justify bevacizumab use in recurrent GBM",
+        "No PJP prophylaxis planned despite bevacizumab's immunosuppressive effects"
+      ],
+      "agreement_with_proposal": "disagree"
+    },
+    {
+      "persona": "chair",
+      "round": 3,
+      "statement": "Urgent surgical decompression required pre-therapy; systemic regimen deferred pending post-op imaging and ECOG reassessment.",
+      "concerns": [
+        "Midline shift requiring immediate decompression precludes safe bevacizumab use",
+        "ECOG 2 status limits tolerance of high-toxicity regimens (FAERS: 3,354 death reports with bevacizumab combos)"
+      ],
+      "agreement_with_proposal": "modify"
+    }
+  ],
+  "consensus_score": 0.0
+}

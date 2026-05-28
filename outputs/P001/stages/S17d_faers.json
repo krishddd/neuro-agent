@@ -1,0 +1,357 @@
+{
+  "stage": 17,
+  "stage_name": "FDA FAERS Adverse-Event Signals",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:28:07.462729+00:00",
+  "n_candidates_queried": 3,
+  "reports": [
+    {
+      "rank": 1,
+      "primary_drug": "bevacizumab",
+      "combo_drug": "entrectinib",
+      "triggered_by": [
+        "novel_combo"
+      ],
+      "n_total_reports": 36193,
+      "signals": [
+        {
+          "reaction": "Off Label Use",
+          "n_reports": 6283,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Diarrhoea",
+          "n_reports": 4348,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Nausea",
+          "n_reports": 3580,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Hypertension",
+          "n_reports": 3514,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Death",
+          "n_reports": 3354,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Fatigue",
+          "n_reports": 3303,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Anaemia",
+          "n_reports": 3060,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Disease Progression",
+          "n_reports": 3006,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Neutropenia",
+          "n_reports": 2910,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Vomiting",
+          "n_reports": 2835,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        }
+      ],
+      "cache_hit": false,
+      "note": "pair query empty \u2014 counts shown are for bevacizumab alone (single-drug fallback)",
+      "faers_unavailable": false,
+      "fallback_used": true
+    },
+    {
+      "rank": 2,
+      "primary_drug": "bevacizumab",
+      "combo_drug": "carmustine",
+      "triggered_by": [
+        "novel_combo"
+      ],
+      "n_total_reports": 36193,
+      "signals": [
+        {
+          "reaction": "Off Label Use",
+          "n_reports": 6283,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Diarrhoea",
+          "n_reports": 4348,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Nausea",
+          "n_reports": 3580,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Hypertension",
+          "n_reports": 3514,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Death",
+          "n_reports": 3354,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Fatigue",
+          "n_reports": 3303,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Anaemia",
+          "n_reports": 3060,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Disease Progression",
+          "n_reports": 3006,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Neutropenia",
+          "n_reports": 2910,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Vomiting",
+          "n_reports": 2835,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        }
+      ],
+      "cache_hit": false,
+      "note": "pair query empty \u2014 counts shown are for bevacizumab alone (single-drug fallback)",
+      "faers_unavailable": false,
+      "fallback_used": true
+    },
+    {
+      "rank": 3,
+      "primary_drug": "bevacizumab",
+      "combo_drug": "pembrolizumab",
+      "triggered_by": [
+        "novel_combo"
+      ],
+      "n_total_reports": 36193,
+      "signals": [
+        {
+          "reaction": "Off Label Use",
+          "n_reports": 6283,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Diarrhoea",
+          "n_reports": 4348,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Nausea",
+          "n_reports": 3580,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Hypertension",
+          "n_reports": 3514,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Death",
+          "n_reports": 3354,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Fatigue",
+          "n_reports": 3303,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Anaemia",
+          "n_reports": 3060,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Disease Progression",
+          "n_reports": 3006,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Neutropenia",
+          "n_reports": 2910,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        },
+        {
+          "reaction": "Vomiting",
+          "n_reports": 2835,
+          "serious_pct": 14.6,
+          "outcomes": [
+            "unknown",
+            "resolved",
+            "fatal"
+          ]
+        }
+      ],
+      "cache_hit": false,
+      "note": "pair query empty \u2014 counts shown are for bevacizumab alone (single-drug fallback)",
+      "faers_unavailable": false,
+      "fallback_used": true
+    }
+  ],
+  "faers_unavailable": false,
+  "note": null
+}

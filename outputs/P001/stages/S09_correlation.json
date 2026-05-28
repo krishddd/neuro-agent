@@ -1,0 +1,51 @@
+{
+  "stage": 9,
+  "stage_name": "Treatment vs Scan Correlation",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:51:04.928726+00:00",
+  "summary": "RECIST response: PD | Sum change: n/a | Treatment started: 2023-10-21 | Nearest preceding drug event: Temozolomide stop (2024-01-31) | New lesion: True | Confirmation required: False",
+  "treatment_started": "2023-10-21",
+  "response_observed": null,
+  "lag_days": null,
+  "consistent": false,
+  "notes": "New lesion detected \u2014 automatic Progressive Disease per RECIST 1.1.",
+  "med_events": [
+    {
+      "drug": "Temozolomide",
+      "event_type": "start",
+      "event_date": "2023-10-21",
+      "dose": "75 mg/m\u00b2"
+    },
+    {
+      "drug": "Temozolomide",
+      "event_type": "dose_change",
+      "event_date": "2023-10-21",
+      "dose": "150 mg/m\u00b2"
+    },
+    {
+      "drug": "Bevacizumab",
+      "event_type": "start",
+      "event_date": "2024-01-31",
+      "dose": "10 mg/kg"
+    },
+    {
+      "drug": "Lomustine",
+      "event_type": "start",
+      "event_date": "2024-01-31",
+      "dose": "90 mg/m\u00b2"
+    },
+    {
+      "drug": "Temozolomide",
+      "event_type": "stop",
+      "event_date": "2024-01-31",
+      "dose": "75 mg/m\u00b2"
+    },
+    {
+      "drug": "Temozolomide",
+      "event_type": "stop",
+      "event_date": "2024-01-31",
+      "dose": "150 mg/m\u00b2"
+    }
+  ]
+}

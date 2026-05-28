@@ -1,0 +1,14 @@
+{
+  "mdt_email": {
+    "ok": true
+  },
+  "mdt_calendar": {
+    "ok": true
+  },
+  "drive": {
+    "ok": true,
+    "uploaded": 3,
+    "failed": 0,
+    "folder_url": "https://drive.google.com/drive/folders/1berLBbuVqPem9rLhOAEwYnfF4tFbGrk7"
+  }
+}

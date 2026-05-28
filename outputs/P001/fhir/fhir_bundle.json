@@ -1,0 +1,433 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "timestamp": "2026-04-26T11:51:57.411637+00:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-P001",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P001",
+        "gender": "M"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cond-P001",
+      "resource": {
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "code": {
+          "text": "glioblastoma"
+        },
+        "recordedDate": "2023-10-21"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-lesion-P001-0",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "code": {
+          "text": "Target lesion L1 (right parietal)"
+        },
+        "valueQuantity": {
+          "value": 10.8,
+          "unit": "mm"
+        },
+        "note": [
+          {
+            "text": "visit=v2"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-recist-P001",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "code": {
+          "text": "RECIST 1.1 response"
+        },
+        "valueString": "PD",
+        "note": [
+          {
+            "text": "New lesion detected \u2014 automatic Progressive Disease per RECIST 1.1."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-0",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Bevacizumab"
+        },
+        "dosage": [
+          {
+            "text": "10 mg/kg every 2 weeks IV"
+          }
+        ],
+        "effectivePeriod": {
+          "start": "2024-01-31",
+          "end": null
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Lomustine"
+        },
+        "dosage": [
+          {
+            "text": "90 mg/m\u00b2 every 6 weeks PO"
+          }
+        ],
+        "effectivePeriod": {
+          "start": "2024-01-31",
+          "end": null
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Dexamethasone"
+        },
+        "dosage": [
+          {
+            "text": "mg/m\u00b2 PO"
+          }
+        ],
+        "effectivePeriod": {
+          "start": null,
+          "end": null
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Omeprazole"
+        },
+        "dosage": [
+          {
+            "text": "mg/m\u00b2 PO"
+          }
+        ],
+        "effectivePeriod": {
+          "start": null,
+          "end": null
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-4",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Fluconazole"
+        },
+        "dosage": [
+          {
+            "text": "mg/m\u00b2 PO"
+          }
+        ],
+        "effectivePeriod": {
+          "start": null,
+          "end": null
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-5",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Valproate sodium"
+        },
+        "dosage": [
+          {
+            "text": "mg/m\u00b2 PO"
+          }
+        ],
+        "effectivePeriod": {
+          "start": null,
+          "end": null
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-6",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Low-molecular-weight heparin (LMWH)"
+        },
+        "dosage": [
+          {
+            "text": "mg/m\u00b2 IV"
+          }
+        ],
+        "effectivePeriod": {
+          "start": null,
+          "end": null
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-7",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "stopped",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Temozolomide"
+        },
+        "dosage": [
+          {
+            "text": "75 mg/m\u00b2 daily x1/28d PO"
+          }
+        ],
+        "effectivePeriod": {
+          "start": "2023-10-21",
+          "end": "2024-01-31"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medstmt-P001-8",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "status": "stopped",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "medicationCodeableConcept": {
+          "text": "Temozolomide"
+        },
+        "dosage": [
+          {
+            "text": "150 mg/m\u00b2 daily x5/28d PO"
+          }
+        ],
+        "effectivePeriod": {
+          "start": "2023-10-21",
+          "end": "2024-01-31"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:issue-P001-3",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "status": "final",
+        "patient": {
+          "reference": "Patient/P001"
+        },
+        "severity": "high",
+        "code": {
+          "text": "bevacizumab + low-molecular-weight heparin (lmwh)"
+        },
+        "detail": "Bevacizumab increases the risk of thromboembolic events due to anti-angiogenic effects, while LMWH is an anticoagulant. Concurrent use may paradoxically increase bleeding risk (due to LMWH's anticoagulant effect) or thrombosis risk (due to bevacizumab's pro-thrombotic effects), depending on the balance between anticoagulation and vascular integrity.",
+        "mitigation": [
+          {
+            "action": {
+              "text": "Avoid concomitant use if possible. If required, closely monitor for signs of bleeding or thrombosis, and adjust LMWH dosing based on clinical response and coagulation parameters. Consult hematology/oncology for risk-benefit evaluation."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:issue-P001-6",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "status": "final",
+        "patient": {
+          "reference": "Patient/P001"
+        },
+        "severity": "high",
+        "code": {
+          "text": "bevacizumab + valproate sodium"
+        },
+        "detail": "Bevacizumab may inhibit the metabolism of valproate sodium, leading to increased plasma concentrations of valproate and a heightened risk of valproate toxicity (e.g., encephalopathy, hepatotoxicity).",
+        "mitigation": [
+          {
+            "action": {
+              "text": "Avoid concomitant use if possible. If co-administration is necessary, closely monitor valproate levels and consider dose reduction of valproate. Consult a specialist for risk-benefit evaluation."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:issue-P001-16",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "status": "final",
+        "patient": {
+          "reference": "Patient/P001"
+        },
+        "severity": "high",
+        "code": {
+          "text": "fluconazole + temozolomide"
+        },
+        "detail": "Fluconazole inhibits CYP2C9, the primary metabolic enzyme for temozolomide, leading to increased plasma concentrations of temozolomide and heightened risk of toxicity.",
+        "mitigation": [
+          {
+            "action": {
+              "text": "Avoid concomitant use of fluconazole and temozolomide. If antifungal therapy is required, consider alternative agents with minimal CYP2C9 inhibition (e.g., itraconazole, posaconazole) and monitor temozolomide levels if co-administration is unavoidable."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:issue-P001-17",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "status": "final",
+        "patient": {
+          "reference": "Patient/P001"
+        },
+        "severity": "high",
+        "code": {
+          "text": "fluconazole + valproate sodium"
+        },
+        "detail": "Fluconazole inhibits hepatic metabolism of valproate sodium, potentially increasing valproate plasma concentrations and risk of toxicity (e.g., hepatotoxicity, encephalopathy).",
+        "mitigation": [
+          {
+            "action": {
+              "text": "Avoid concomitant use if possible. If required, closely monitor valproate levels and consider dose reduction of valproate sodium. Alternative antifungal agents (e.g., itraconazole) may be considered if feasible."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:issue-P001-20",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "status": "final",
+        "patient": {
+          "reference": "Patient/P001"
+        },
+        "severity": "high",
+        "code": {
+          "text": "Lomustine + Temozolomide"
+        },
+        "detail": "Additive myelosuppression; both agents are alkylating",
+        "mitigation": [
+          {
+            "action": {
+              "text": "Requires dose reduction and close haematologic monitoring"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:issue-P001-21",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "status": "final",
+        "patient": {
+          "reference": "Patient/P001"
+        },
+        "severity": "high",
+        "code": {
+          "text": "lomustine + valproate sodium"
+        },
+        "detail": "Lomustine inhibits the hepatic metabolism of valproate sodium, leading to increased plasma concentrations of valproate and a heightened risk of valproate toxicity, including fatal hepatotoxicity.",
+        "mitigation": [
+          {
+            "action": {
+              "text": "Avoid concomitant use of lomustine and valproate sodium. If co-administration is unavoidable, closely monitor valproate levels and consider dose reduction of valproate, but this combination is generally contraindicated due to the significant risk of severe toxicity."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:issue-P001-27",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "status": "final",
+        "patient": {
+          "reference": "Patient/P001"
+        },
+        "severity": "high",
+        "code": {
+          "text": "temozolomide + valproate sodium"
+        },
+        "detail": "Valproate sodium inhibits carboxylesterase 1 (CES1), an enzyme involved in the metabolic activation of temozolomide, leading to increased plasma concentrations of temozolomide and potential toxicity.",
+        "mitigation": [
+          {
+            "action": {
+              "text": "Avoid concomitant use if possible. If co-administration is necessary, closely monitor for temozolomide-related toxicity (e.g., myelosuppression, neurotoxicity) and consider dose reduction of temozolomide. Alternative anticonvulsants (e.g., levetiracetam) may be preferred."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:careplan-P001",
+      "resource": {
+        "resourceType": "CarePlan",
+        "status": "active",
+        "intent": "plan",
+        "subject": {
+          "reference": "Patient/P001"
+        },
+        "description": "Urgency level: critical (score 5)"
+      }
+    }
+  ]
+}

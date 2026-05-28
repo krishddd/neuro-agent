@@ -1,0 +1,39 @@
+{
+  "stage": 2,
+  "stage_name": "Gemma4 Vision Analysis",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:17:00.834747+00:00",
+  "v1": {
+    "visit": "v1",
+    "findings": [
+      {
+        "description": "Large, heterogeneous mass in the right parietal lobe, consistent with Glioblastoma Multiforme (GBM). The mass exhibits significant surrounding edema.",
+        "location": "Right parietal lobe",
+        "size_mm": 50.0,
+        "enhancement": "heterogeneous"
+      }
+    ],
+    "impression": "Enhancing mass in the right parietal lobe, consistent with Glioblastoma Multiforme (GBM). Significant surrounding edema and mass effect are present.",
+    "mass_effect": true,
+    "hemorrhage": false,
+    "discrepancy_with_report": true,
+    "discrepancy_notes": "The provided radiology report is incomplete and contains no specific findings for Visit 1 (v1). The image shows a large, enhancing, heterogeneous mass in the right parietal lobe, which is consistent with the diagnosis stated in the report header (GBM, right parietal), but the specific findings and measurements are not documented in the body of the report."
+  },
+  "v2": {
+    "visit": "v2",
+    "findings": [
+      {
+        "description": "Enhancing lesion in the right parietal lobe, showing signs of enlargement and new satellite foci of enhancement. Increased perilesional oedema and midline shift are noted.",
+        "location": "Right parietal lobe",
+        "size_mm": 39.8,
+        "enhancement": "ring"
+      }
+    ],
+    "impression": "Enhancement of the right parietal lobe lesion, consistent with Glioblastoma Multiforme (GBM). The lesion shows signs of progression (Progressive Disease, PD) compared to Visit 1, with increased perilesional oedema and midline shift.",
+    "mass_effect": true,
+    "hemorrhage": false,
+    "discrepancy_with_report": false,
+    "discrepancy_notes": null
+  }
+}

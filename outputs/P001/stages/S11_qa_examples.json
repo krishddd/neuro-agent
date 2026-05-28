@@ -1,0 +1,39 @@
+{
+  "stage": 11,
+  "stage_name": "Clinical Q&A (RAG + Citations)",
+  "model": "qwen3:14b + ChromaDB",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:58:24.885702+00:00",
+  "qa_pairs": [
+    {
+      "question": "What is the current assessment of the tumor's progression based on the MRI findings?",
+      "answer": "The MRI report indicates progressive disease (PD) with enlargement of the enhancing lesion, new satellite foci, and increased perilesional oedema, consistent with glioblastoma multiforme (GBM).",
+      "citations": [
+        "P001_mri_report"
+      ]
+    },
+    {
+      "question": "What is the significance of the RANO criteria response being classified as PD?",
+      "answer": "The RANO criteria response of PD, along with worsened neurologic status, suggests disease progression despite treatment. This may necessitate a modification of the current regimen.",
+      "citations": [
+        "P001_rano"
+      ]
+    },
+    {
+      "question": "What is the rationale for modifying the current treatment regimen?",
+      "answer": "The treatment proposal suggests modifying the regimen due to progressive disease (PD) and the need for further optimization, potentially involving clinical trials such as NCT06810544.",
+      "citations": [
+        "P001_treatment_proposal"
+      ]
+    },
+    {
+      "question": "Are there any new lesions detected, and how does this affect the treatment plan?",
+      "answer": "Yes, a new lesion was detected, and this, combined with the PD classification, indicates a need for urgent intervention. The treatment plan may involve deferring current therapies and exploring alternative options.",
+      "citations": [
+        "P001_recist_s4"
+      ]
+    }
+  ],
+  "top_k_retrieval": 6,
+  "retrieval_score_threshold": 0.72
+}

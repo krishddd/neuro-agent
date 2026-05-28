@@ -1,0 +1,57 @@
+{
+  "stage": 17,
+  "stage_name": "ClinicalTrials.gov Matching",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:27:58.007090+00:00",
+  "triggered": true,
+  "trigger_reason": "RANO=PD (progressive disease)",
+  "n_searched": 20,
+  "top_matches": [
+    {
+      "nct_id": "NCT06810544",
+      "title": "Safety and Tolerability of TNG456 Alone and in Combination With Abemaciclib in Patients With Solid Tumors With MTAP Loss",
+      "phase": "Phase 1/Phase 2",
+      "status": "RECRUITING",
+      "interventions": [
+        "TNG456",
+        "abemaciclib"
+      ],
+      "eligibility_summary": "Negative serum pregnancy test result at screening | Has an ECOG performance status score of 0 to 1 | Has measurable disease based on RECIST v1.1 or a confirmed glioblastoma (IDH-wildtype) with radiographic evidence of disease progression or recurrence defined by RANO 2.0. | Has an ECOG performance score of 0 to 1 or for GBM has a Karnofsky performance status score \u226570. | A female patient is who is pregnant or breastfeeding | Has impaired GI function or disease that may significantly alter the...",
+      "distance_km": null,
+      "match_score": 0.9,
+      "match_reasoning": "diagnosis match; IDH wildtype eligible; novel intervention; Phase 1/Phase 2"
+    },
+    {
+      "nct_id": "NCT04765514",
+      "title": "Chemoradiotherapy Versus Chemotherapy for Elderly and Frail GBM Patients",
+      "phase": "Phase 2",
+      "status": "RECRUITING",
+      "interventions": [
+        "Temozolomide monotherapy",
+        "Chemo-Radiotherapy with concurrent temozolomide."
+      ],
+      "eligibility_summary": "Newly-diagnosed, histologically proven, intracranial glioblastoma with maximal safe resection. | MGMT promoter methylation status must be tested and the results positive (defined as all non-negative MGMT status, including intermediate or indeterminate status (i.e., with cutoff higher than the MGMT negative threshold). | Age \u2265 65 \\& KPS of 60 - 70 | Stable or decreasing dose of corticosteroids for at least 14 days prior to randomization. | ANC \u2265 1.5 x 109/L | Platelets \u2265 100 x 109/L | Serum cr...",
+      "distance_km": null,
+      "match_score": 0.8,
+      "match_reasoning": "diagnosis match; biomarker-stratified; novel intervention; Phase 2"
+    },
+    {
+      "nct_id": "NCT06558214",
+      "title": "OPTIMUS PRIME: Safety and Feasibility of OPTune GIO\u00ae Integrated With MRI-gUided Laser Ablation Surgery and Pembrolizumab for Recurrent GlIoblastoMa, A randomizEd Trial",
+      "phase": "Phase 2",
+      "status": "RECRUITING",
+      "interventions": [
+        "Pembrolizumab",
+        "Optune GIO\u00ae",
+        "NeuroBlate\u00ae"
+      ],
+      "eligibility_summary": "Patient must be at least 18 years of age. | Diagnosis of recurrent or progressive glioblastoma, WHO Grade IV, IDH wild-Type or astrocytoma WHO grade IV. | Unequivocal evidence of tumor progression by brain MRI scan per RANO criteria. | Patients who experience a second disease progression are eligible provided that they have not been previously treated with anti-angiogenic agents including bevacizumab (at the exception of bevacizumab radiation necrotic protocol) | A diagnostic contrast-enhance...",
+      "distance_km": null,
+      "match_score": 0.8,
+      "match_reasoning": "diagnosis match; biomarker-stratified; novel intervention; Phase 2"
+    }
+  ],
+  "search_query": "glioblastoma",
+  "retrieved_at": "2026-04-26T11:27:58.007090+00:00"
+}

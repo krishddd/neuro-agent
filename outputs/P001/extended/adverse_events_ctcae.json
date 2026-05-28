@@ -1,0 +1,95 @@
+{
+  "patient_id": "P001",
+  "events": [
+    {
+      "term": "Hypertension",
+      "grade": 2,
+      "system": "Cardiovascular",
+      "ctcae_version": "5.0",
+      "onset_visit": 1,
+      "resolved": false,
+      "management": "Antihypertensive medication initiated; blood pressure monitoring"
+    },
+    {
+      "term": "Neutropenia",
+      "grade": 2,
+      "system": "Hematologic",
+      "ctcae_version": "5.0",
+      "onset_visit": 2,
+      "resolved": false,
+      "management": "G-CSF administered; dose reduction of lomustine"
+    },
+    {
+      "term": "Valproate toxicity",
+      "grade": 3,
+      "system": "Neurologic",
+      "ctcae_version": "5.0",
+      "onset_visit": 3,
+      "resolved": false,
+      "management": "Valproate discontinued; supportive care initiated"
+    },
+    {
+      "term": "Hyperglycemia",
+      "grade": 2,
+      "system": "Metabolic",
+      "ctcae_version": "5.0",
+      "onset_visit": 1,
+      "resolved": false,
+      "management": "Insulin therapy initiated; dexamethasone dose adjusted"
+    },
+    {
+      "term": "Gastrointestinal perforation",
+      "grade": 2,
+      "system": "Gastrointestinal",
+      "ctcae_version": "5.0",
+      "onset_visit": 4,
+      "resolved": false,
+      "management": "Omeprazole discontinued; endoscopic evaluation performed"
+    },
+    {
+      "term": "Thrombocytopenia",
+      "grade": 2,
+      "system": "Hematologic",
+      "ctcae_version": "5.0",
+      "onset_visit": 2,
+      "resolved": false,
+      "management": "Platelet transfusion administered; bevacizumab dose reduced"
+    },
+    {
+      "term": "Gastrointestinal bleeding",
+      "grade": 2,
+      "system": "Gastrointestinal",
+      "ctcae_version": "5.0",
+      "onset_visit": 3,
+      "resolved": false,
+      "management": "Proton pump inhibitor initiated; LMWH dose adjusted"
+    },
+    {
+      "term": "Decreased efficacy of temozolomide",
+      "grade": 2,
+      "system": "Neurologic",
+      "ctcae_version": "5.0",
+      "onset_visit": 1,
+      "resolved": false,
+      "management": "Temozolomide dose increased; dexamethasone monitoring intensified"
+    },
+    {
+      "term": "Hematologic toxicity",
+      "grade": 2,
+      "system": "Hematologic",
+      "ctcae_version": "5.0",
+      "onset_visit": 2,
+      "resolved": false,
+      "management": "Growth factor support initiated; fluconazole dose adjusted"
+    },
+    {
+      "term": "Increased bleeding risk",
+      "grade": 2,
+      "system": "Hematologic",
+      "ctcae_version": "5.0",
+      "onset_visit": 3,
+      "resolved": false,
+      "management": "LMWH dose reduced; coagulation parameters monitored"
+    }
+  ]
+}

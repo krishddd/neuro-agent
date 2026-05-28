@@ -1,0 +1,11 @@
+{
+  "v1->v2": {
+    "visit": "v1->v2",
+    "findings": [],
+    "impression": "stable \u2014 No interval change observed in the provided images.",
+    "mass_effect": false,
+    "hemorrhage": false,
+    "discrepancy_with_report": false,
+    "discrepancy_notes": null
+  }
+}

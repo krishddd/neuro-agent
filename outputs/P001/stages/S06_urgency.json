@@ -1,0 +1,13 @@
+{
+  "stage": 6,
+  "stage_name": "Urgency Triage & Clinical Scoring",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:20:46.858311+00:00",
+  "score": 5,
+  "level": "critical",
+  "drivers": [
+    "critical:midline shift"
+  ],
+  "rationale": "Critical keywords: ['midline shift']; high keywords: ['mass effect', 'edema', 'enhancement', 'progression']; RECIST PD: True."
+}

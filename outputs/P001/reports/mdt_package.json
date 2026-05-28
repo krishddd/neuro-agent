@@ -1,0 +1,77 @@
+{
+  "patient_id": "P001",
+  "fhir_bundle": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\fhir\\fhir_bundle.json",
+  "snapshot": {
+    "patient_id": "P001",
+    "phases_done": [
+      "ingest",
+      "mri",
+      "recist",
+      "treatment_opt",
+      "pharma"
+    ],
+    "ingestion": {
+      "n_files": 20,
+      "visits": [
+        "v1",
+        "v2"
+      ],
+      "has_prior_scans": true
+    },
+    "record": {
+      "diagnosis": "glioblastoma",
+      "impression": "The enhancing lesion in the right parietal lobe has progressed, showing enlargement, new satellite foci, and increased perilesional oedema with midline shift, consistent with glioblastoma multiforme (GBM). This represents progressive disease (PD) compared to the prior visit.",
+      "n_findings": 1
+    },
+    "recist": {
+      "response": "PD",
+      "pct_change": null,
+      "new_lesion_detected": true,
+      "confirmation_required": false
+    },
+    "volumetric": {
+      "enhancing_volume_mm3": 0.0,
+      "largest_axial_bidim_mm2": 0.0,
+      "backend": "none",
+      "volumetric_unavailable": true,
+      "status": "done"
+    },
+    "rano": {
+      "response": "PD",
+      "bidirectional_product_mm2": 81.6,
+      "delta_product_pct": null,
+      "t2_flair_change": "stable",
+      "corticosteroid_dose_change": "none",
+      "neurologic_status": "worsened",
+      "criteria_used": "RANO"
+    },
+    "urgency": {
+      "score": 5,
+      "level": "critical"
+    },
+    "medications": {
+      "n_current": 7,
+      "n_historical": 2
+    },
+    "interactions": {
+      "highest_severity": "contraindicated",
+      "n": 28
+    },
+    "prediction": {
+      "recist_delta_pred": 5.71,
+      "recist_sigma": 15.343,
+      "pfs_median_weeks": 13.0,
+      "optimization_triggered": true
+    },
+    "clinical_trials": {
+      "triggered": true,
+      "n_top_matches": 3,
+      "top_nct_id": "NCT06810544"
+    },
+    "treatment_proposal": {
+      "decision": "MODIFY",
+      "proposed_regimen": "defer",
+      "mdt_discussion_required": true
+    }
+  }
+}

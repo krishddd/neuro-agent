@@ -1,0 +1,5 @@
+{
+  "patient_letter": "sent_to_doctor_for_review",
+  "gp_handover": "sent",
+  "chat_welcome_dm": "suppressed_spikes_policy"
+}

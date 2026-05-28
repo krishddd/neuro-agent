@@ -1,0 +1,77 @@
+{
+  "patient_id": "P001",
+  "name": "James R. Thornton",
+  "tumor": "glioblastoma",
+  "screening_date": "2023-11-05",
+  "eligible_trials": [
+    {
+      "trial_id": "NCT05678901",
+      "title": "Combination Immunotherapy for Recurrent Glioblastoma",
+      "phase": "II",
+      "sponsor": "National Cancer Institute",
+      "intervention": "PD-1 inhibitor + T-cell engager",
+      "primary_endpoint": "Progression-free survival at 6 months",
+      "eligibility_verdict": "Eligible",
+      "exclusion_criteria_check": [
+        "No prior immunotherapy",
+        "No active infections"
+      ]
+    },
+    {
+      "trial_id": "NCT05432198",
+      "title": "Targeted Therapy with EGFR Inhibitor in GBM",
+      "phase": "III",
+      "sponsor": "PharmaCure Inc.",
+      "intervention": "EGFR tyrosine kinase inhibitor",
+      "primary_endpoint": "Overall survival at 12 months",
+      "eligibility_verdict": "Eligible",
+      "exclusion_criteria_check": [
+        "No EGFR mutation (not required)",
+        "No prior EGFR inhibitor use"
+      ]
+    },
+    {
+      "trial_id": "NCT05210987",
+      "title": "Radiogenomics-Guided Radiotherapy for GBM",
+      "phase": "II",
+      "sponsor": "Radiomics Research Group",
+      "intervention": "Adaptive radiation based on tumor genomics",
+      "primary_endpoint": "Local control rate at 1 year",
+      "eligibility_verdict": "Eligible",
+      "exclusion_criteria_check": [
+        "No prior radiation therapy (not required)",
+        "No contraindications to radiation"
+      ]
+    }
+  ],
+  "ineligible_trials": [
+    {
+      "trial_id": "NCT05123456",
+      "title": "Vaccine Therapy for IDH-Mutant Gliomas",
+      "phase": "I",
+      "reason_ineligible": [
+        "Patient has wild-type IDH1/2",
+        "Trial requires IDH mutation"
+      ]
+    },
+    {
+      "trial_id": "NCT05098765",
+      "title": "CAR-T Cells for Newly Diagnosed GBM",
+      "phase": "I",
+      "reason_ineligible": [
+        "Patient has progressive disease (not newly diagnosed)",
+        "Trial requires initial diagnosis within 3 months"
+      ]
+    },
+    {
+      "trial_id": "NCT04987654",
+      "title": "Anti-Angiogenic Therapy in GBM with Temozolomide Resistance",
+      "phase": "II",
+      "reason_ineligible": [
+        "Patient has no known temozolomide resistance",
+        "Trial requires prior resistance to standard therapy"
+      ]
+    }
+  ],
+  "eligible_count": 3
+}

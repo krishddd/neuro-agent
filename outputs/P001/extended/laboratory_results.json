@@ -1,0 +1,138 @@
+[
+  {
+    "visit": 1,
+    "date": "2023-10-21",
+    "FBC": {
+      "Haemoglobin": 12.4,
+      "WBC": 7.5,
+      "Neutrophils": 6.84,
+      "Lymphocytes": 3.25,
+      "Monocytes": 0.3,
+      "Platelets": 185.0,
+      "MCV": 93.4,
+      "MCH": 30.2
+    },
+    "UE": {
+      "Sodium": 142.0,
+      "Potassium": 4.19,
+      "Chloride": 102.8,
+      "Bicarbonate": 23.3,
+      "Urea": 8.5,
+      "Creatinine": 66.0
+    },
+    "LFT": {
+      "Bilirubin": 17.9,
+      "ALT": 13.0,
+      "AST": 15.0,
+      "ALP": 101.0,
+      "GGT": 37.0,
+      "Total Protein": 69.7,
+      "Albumin": 43.9
+    },
+    "CRP_mg_L": 23.3,
+    "HbA1c_mmol_mol": null,
+    "LDH_U_L": 218.0
+  },
+  {
+    "visit": 2,
+    "date": "2023-12-24",
+    "FBC": {
+      "Haemoglobin": 13.7,
+      "WBC": 10.15,
+      "Neutrophils": 5.68,
+      "Lymphocytes": 1.4,
+      "Monocytes": 0.82,
+      "Platelets": 338.0,
+      "MCV": 93.8,
+      "MCH": 29.0
+    },
+    "UE": {
+      "Sodium": 136.5,
+      "Potassium": 3.75,
+      "Chloride": 97.0,
+      "Bicarbonate": 26.5,
+      "Urea": 7.1,
+      "Creatinine": 113.0
+    },
+    "LFT": {
+      "Bilirubin": 18.7,
+      "ALT": 40.0,
+      "AST": 19.0,
+      "ALP": 98.0,
+      "GGT": 37.0,
+      "Total Protein": 65.1,
+      "Albumin": 46.4
+    },
+    "CRP_mg_L": 26.7,
+    "HbA1c_mmol_mol": null,
+    "LDH_U_L": 381.0
+  },
+  {
+    "visit": 3,
+    "date": "2024-02-24",
+    "FBC": {
+      "Haemoglobin": 13.6,
+      "WBC": 4.5,
+      "Neutrophils": 3.65,
+      "Lymphocytes": 1.07,
+      "Monocytes": 0.85,
+      "Platelets": 370.0,
+      "MCV": 95.0,
+      "MCH": 28.8
+    },
+    "UE": {
+      "Sodium": 133.7,
+      "Potassium": 4.9,
+      "Chloride": 106.5,
+      "Bicarbonate": 20.8,
+      "Urea": 5.9,
+      "Creatinine": 62.0
+    },
+    "LFT": {
+      "Bilirubin": 58.0,
+      "ALT": 336.0,
+      "AST": 105.0,
+      "ALP": 277.0,
+      "GGT": 205.0,
+      "Total Protein": 74.4,
+      "Albumin": 37.3
+    },
+    "CRP_mg_L": 36.9,
+    "HbA1c_mmol_mol": null,
+    "LDH_U_L": 354.0
+  },
+  {
+    "visit": 4,
+    "date": "2024-04-27",
+    "FBC": {
+      "Haemoglobin": 9.8,
+      "WBC": 2.44,
+      "Neutrophils": 1.1,
+      "Lymphocytes": 0.52,
+      "Monocytes": 0.47,
+      "Platelets": 74.0,
+      "MCV": 83.0,
+      "MCH": 25.4
+    },
+    "UE": {
+      "Sodium": 133.3,
+      "Potassium": 4.39,
+      "Chloride": 102.9,
+      "Bicarbonate": 20.1,
+      "Urea": 7.0,
+      "Creatinine": 61.0
+    },
+    "LFT": {
+      "Bilirubin": 6.1,
+      "ALT": 16.0,
+      "AST": 30.0,
+      "ALP": 59.0,
+      "GGT": 16.0,
+      "Total Protein": 80.7,
+      "Albumin": 43.6
+    },
+    "CRP_mg_L": 23.6,
+    "HbA1c_mmol_mol": null,
+    "LDH_U_L": 383.0
+  }
+]

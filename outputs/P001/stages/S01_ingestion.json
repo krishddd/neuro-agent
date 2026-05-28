@@ -1,0 +1,274 @@
+{
+  "stage": 1,
+  "stage_name": "Multi-source File Ingestion",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:16:02.720749+00:00",
+  "files": [
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\brain_axial.dcm",
+      "kind": "mri_image",
+      "visit": "v1",
+      "mime": "application/octet-stream",
+      "size_bytes": 131868,
+      "text": null,
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\brain_axial.dcm",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\discharge_summary.pdf",
+      "kind": "discharge",
+      "visit": "v1",
+      "mime": "application/pdf",
+      "size_bytes": 6065,
+      "text": "NeuroMed University Hospital NHS Trust Discharge Summary\nPatient: P001 | NHS: 432 890 1234\nNeurosurgery Ward / Neuro-Oncology\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nAge: 63 years\nSex: M\nNHS Number: 432 890 1234\nBlood Group: A+\nHeight / Weight: 183.2 cm / 63.4 kg\nBSA: 1.61 m\u00b2\nEthnicity: White British\nReferring GP: Dr. Sarah Patel, The Grange Practice, Leeds\nDIAGNOSIS\nHistology: Glioblastoma Multiforme (GBM)\nWHO Grade: IV\nICD-O3 Code: 9440/3\nPrimary Location: right parietal\nLaterality: right\nSurgery Date: 07 November 2023\nSurgeon: Mr. Jonathan Hale (Consultant Neurosurgeon)\nExtent of Resection: Gross Total Resection (GTR) \u2014 >98% EOR\nMOLECULAR PROFILE\nIdh Status: Wild-type\nMgmt Promoter Methylation: Unmethylated\nEgfr Amplification: True\nCodeletion 1P19Q: False\nTert Promoter Mutation: Mutant C250T\nAtrx Status: Lost\nCdkn2A B Homozygous Deletion: False\nPten Loss: True\nKi67 Proliferation Index Percent: 66.1\nCLINICAL PRESENTATION\nSymptom Duration: 15 weeks\nPresenting Symptoms: papilloedema, Cushing's triad, headache (worse in morning)\nKPS at Triage: 90\nECOG at Triage: 1\n\nUrgency: URGENT (score 3/5)\nTREATMENT & CLINICAL COURSE\nPatient James R. Thornton was diagnosed with Glioblastoma Multiforme (GBM) WHO Grade IV on 2023-10-21. Following\nGross Total Resection (GTR) \u2014 >98% EOR, the patient commenced concurrent chemoradiotherapy with Temozolomide\n(TMZ). Over 4 imaging time-points, the overall radiological trajectory demonstrates True Progression.\nMEDICATIONS ON DISCHARGE\nDrug Name Dose Route Schedule\nTemozolomide (TMZ) 75 mg/m\u00b2 PO Daily concurrent with RT\nTemozolomide (TMZ) adjuvant 150 mg/m\u00b2 PO Days 1-5 of 28-day cycle\nStupp protocol RT mg/m\u00b2\nLow-molecular-weight heparin (LMWH) mg/m\u00b2\nValproate sodium mg/m\u00b2 PO\nDexamethasone mg/m\u00b2\nOmeprazole mg/m\u00b2\nFluconazole mg/m\u00b2\nGP HANDOVER NOTE\nDear Dr. Sarah Patel,\nRe: James R. Thornton, DOB: 1962-03-14, NHS: 432 890 1234\nThank you for continuing to support this patient in the community. James was diagnosed with Glioblastoma Multiforme (GBM)\nWHO Grade IV (MGMT Unmethylated, IDH Wild-type) on 2023-10-21. They underwent Gross Total Resection (GTR) \u2014\n>98% EOR followed by Temozolomide (TMZ).\nCurrent medications: Temozolomide (TMZ), Temozolomide (TMZ) adjuvant, Stupp protocol RT, Low-molecular-weight\nheparin (LMWH) \u2014 please review for community prescribing.\nCurrent performance status: KPS 90 / ECOG 1.\nURGENT: Please contact neuro-oncology if the patient presents with new neurological symptoms, seizure, or sudden\ndeterioration.\nYours sincerely,\nNeuro-Oncology MDT\nFOLLOW-UP PLAN\nRecommended Action: Urgent MDT review within 72 hours\nTriage Alerts: Steroid dose may need escalation \u2014 current 4mg dexamethasone,\nConsider re-biopsy or liquid biopsy if progression confirmed\nNext Review: As per oncology MDT schedule\nUrgent Contact: On-call Neuro-Oncology: 0800 123 4567\nDischarge summary prepared by NeuroMed University Hospital NHS Trust Neuro-Oncology Team. Please file in patient records. For clinical\nqueries: neurooncology@neuromed.nhs.uk",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\discharge_summary.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\laboratory_results.pdf",
+      "kind": "lab",
+      "visit": "v1",
+      "mime": "application/pdf",
+      "size_bytes": 10706,
+      "text": "NeuroMed University Hospital NHS Trust Laboratory Results Report\nPatient: P001 | NHS: 432 890 1234\nHaematology & Biochemistry Laboratory\nPATIENT DETAILS\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nBlood Group: A+\nVISIT 1 \u2014 21 October 2023\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 12.4 g/dL 13.5\u201317.5 LOW\nWBC 7.5 10^9/L 4.0\u201311.0\nNeutrophils 6.84 10^9/L 2.0\u20137.5\nLymphocytes 3.25 10^9/L 1.0\u20134.0\nMonocytes 0.3 10^9/L 0.2\u20131.0\nPlatelets 185.0 10^9/L 150\u2013400\nMCV 93.4 fL 80\u2013100\nMCH 30.2 pg 27\u201333\nUREA & ELECTROLYTES\nTest Result Unit Ref Range Flag\nSodium 142.0 mmol/L 135\u2013145\nPotassium 4.19 mmol/L 3.5\u20135.0\nChloride 102.8 mmol/L 98\u2013107\nBicarbonate 23.3 mmol/L 22\u201329\nUrea 8.5 mmol/L 2.5\u20137.8 HIGH\nCreatinine 66.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 17.9 umol/L 0\u201321\nALT 13.0 U/L 0\u201341\nAST 15.0 U/L 0\u201340\nALP 101.0 U/L 30\u2013130\nGGT 37.0 U/L 0\u201350\nTotal Protein 69.7 g/L 60\u201380\nAlbumin 43.9 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 23.3 HIGH\n\nLDH (U/L): 218.0\nVISIT 2 \u2014 24 December 2023\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 13.7 g/dL 13.5\u201317.5\nWBC 10.15 10^9/L 4.0\u201311.0\nNeutrophils 5.68 10^9/L 2.0\u20137.5\nLymphocytes 1.4 10^9/L 1.0\u20134.0\nMonocytes 0.82 10^9/L 0.2\u20131.0\nPlatelets 338.0 10^9/L 150\u2013400\nMCV 93.8 fL 80\u2013100\nMCH 29.0 pg 27\u201333\nUREA & ELECTROLYTES\nTest Result Unit Ref Range Flag\nSodium 136.5 mmol/L 135\u2013145\nPotassium 3.75 mmol/L 3.5\u20135.0\nChloride 97.0 mmol/L 98\u2013107 LOW\nBicarbonate 26.5 mmol/L 22\u201329\nUrea 7.1 mmol/L 2.5\u20137.8\nCreatinine 113.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 18.7 umol/L 0\u201321\nALT 40.0 U/L 0\u201341\nAST 19.0 U/L 0\u201340\nALP 98.0 U/L 30\u2013130\nGGT 37.0 U/L 0\u201350\nTotal Protein 65.1 g/L 60\u201380\nAlbumin 46.4 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 26.7 HIGH\nLDH (U/L): 381.0 HIGH\nVISIT 3 \u2014 24 February 2024\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 13.6 g/dL 13.5\u201317.5\nWBC 4.5 10^9/L 4.0\u201311.0\n\nNeutrophils 3.65 10^9/L 2.0\u20137.5\nLymphocytes 1.07 10^9/L 1.0\u20134.0\nMonocytes 0.85 10^9/L 0.2\u20131.0\nPlatelets 370.0 10^9/L 150\u2013400\nMCV 95.0 fL 80\u2013100\nMCH 28.8 pg 27\u201333\nUREA & ELECTROLYTES\nTest Result Unit Ref Range Flag\nSodium 133.7 mmol/L 135\u2013145 LOW\nPotassium 4.9 mmol/L 3.5\u20135.0\nChloride 106.5 mmol/L 98\u2013107\nBicarbonate 20.8 mmol/L 22\u201329 LOW\nUrea 5.9 mmol/L 2.5\u20137.8\nCreatinine 62.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 58.0 umol/L 0\u201321 HIGH\nALT 336.0 U/L 0\u201341 HIGH\nAST 105.0 U/L 0\u201340 HIGH\nALP 277.0 U/L 30\u2013130 HIGH\nGGT 205.0 U/L 0\u201350 HIGH\nTotal Protein 74.4 g/L 60\u201380\nAlbumin 37.3 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 36.9 HIGH\nLDH (U/L): 354.0 HIGH\nVISIT 4 \u2014 27 April 2024\nFULL BLOOD COUNT\nTest Result Unit Ref Range Flag\nHaemoglobin 9.8 g/dL 13.5\u201317.5 LOW\nWBC 2.44 10^9/L 4.0\u201311.0 LOW\nNeutrophils 1.1 10^9/L 2.0\u20137.5 LOW\nLymphocytes 0.52 10^9/L 1.0\u20134.0 LOW\nMonocytes 0.47 10^9/L 0.2\u20131.0\nPlatelets 74.0 10^9/L 150\u2013400 LOW\nMCV 83.0 fL 80\u2013100\nMCH 25.4 pg 27\u201333 LOW\nUREA & ELECTROLYTES\n\nTest Result Unit Ref Range Flag\nSodium 133.3 mmol/L 135\u2013145 LOW\nPotassium 4.39 mmol/L 3.5\u20135.0\nChloride 102.9 mmol/L 98\u2013107\nBicarbonate 20.1 mmol/L 22\u201329 LOW\nUrea 7.0 mmol/L 2.5\u20137.8\nCreatinine 61.0 umol/L 60\u2013120\nLIVER FUNCTION TESTS\nTest Result Unit Ref Range Flag\nBilirubin 6.1 umol/L 0\u201321\nALT 16.0 U/L 0\u201341\nAST 30.0 U/L 0\u201340\nALP 59.0 U/L 30\u2013130\nGGT 16.0 U/L 0\u201350\nTotal Protein 80.7 g/L 60\u201380 HIGH\nAlbumin 43.6 g/L 35\u201350\nOTHER MARKERS\nCRP (mg/L): 23.6 HIGH\nLDH (U/L): 383.0 HIGH\nResults validated by NeuroMed University Hospital NHS Trust Laboratory Services. Pathologist on call: lab.urgent@neuromed.nhs.uk | Ext.\n5001",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\laboratory_results.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri.png",
+      "kind": "mri_image",
+      "visit": "v1",
+      "mime": "image/png",
+      "size_bytes": 95859,
+      "text": null,
+      "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v1\\mri_norm.png",
+      "meta": {
+        "rel": "clinical\\mri.png",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri_brain_report.pdf",
+      "kind": "mri_report",
+      "visit": "v1",
+      "mime": "application/pdf",
+      "size_bytes": 4073,
+      "text": "NeuroMed University Hospital NHS Trust MRI Brain Report\nPatient: P001 | NHS: 432 890 1234\nNeuro-Oncology Department\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nSex / Age: M / 63 yrs at diagnosis\nNHS Number: 432 890 1234\nBlood Group: A+\nReferring GP: Dr. Sarah Patel, The Grange Practice, Leeds\nDiagnosis: Glioblastoma Multiforme (GBM) \u2014 WHO Grade IV\nPrimary Location: right parietal\nReport Date: 21 October 2023\nMRI SEQUENCES ACQUIRED\nT1 post-Gd | T2 FLAIR | DWI/ADC | PWI (DSC-MRI) | MR Spectroscopy | SWI\nVISIT 1 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 2 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 3 \u2014\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nVISIT 4 \u2014\n\nScan Type: MRI Brain\nScanner: GE SIGNA Premier 3T\nContrast Used: Gadolinium (0.1 mmol/kg)\nReporting Radiologist: Dr. A. Okafor, FRCR\nFINDINGS\nRECIST 1.1 LESION MEASUREMENTS\nVisit \u2014 \u2014 Overall:\nVisit \u2014 \u2014 Overall:\nVisit \u2014 \u2014 Overall:\nThis report is generated for clinical use within NeuroMed University Hospital NHS Trust. Results should be interpreted in conjunction with the\nclinical context. For queries contact the Radiology Department: radiology@neuromed.nhs.uk",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\mri_brain_report.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri_montage_16bit.png",
+      "kind": "mri_image",
+      "visit": "v1",
+      "mime": "image/png",
+      "size_bytes": 1820087,
+      "text": null,
+      "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v1\\mri_montage_16bit_norm.png",
+      "meta": {
+        "rel": "clinical\\mri_montage_16bit.png",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\mri_preview_annotated.png",
+      "kind": "mri_image",
+      "visit": "v1",
+      "mime": "image/png",
+      "size_bytes": 219174,
+      "text": null,
+      "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v1\\mri_preview_annotated_norm.png",
+      "meta": {
+        "rel": "clinical\\mri_preview_annotated.png",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\pathology_report.pdf",
+      "kind": "pathology",
+      "visit": "v1",
+      "mime": "application/pdf",
+      "size_bytes": 5906,
+      "text": "NeuroMed University Hospital NHS Trust Histopathology Report\nLab Ref: PATH-P001-2023 | NHS: 432\nDepartment of Neuropathology\n890 1234\nPATIENT & SPECIMEN DETAILS\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nSex: M\nSpecimen Type: Brain tumour biopsy / resection specimen\nSurgery Date: 07 November 2023\nSurgeon: Mr. Jonathan Hale (Consultant Neurosurgeon)\nSpecimen Received: 07 November 2023\nReporting Pathologist: Dr. R. Patel, FRCPath \u2014 Consultant Neuropathologist\nAuthorised: 07 November 2023\nMACROSCOPIC DESCRIPTION\nMultiple tissue fragments received in formalin, aggregating to approximately 2.1 x 1.8 x 0.9 cm. Tissue is pale grey-white with\nfocal areas of haemorrhage. Surgical margins not assessable on submitted fragments.\nHISTOLOGICAL REPORT\nNEUROPATHOLOGY REPORT nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnnnnnnn Patient: James R. Thornton DOB: 1962-03-14 Hospital ID: P001 Specimen type: Brain\nbiopsy / resection specimen Date of procedure: 2023-09-26 Reported by: Dr. Idris Okoye, FRCPath \u2014 Consultant\nNeuropathologist nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\nnnnnnnnnnnnn\nCLINICAL INFORMATION: 63-year-old male presenting with seizures and progressive neurological deficits. MRI\ndemonstrated a ring-enhancing mass lesion within the left frontal lobe.\nMACROSCOPIC DESCRIPTION: Received in formalin: Multiple fragments of soft, grey-tan haemorrhagic tissue, aggregate\n2.8 \u00d7 1.5 \u00d7 0.9 cm. Tissue submitted entirely for processing. Blocks: A1\u2013A4.\nMICROSCOPIC DESCRIPTION: Sections show a highly cellular infiltrating glial neoplasm demonstrating marked nuclear\npleomorphism, brisk mitotic activity (>10 mitoses/10 HPF), microvascular proliferation (endothelial multi-layering, glomeruloid\nvascular tufts), and geographic necrosis with pseudopalisading. Perineuronal satellitosis and subpial spread are identified.\nThe surrounding neuropil shows reactive astrogliosis.\nIMMUNOHISTOCHEMISTRY: GFAP: Strong diffuse positive IDH1 R132H: Negative ATRX: Loss of nuclear expression p53:\nWild-type pattern Ki-67: Approximately 38.1% positivity in hotspot areas EGFR: Overexpressed (3+) PTEN: Loss of\nexpression\nMOLECULAR PROFILE: MGMT promoter methylation (pyrosequencing): Unmethylated IDH1/2 sequencing (next-generation\nsequencing panel): Wild-type TERT promoter mutation: C250T detected CDKN2A/B homozygous deletion (FISH): Not\ndetected EGFR amplification (FISH): Detected, copy number 23 PTEN deletion: Heterozygous deletion detected\nDIAGNOSIS: GLIOBLASTOMA MULTIFORME (GBM), WHO CNS Grade IV ICD-O-3: 9440/3 WHO 2021 CNS Tumour\nClassification criteria met.\nSYNOPSIS: The morphological, immunohistochemical, and molecular findings confirm a WHO Grade IV IDH wild-type\nGlioblastoma. The unmethylated MGMT promoter status is an adverse prognostic marker and predicts relative resistance to\ntemozolomide chemotherapy. Recommend Stupp protocol discussion at neuro-oncology MDT.\nSigned electronically: Dr. Idris Okoye, FRCPath \u2014 Consultant Neuropathologist Date of report: 2023-10-08\n\nMOLECULAR / IHC SUMMARY\nIdh Status: Wild-type\nMgmt Promoter Methylation: Unmethylated\nEgfr Amplification: True\nCodeletion 1P19Q: False\nTert Promoter Mutation: Mutant C250T\nAtrx Status: Lost\nCdkn2A B Homozygous Deletion: False\nPten Loss: True\nKi67 Proliferation Index Percent: 66.1\nFINAL DIAGNOSIS\nGlioblastoma Multiforme (GBM) \u2014 WHO Grade IV\nICD-O3: 9440/3 | Location: right parietal | Laterality: right\nThis report is issued by the NeuroMed University Hospital NHS Trust Neuropathology Department. Diagnostic queries:\nneuropathology@neuromed.nhs.uk | Ext. 6210. Classification per WHO CNS5 2021.",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\pathology_report.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\prescription_oncology_clinic.pdf",
+      "kind": "prescription",
+      "visit": "v1",
+      "mime": "application/pdf",
+      "size_bytes": 4214,
+      "text": "NeuroMed University Hospital NHS Trust Prescription Record\nPatient: P001 | Date: 21 October 2023\nOncology Outpatient Clinic\nPRESCRIPTION DETAILS\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nWeight (kg): 63.4\nBSA (m\u00b2): 1.61\nPrescribing Clinician: Dr. Paul Osei (Consultant Oncologist)\nPrescription Date: 21 October 2023\nAllergies: Codeine (Severe nausea/vomiting)\nPRESCRIBED MEDICATIONS\n1. Temozolomide (TMZ)\nDose: 75 mg/m\u00b2\nRoute: PO\nSchedule: Daily concurrent with RT\nCycle: 42 days\nBrand: Temodal\nMonitor for: myelosuppression, nausea, fatigue, MGMT-dependent efficacy\n2. Temozolomide (TMZ) adjuvant\nDose: 150 mg/m\u00b2\nRoute: PO\nSchedule: Days 1-5 of 28-day cycle\nCycle: 28 days\nBrand: Temodal\nMonitor for: thrombocytopenia, lymphopenia, hepatotoxicity\n3. Stupp protocol RT\n4. Low-molecular-weight heparin (LMWH)\nBrand: Clexane\nIndication: VTE prophylaxis\n5. Valproate sodium\nRoute: PO\nBrand: Epilim Chrono\n6. Dexamethasone\nIndication: Maintenance \u2014 peritumoral oedema\n7. Omeprazole\nIndication: Gastric protection on dexamethasone\n8. Fluconazole\nIndication: Candida prophylaxis \u2014 immunosuppressed\n\nPRESCRIBER AUTHORISATION\nPrescriber: Dr. Paul Osei (Consultant Oncologist)\nGMC Number: 7654321\nDate: 21 October 2023\nSignature: _________________________________\nContact: oncology.clinic@neuromed.nhs.uk | Ext. 4421\nFP10 Prescription \u2014 NeuroMed University Hospital NHS Trust. Dispense as written. Contact prescriber before any substitution. Store per\nBNF guidelines.",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\prescription_oncology_clinic.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\treatment_protocol.pdf",
+      "kind": "protocol",
+      "visit": "v1",
+      "mime": "application/pdf",
+      "size_bytes": 4742,
+      "text": "NeuroMed University Hospital NHS Trust Treatment Protocol\nPatient: P001 | Protocol ref:\nChemotherapy / Radiotherapy Scheduling Unit\nNOM-P001-TMZ\nTREATMENT PROTOCOL HEADER\nPatient Name: James R. Thornton\nDate of Birth: 14 March 1962\nNHS Number: 432 890 1234\nDiagnosis: Glioblastoma Multiforme (GBM)\nWHO Grade: IV\nIDH Status: Wild-type\nMGMT Status: Unmethylated\nProtocol Name: Stupp Protocol (RT + Concurrent TMZ fi Adjuvant TMZ)\nProtocol Version: v4.1 \u2014 NCRI Neuro-Oncology Guidelines 2023\nResponsible Oncologist: Dr. Paul Osei (Consultant Oncologist)\nTREATMENT PHASES\nPhase 1:\nPhase 2:\nPhase 3:\nPhase 4:\nCHEMOTHERAPY REGIMEN\nDrug Dose Route Schedule Cycle\nTemozolomide (TMZ) 75 mg/m\u00b2 PO Daily concurrent with RT 42d\nTemozolomide (TMZ) adjuvant 150 mg/m\u00b2 PO Days 1-5 of 28-day cycle 28d\nStupp protocol RT mg/m\u00b2 d\nLow-molecular-weight heparin (LMWH) mg/m\u00b2 d\nValproate sodium mg/m\u00b2 PO d\nDexamethasone mg/m\u00b2 d\nOmeprazole mg/m\u00b2 d\nFluconazole mg/m\u00b2 d\nLONGITUDINAL TREATMENT TIMELINE\nDate Event Detail\n21 October 2023\n21 October 2023\n07 November 2023\n24 December 2023\n24 February 2024\n\n27 April 2024\nTreatment protocol document \u2014 NeuroMed University Hospital NHS Trust. All dose modifications must be authorised by the responsible\noncologist. Protocol queries: chemotherapy.unit@neuromed.nhs.uk",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\treatment_protocol.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\brain_axial_v2.dcm",
+      "kind": "mri_image",
+      "visit": "v2",
+      "mime": "application/octet-stream",
+      "size_bytes": 131868,
+      "text": null,
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\visit2\\brain_axial_v2.dcm",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\longitudinal_timeline.pdf",
+      "kind": "timeline",
+      "visit": "v2",
+      "mime": "application/pdf",
+      "size_bytes": 1607,
+      "text": "NeuroMed University Hospital NHS Trust\nLONGITUDINAL PATIENT TIMELINE (Stage 10 Input)\nPatient: James R. Thornton | ID: P001\nDiagnosis: Glioblastoma Multiforme (GBM) ? WHO Grade IV | Site: right parietal\n--- VISIT 1 ---\nDate: 21 October 2023\nLesion Size: 28.4 mm (longest diameter)\nTreatment: Temozolomide 75mg/m2 concurrent + RT 60Gy/30fr\nStatus: Baseline\n--- VISIT 2 ---\nDate: 31 January 2024\nLesion Size: 40.5 mm (longest diameter)\nChange: +42.6% from baseline\nRECIST: Progressive Disease (PD)\nFinding: WORSENED\nDiscontinue Temozolomide. Initiate Bevacizumab 10 mg/kg IV q2w + Lomustine 90 mg/m2 q6w.\nTREATMENT HISTORY SUMMARY\nStart of treatment: 21 October 2023\nCycles completed: 3\nResponse observed: Progressive Disease\nGenerated: 31 January 2024",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\visit2\\longitudinal_timeline.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri.png",
+      "kind": "mri_image",
+      "visit": "v2",
+      "mime": "image/png",
+      "size_bytes": 95958,
+      "text": null,
+      "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v2\\mri_norm.png",
+      "meta": {
+        "rel": "clinical\\visit2\\mri.png",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri_brain_report_v2.pdf",
+      "kind": "mri_report",
+      "visit": "v2",
+      "mime": "application/pdf",
+      "size_bytes": 1903,
+      "text": "NeuroMed University Hospital NHS Trust\nNeuro-Oncology Department\nMRI Brain Report ? VISIT 2 (Follow-up)\nPatient: P001 | NHS: 432 890 1234\nPATIENT INFORMATION\nPatient Name: James R. Thornton\nPatient ID: P001\nDate of Birth: 14 March 1962\nDiagnosis: Glioblastoma Multiforme (GBM) ? WHO Grade IV\nPrimary Location: right parietal\nVisit 1 Date: 21 October 2023\nReport Date: 31 January 2024 (Visit 2)\nScanner: Siemens MAGNETOM Vida 3T\nSequences: T1 post-Gd | T2 FLAIR | DWI/ADC | SWI\nRECIST 1.1 TUMOUR RESPONSE ASSESSMENT\nVisit 1 longest diameter (scan1): 28.4 mm\nVisit 2 longest diameter (scan2): 40.5 mm\nChange: +42.6%\nRECIST Classification: Progressive Disease (PD)\nIMAGING FINDINGS\nEnlargement of the enhancing lesion. New satellite foci of enhancement. Increased perilesional oedema and midline shift.\nCOMPARISON WITH PRIOR IMAGING\nDirect comparison performed with Visit 1 study dated 21 October 2023.\nOverall trend: WORSENED\nReporting Radiologist: Dr. A. Chambers, Consultant Neuroradiologist\nVerified: 31 January 2024",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\visit2\\mri_brain_report_v2.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri_montage_16bit.png",
+      "kind": "mri_image",
+      "visit": "v2",
+      "mime": "image/png",
+      "size_bytes": 1822209,
+      "text": null,
+      "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v2\\mri_montage_16bit_norm.png",
+      "meta": {
+        "rel": "clinical\\visit2\\mri_montage_16bit.png",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\mri_preview_annotated.png",
+      "kind": "mri_image",
+      "visit": "v2",
+      "mime": "image/png",
+      "size_bytes": 220725,
+      "text": null,
+      "image_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\images\\v2\\mri_preview_annotated_norm.png",
+      "meta": {
+        "rel": "clinical\\visit2\\mri_preview_annotated.png",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\prescription_v2.pdf",
+      "kind": "prescription",
+      "visit": "v2",
+      "mime": "application/pdf",
+      "size_bytes": 1202,
+      "text": "NeuroMed University Hospital NHS Trust\nNeuro-Oncology Outpatient Clinic\nPRESCRIPTION ? VISIT 2 FOLLOW-UP\nPatient: James R. Thornton | ID: P001 | NHS: 432 890 1234\nDate: 31 January 2024\nDiagnosis: Glioblastoma Multiforme (GBM) ? WHO Grade IV\nRECIST Response at V2: Progressive Disease (PD)\nTREATMENT DECISION:\nDiscontinue Temozolomide. Initiate Bevacizumab 10 mg/kg IV q2w + Lomustine 90 mg/m2 q6w.\nPrescriber: Dr. R. Okafor, Consultant Neuro-Oncologist\nNext review: 8 weeks post this date",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\visit2\\prescription_v2.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\clinical\\visit2\\treatment_response_correlation.pdf",
+      "kind": "correlation",
+      "visit": "v2",
+      "mime": "application/pdf",
+      "size_bytes": 1424,
+      "text": "NeuroMed University Hospital NHS Trust\nTREATMENT-RESPONSE CORRELATION REPORT (Stage 9 Input)\nPatient: James R. Thornton | ID: P001 | Date: 31 January 2024\nTREATMENT vs. TUMOUR RESPONSE CORRELATION\nV1 Lesion Diameter: 28.4 mm | V2 Lesion Diameter: 40.5 mm\nChange: +42.6% | RECIST: PD ? Progressive Disease\nCLINICAL INTERPRETATION:\nProgressive disease detected. Prior regimen ineffective. Treatment escalation to salvage therapy initiated.\nBIOMARKER CORRELATION:\nMGMT promoter methylation: Tested at V1. Results available in pathology_report.pdf.\nIDH mutation status: See pathology_report.pdf (V1).\nOncologist: Dr. R. Okafor | Radiologist: Dr. A. Chambers\nVerified: 31 January 2024",
+      "image_path": null,
+      "meta": {
+        "rel": "clinical\\visit2\\treatment_response_correlation.pdf",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\phase4\\patient_intake_form.json",
+      "kind": "other",
+      "visit": "v1",
+      "mime": "application/json",
+      "size_bytes": 2600,
+      "text": null,
+      "image_path": null,
+      "meta": {
+        "rel": "phase4\\patient_intake_form.json",
+        "is_nifti": false
+      }
+    },
+    {
+      "path": "C:\\Users\\aieuser\\Documents\\Datasets\\patients\\P001\\phase4\\wearable_data.json",
+      "kind": "other",
+      "visit": "v1",
+      "mime": "application/json",
+      "size_bytes": 2208,
+      "text": null,
+      "image_path": null,
+      "meta": {
+        "rel": "phase4\\wearable_data.json",
+        "is_nifti": false
+      }
+    }
+  ],
+  "visits": [
+    "v1",
+    "v2"
+  ],
+  "has_prior_scans": true
+}

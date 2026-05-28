@@ -1,0 +1,11 @@
+{
+  "stage": 13,
+  "stage_name": "FHIR R4 Export & MDT Package",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T12:00:39.385380+00:00",
+  "fhir_bundle_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\fhir\\fhir_bundle.json",
+  "mdt_package_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\reports\\mdt_package.json",
+  "patient_letter_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\reports\\patient_letter.txt",
+  "gp_handover_path": "C:\\Users\\aieuser\\Documents\\neuro_agent\\outputs\\P001\\reports\\gp_handover.txt"
+}

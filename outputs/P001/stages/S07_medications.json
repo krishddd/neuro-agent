@@ -1,0 +1,92 @@
+{
+  "stage": 7,
+  "stage_name": "Medication Ingestion (Vision + OCR)",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:38:14.777901+00:00",
+  "current": [
+    {
+      "name": "Bevacizumab",
+      "dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "route": "IV",
+      "start_date": "2024-01-31",
+      "stop_date": null,
+      "indication": "GBM"
+    },
+    {
+      "name": "Lomustine",
+      "dose": "90 mg/m\u00b2",
+      "frequency": "every 6 weeks",
+      "route": "PO",
+      "start_date": "2024-01-31",
+      "stop_date": null,
+      "indication": "GBM"
+    },
+    {
+      "name": "Dexamethasone",
+      "dose": "mg/m\u00b2",
+      "frequency": null,
+      "route": "PO",
+      "start_date": null,
+      "stop_date": null,
+      "indication": "peritumoral oedema"
+    },
+    {
+      "name": "Omeprazole",
+      "dose": "mg/m\u00b2",
+      "frequency": null,
+      "route": "PO",
+      "start_date": null,
+      "stop_date": null,
+      "indication": "gastric protection on dexamethasone"
+    },
+    {
+      "name": "Fluconazole",
+      "dose": "mg/m\u00b2",
+      "frequency": null,
+      "route": "PO",
+      "start_date": null,
+      "stop_date": null,
+      "indication": "Candida prophylaxis \u2014 immunosuppressed"
+    },
+    {
+      "name": "Valproate sodium",
+      "dose": "mg/m\u00b2",
+      "frequency": null,
+      "route": "PO",
+      "start_date": null,
+      "stop_date": null,
+      "indication": null
+    },
+    {
+      "name": "Low-molecular-weight heparin (LMWH)",
+      "dose": "mg/m\u00b2",
+      "frequency": null,
+      "route": "IV",
+      "start_date": null,
+      "stop_date": null,
+      "indication": "VTE prophylaxis"
+    }
+  ],
+  "historical": [
+    {
+      "name": "Temozolomide",
+      "dose": "75 mg/m\u00b2",
+      "frequency": "daily x1/28d",
+      "route": "PO",
+      "start_date": "2023-10-21",
+      "stop_date": "2024-01-31",
+      "indication": "GBM"
+    },
+    {
+      "name": "Temozolomide",
+      "dose": "150 mg/m\u00b2",
+      "frequency": "daily x5/28d",
+      "route": "PO",
+      "start_date": "2023-10-21",
+      "stop_date": "2024-01-31",
+      "indication": "GBM"
+    }
+  ]
+}

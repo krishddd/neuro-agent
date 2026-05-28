@@ -1,0 +1,19 @@
+{
+  "stage": 4,
+  "stage_name": "RANO Response Assessment (brain tumours)",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:20:46.856284+00:00",
+  "bidirectional_product_mm2": 81.6,
+  "baseline_product_mm2": null,
+  "delta_product_pct": null,
+  "t2_flair_change": "stable",
+  "corticosteroid_dose_mg_per_day": null,
+  "corticosteroid_dose_change": "none",
+  "neurologic_status": "worsened",
+  "new_enhancing_lesion": true,
+  "nonmeasurable_disease_progression": false,
+  "response": "PD",
+  "criteria_used": "RANO",
+  "rationale": "New enhancing lesion \u2014 automatic PD per RANO."
+}

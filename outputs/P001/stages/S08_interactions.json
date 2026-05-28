@@ -1,0 +1,243 @@
+{
+  "stage": 8,
+  "stage_name": "Drug Interaction Safety Check",
+  "model": "qwen3:14b",
+  "patient_id": "P001",
+  "generated_at": "2026-04-26T11:51:04.925619+00:00",
+  "interactions": [
+    {
+      "drug_a": "Dexamethasone",
+      "drug_b": "Bevacizumab",
+      "severity": "moderate",
+      "mechanism": "Steroid-induced hypertension may compound bevacizumab hypertensive effect",
+      "recommendation": "Monitor BP; antihypertensive therapy may be required",
+      "source": "kb"
+    },
+    {
+      "drug_a": "bevacizumab",
+      "drug_b": "fluconazole",
+      "severity": "none",
+      "mechanism": "No known pharmacokinetic or pharmacodynamic interactions between bevacizumab (a VEGF inhibitor) and fluconazole (a CYP450 inhibitor). Bevacizumab is not metabolized by CYP enzymes, and fluconazole does not significantly alter bevacizumab's clearance. Both drugs are generally well-tolerated together in clinical practice.",
+      "recommendation": "No dose adjustment or additional monitoring is required for this combination. Continue both medications as prescribed, and monitor for standard adverse effects of each drug (e.g., hypertension, nephrotoxicity for bevacizumab; gastrointestinal effects for fluconazole).",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "bevacizumab",
+      "drug_b": "lomustine",
+      "severity": "moderate",
+      "mechanism": "Both bevacizumab and lomustine may contribute to myelosuppression, potentially increasing the risk of hematologic toxicity (e.g., neutropenia, thrombocytopenia) when used concurrently. There is no direct pharmacokinetic or pharmacodynamic interaction, but additive effects on bone marrow function are possible.",
+      "recommendation": "Monitor complete blood counts frequently during combination therapy. Consider dose adjustments or delays based on hematologic parameters. No definitive contraindication exists, but caution is advised due to overlapping myelosuppressive risks.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "bevacizumab",
+      "drug_b": "low-molecular-weight heparin (lmwh)",
+      "severity": "major",
+      "mechanism": "Bevacizumab increases the risk of thromboembolic events due to anti-angiogenic effects, while LMWH is an anticoagulant. Concurrent use may paradoxically increase bleeding risk (due to LMWH's anticoagulant effect) or thrombosis risk (due to bevacizumab's pro-thrombotic effects), depending on the balance between anticoagulation and vascular integrity.",
+      "recommendation": "Avoid concomitant use if possible. If required, closely monitor for signs of bleeding or thrombosis, and adjust LMWH dosing based on clinical response and coagulation parameters. Consult hematology/oncology for risk-benefit evaluation.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "bevacizumab",
+      "drug_b": "omeprazole",
+      "severity": "minor",
+      "mechanism": "Omeprazole may increase the risk of gastrointestinal perforation when used with bevacizumab, though the evidence is not definitive. This could be related to bevacizumab's anti-angiogenic effects and potential interactions with gastric mucosal integrity.",
+      "recommendation": "Monitor for signs of gastrointestinal perforation (e.g., abdominal pain, perforation symptoms). Consider alternative acid suppression strategies (e.g., H2 receptor antagonists) if clinically appropriate, but no absolute contraindication exists.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "Bevacizumab",
+      "drug_b": "Temozolomide",
+      "severity": "none",
+      "mechanism": "Standard combination in recurrent GBM; no adverse PK interaction",
+      "recommendation": "Standard of care combination",
+      "source": "kb"
+    },
+    {
+      "drug_a": "bevacizumab",
+      "drug_b": "valproate sodium",
+      "severity": "major",
+      "mechanism": "Bevacizumab may inhibit the metabolism of valproate sodium, leading to increased plasma concentrations of valproate and a heightened risk of valproate toxicity (e.g., encephalopathy, hepatotoxicity).",
+      "recommendation": "Avoid concomitant use if possible. If co-administration is necessary, closely monitor valproate levels and consider dose reduction of valproate. Consult a specialist for risk-benefit evaluation.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "dexamethasone",
+      "drug_b": "fluconazole",
+      "severity": "moderate",
+      "mechanism": "Fluconazole inhibits CYP3A4 and CYP2C9, which are involved in the metabolism of dexamethasone, leading to increased dexamethasone plasma concentrations.",
+      "recommendation": "Monitor for signs of dexamethasone toxicity (e.g., hyperglycemia, immunosuppression, osteoporosis). Consider dose adjustment of dexamethasone if clinically indicated. Use alternative antifungal agents if feasible, but ensure close monitoring if fluconazole is required.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "dexamethasone",
+      "drug_b": "lomustine",
+      "severity": "minor",
+      "mechanism": "Dexamethasone may induce hepatic enzymes (e.g., CYP3A4), potentially altering lomustine metabolism. However, lomustine is primarily metabolized via non-CYP pathways, and clinical evidence of significant interaction is limited.",
+      "recommendation": "Monitor for lomustine efficacy (e.g., tumor response) and dexamethasone-related adverse effects (e.g., immunosuppression). No dose adjustment is typically required, but consider close follow-up in patients with suboptimal lomustine response.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "dexamethasone",
+      "drug_b": "low-molecular-weight heparin (lmwh)",
+      "severity": "minor",
+      "mechanism": "Pharmacodynamic interaction: Dexamethasone may increase the risk of gastrointestinal bleeding, which could be additive to the bleeding risk associated with low-molecular-weight heparin (LMWH). However, no direct metabolic or pharmacokinetic interaction is established between the two drugs.",
+      "recommendation": "Monitor for signs of bleeding (e.g., gastrointestinal symptoms, bruising) and adjust LMWH dose if clinically indicated. No dose adjustment of dexamethasone or LMWH is required based on current evidence, but caution is advised in patients with a history of bleeding or thrombocytopenia.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "dexamethasone",
+      "drug_b": "omeprazole",
+      "severity": "minor",
+      "mechanism": "Omeprazole may inhibit CYP3A4, a metabolic pathway for dexamethasone, potentially increasing dexamethasone plasma concentrations. However, the clinical significance of this interaction is limited due to the weak inhibitory effect of omeprazole on CYP3A4 and the wide therapeutic index of dexamethasone.",
+      "recommendation": "Monitor for increased corticosteroid effects (e.g., hyperglycemia, fluid retention). No dose adjustment is typically required, but consider alternative PPIs (e.g., pantoprazole) if clinically appropriate to minimize interaction risk.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "Dexamethasone",
+      "drug_b": "Temozolomide",
+      "severity": "minor",
+      "mechanism": "Corticosteroids may reduce temozolomide oral bioavailability",
+      "recommendation": "Separate administration by at least 1 hour",
+      "source": "kb"
+    },
+    {
+      "drug_a": "dexamethasone",
+      "drug_b": "valproate sodium",
+      "severity": "moderate",
+      "mechanism": "Dexamethasone may increase the hepatic metabolism of valproate sodium via induction of CYP enzymes (e.g., CYP2C9), potentially reducing valproate plasma concentrations and efficacy.",
+      "recommendation": "Monitor valproate levels closely and consider dose adjustment if subtherapeutic levels are detected. Avoid abrupt discontinuation of either drug. Use alternative corticosteroids if feasible, but prioritize clinical judgment based on patient-specific factors.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "fluconazole",
+      "drug_b": "lomustine",
+      "severity": "minor",
+      "mechanism": "Fluconazole is a CYP3A4 inhibitor, but lomustine is primarily metabolized via non-CYP pathways (e.g., hydrolysis). However, both drugs may contribute to myelosuppression, increasing the risk of hematologic toxicity.",
+      "recommendation": "Monitor blood counts closely and consider dose adjustment of lomustine if significant myelosuppression occurs. No routine dose adjustment of fluconazole is required.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "fluconazole",
+      "drug_b": "low-molecular-weight heparin (lmwh)",
+      "severity": "minor",
+      "mechanism": "Fluconazole may reduce renal clearance of low-molecular-weight heparin (LMWH) by impairing renal function, potentially increasing LMWH plasma concentrations and bleeding risk. However, this interaction is not well-established and depends on individual renal function.",
+      "recommendation": "Monitor renal function and LMWH anti-Xa levels closely. Adjust LMWH dose if renal impairment develops. Consider alternative antifungal agents if significant renal dysfunction is present or if bleeding risk is high.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "fluconazole",
+      "drug_b": "omeprazole",
+      "severity": "minor",
+      "mechanism": "Fluconazole inhibits CYP3A4, which is involved in the metabolism of omeprazole, potentially increasing omeprazole plasma concentrations.",
+      "recommendation": "Monitor for omeprazole-related adverse effects (e.g., hypomagnesemia, gastrointestinal symptoms). Consider alternative proton pump inhibitors (e.g., pantoprazole) if clinically feasible, as they have less CYP3A4 dependence.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "fluconazole",
+      "drug_b": "temozolomide",
+      "severity": "contraindicated",
+      "mechanism": "Fluconazole inhibits CYP2C9, the primary metabolic enzyme for temozolomide, leading to increased plasma concentrations of temozolomide and heightened risk of toxicity.",
+      "recommendation": "Avoid concomitant use of fluconazole and temozolomide. If antifungal therapy is required, consider alternative agents with minimal CYP2C9 inhibition (e.g., itraconazole, posaconazole) and monitor temozolomide levels if co-administration is unavoidable.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "fluconazole",
+      "drug_b": "valproate sodium",
+      "severity": "major",
+      "mechanism": "Fluconazole inhibits hepatic metabolism of valproate sodium, potentially increasing valproate plasma concentrations and risk of toxicity (e.g., hepatotoxicity, encephalopathy).",
+      "recommendation": "Avoid concomitant use if possible. If required, closely monitor valproate levels and consider dose reduction of valproate sodium. Alternative antifungal agents (e.g., itraconazole) may be considered if feasible.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "lomustine",
+      "drug_b": "low-molecular-weight heparin (lmwh)",
+      "severity": "minor",
+      "mechanism": "Lomustine may cause myelosuppression, including thrombocytopenia, which could increase the risk of bleeding when combined with anticoagulation from low-molecular-weight heparin (LMWH). However, there is no direct pharmacokinetic or pharmacodynamic interaction between the two drugs.",
+      "recommendation": "Monitor for signs of bleeding and platelet counts. Adjust LMWH dose if thrombocytopenia is severe or if bleeding risk is elevated. No absolute contraindication, but caution is advised.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "lomustine",
+      "drug_b": "omeprazole",
+      "severity": "none",
+      "mechanism": "No significant drug-drug interaction mechanism identified between lomustine and omeprazole. Lomustine is not a substrate for CYP2C19 or CYP3A4, which are inhibited by omeprazole, and no evidence suggests omeprazole affects lomustine absorption or metabolism.",
+      "recommendation": "No dose adjustment or monitoring is required for concurrent use of lomustine and omeprazole in neuro-oncology patients.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "Lomustine",
+      "drug_b": "Temozolomide",
+      "severity": "major",
+      "mechanism": "Additive myelosuppression; both agents are alkylating",
+      "recommendation": "Requires dose reduction and close haematologic monitoring",
+      "source": "kb"
+    },
+    {
+      "drug_a": "lomustine",
+      "drug_b": "valproate sodium",
+      "severity": "contraindicated",
+      "mechanism": "Lomustine inhibits the hepatic metabolism of valproate sodium, leading to increased plasma concentrations of valproate and a heightened risk of valproate toxicity, including fatal hepatotoxicity.",
+      "recommendation": "Avoid concomitant use of lomustine and valproate sodium. If co-administration is unavoidable, closely monitor valproate levels and consider dose reduction of valproate, but this combination is generally contraindicated due to the significant risk of severe toxicity.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "low-molecular-weight heparin (lmwh)",
+      "drug_b": "omeprazole",
+      "severity": "minor",
+      "mechanism": "Omeprazole may increase the risk of gastrointestinal bleeding when used with anticoagulants like LMWH, though there is no direct pharmacokinetic or pharmacodynamic interaction between the two drugs. The increased bleeding risk is due to the combined effects of anticoagulation and potential gastric mucosal protection from omeprazole, which may mask early signs of bleeding.",
+      "recommendation": "Monitor the patient closely for signs of bleeding. Consider alternative proton pump inhibitors (e.g., pantoprazole) if clinically feasible, as some evidence suggests they may have a lower risk of interacting with anticoagulants. If omeprazole is necessary, ensure appropriate bleeding precautions are in place.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "low-molecular-weight heparin (lmwh)",
+      "drug_b": "temozolomide",
+      "severity": "moderate",
+      "mechanism": "Additive risk of bleeding due to the anticoagulant effect of low-molecular-weight heparin (LMWH) and the myelosuppressive effects of temozolomide, which may reduce platelet counts and increase hemorrhagic risk.",
+      "recommendation": "Monitor for signs of bleeding (e.g., bruising, hematuria, gastrointestinal bleeding) and assess platelet counts regularly. Adjust LMWH dose based on renal function and platelet levels if indicated. Consider alternative anticoagulation strategies if bleeding risk is high.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "low-molecular-weight heparin (lmwh)",
+      "drug_b": "valproate sodium",
+      "severity": "minor",
+      "mechanism": "Valproate sodium may cause thrombocytopenia, which, when combined with the anticoagulant effects of low-molecular-weight heparin (LMWH), could increase the risk of bleeding due to additive effects on hemostasis.",
+      "recommendation": "Monitor for signs of bleeding (e.g., bruising, hematuria, gastrointestinal bleeding). Consider adjusting LMWH dose or valproate if bleeding occurs, and ensure coagulation parameters (e.g., platelet count, INR) are closely followed.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "Omeprazole",
+      "drug_b": "Temozolomide",
+      "severity": "none",
+      "mechanism": "No clinically significant interaction",
+      "recommendation": "May be used for GI protection",
+      "source": "kb"
+    },
+    {
+      "drug_a": "omeprazole",
+      "drug_b": "valproate sodium",
+      "severity": "moderate",
+      "mechanism": "Omeprazole may inhibit hepatic metabolism of valproate sodium, potentially increasing valproate plasma concentrations via CYP2C19 inhibition and/or reduced renal clearance. This could increase risk of valproate toxicity (e.g., encephalopathy, hepatotoxicity).",
+      "recommendation": "Monitor valproate levels closely; consider dose reduction of valproate or alternative PPI (e.g., H2 receptor antagonist) if feasible. Avoid concurrent use in patients with renal impairment or those at higher risk for valproate toxicity.",
+      "source": "llm_inferred"
+    },
+    {
+      "drug_a": "temozolomide",
+      "drug_b": "valproate sodium",
+      "severity": "major",
+      "mechanism": "Valproate sodium inhibits carboxylesterase 1 (CES1), an enzyme involved in the metabolic activation of temozolomide, leading to increased plasma concentrations of temozolomide and potential toxicity.",
+      "recommendation": "Avoid concomitant use if possible. If co-administration is necessary, closely monitor for temozolomide-related toxicity (e.g., myelosuppression, neurotoxicity) and consider dose reduction of temozolomide. Alternative anticonvulsants (e.g., levetiracetam) may be preferred.",
+      "source": "llm_inferred"
+    }
+  ],
+  "highest_severity": "contraindicated",
+  "flags": [
+    "bevacizumab+low-molecular-weight heparin (lmwh):major",
+    "bevacizumab+valproate sodium:major",
+    "fluconazole+temozolomide:contraindicated",
+    "fluconazole+valproate sodium:major",
+    "Lomustine+Temozolomide:major",
+    "lomustine+valproate sodium:contraindicated",
+    "temozolomide+valproate sodium:major"
+  ]
+}
