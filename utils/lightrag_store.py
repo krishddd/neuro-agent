@@ -33,9 +33,9 @@ log = logging.getLogger(__name__)
 
 # ── lightrag import: fail soft ─────────────────────────────────────────────────
 try:
-    from lightrag import LightRAG, QueryParam              # type: ignore
-    from lightrag.llm.ollama import ollama_model_complete, ollama_embed  # type: ignore
-    from lightrag.utils import EmbeddingFunc                # type: ignore
+    from lightrag import LightRAG, QueryParam  # type: ignore
+    from lightrag.llm.ollama import ollama_embed, ollama_model_complete  # type: ignore
+    from lightrag.utils import EmbeddingFunc  # type: ignore
     LIGHTRAG_AVAILABLE = True
 except Exception as _exc:  # ImportError or transitive init failure
     LightRAG = None         # type: ignore
@@ -53,6 +53,7 @@ except Exception as _exc:  # ImportError or transitive init failure
 # Each instance pins ~50–200 MB depending on graph size, so leaving them
 # unbounded was a slow memory leak.
 from collections import OrderedDict
+
 _INSTANCE_CACHE: "OrderedDict[str, Any]" = OrderedDict()
 _INSTANCE_CACHE_MAX = 32
 

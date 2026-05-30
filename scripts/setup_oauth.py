@@ -106,7 +106,7 @@ def run_oauth_flow() -> None:
     print("=" * 60)
     print(f"\nCredentials : {CREDENTIALS_PATH}")
     print(f"Token will be saved to: {TOKEN_PATH}")
-    print(f"\nScopes requested:")
+    print("\nScopes requested:")
     for s in SCOPES:
         print(f"  • {s}")
     print("\nA browser window will open. Sign in with:")
@@ -131,6 +131,7 @@ def run_oauth_flow() -> None:
 def verify_gmail(creds) -> bool:
     import base64
     from email.mime.text import MIMEText
+
     from googleapiclient.discovery import build
 
     try:

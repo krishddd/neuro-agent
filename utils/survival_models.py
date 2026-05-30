@@ -19,7 +19,6 @@ UnpicklingError and triggers automatic retraining.
 """
 from __future__ import annotations
 
-import json
 import logging
 import pickle
 from pathlib import Path
@@ -29,17 +28,13 @@ import numpy as np
 
 from ..config import (
     MODELS_DIR,
-    NCCN_GUIDELINES_PATH,
     PHASE4_DATA_ROOT,
-    REFERENCE_RANGES_PATH,
 )
 from .patient_state import (
     FEATURE_NAMES,
-    build_patient_state_vector,
-    extract_intake_features,
-    extract_wearable_features,
-    load_phase4_json,
     _get_range,
+    build_patient_state_vector,
+    load_phase4_json,
 )
 
 log = logging.getLogger(__name__)
@@ -289,6 +284,7 @@ def get_gp_model():
         X_fit, y_fit = X[idx], y_rec[idx]
 
         import warnings
+
         from sklearn.exceptions import ConvergenceWarning
 
         # noise_level_bounds raised to prevent ConvergenceWarning at lower bound

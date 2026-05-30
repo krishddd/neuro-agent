@@ -26,16 +26,13 @@ from pathlib import Path
 from typing import Any
 
 from ..config import (
-    MODEL_PRIMARY,
-    MODEL_THINKING,
-    OUTPUTS_DIR,
-    PHASE4_DATA_ROOT,
-    PROMPTS_DIR,
-    SMBO_SIGMA_TRIGGER,
-    RECIST_DELTA_SD_TRIGGER,
-    GMAIL_ENABLED,
-    DRIVE_ENABLED,
     CALENDAR_ENABLED,
+    DRIVE_ENABLED,
+    GMAIL_ENABLED,
+    MODEL_THINKING,
+    PROMPTS_DIR,
+    RECIST_DELTA_SD_TRIGGER,
+    SMBO_SIGMA_TRIGGER,
 )
 from ..memory import WorkingMemory
 from ..utils.schemas import (
@@ -45,7 +42,6 @@ from ..utils.schemas import (
     PredictionResult,
     ShapDriver,
     ShapResult,
-    SMBOCandidate,
     TreatmentProposal,
 )
 from . import register
@@ -242,9 +238,9 @@ def predict_recist_pfs(memory: WorkingMemory, **_) -> dict:
     """Predict RECIST delta (GP) and PFS (RSF/Weibull).  Sets optimization_triggered."""
     memory.require(WorkingMemory.PATIENT_STATE)
 
-    from ..utils.survival_models import get_gp_model, predict_gp, predict_rsf_pfs
-
     import numpy as np
+
+    from ..utils.survival_models import predict_gp, predict_rsf_pfs
 
     vec: PatientStateVector = memory.get(WorkingMemory.PATIENT_STATE)
     if isinstance(vec, dict):
@@ -423,7 +419,7 @@ def explain_with_shap(memory: WorkingMemory, **_) -> dict:
         else PatientStateVector.model_validate(vec_raw)
 
     from ..utils.patient_state import FEATURE_NAMES
-    from ..utils.survival_models import _generate_statistical_cohort, predict_rsf_pfs, _weibull_pfs_fallback
+    from ..utils.survival_models import _generate_statistical_cohort, _weibull_pfs_fallback, predict_rsf_pfs
 
     # Build SHAP background: 200 random patients from synthetic cohort
     X_bg, _, _ = _generate_statistical_cohort(200, rng=np.random.default_rng(7))
@@ -485,7 +481,6 @@ def explain_with_shap(memory: WorkingMemory, **_) -> dict:
         base_value = 24.0
 
     # Top 5 drivers by absolute SHAP value
-    from ..utils.patient_state import FEATURE_NAMES
 
     abs_sv = np.abs(sv)
     top_idx = np.argsort(abs_sv)[-5:][::-1]
@@ -867,7 +862,7 @@ def _persona_turn_call(persona: str, round_num: int, ctx: dict,
     ]
     # First parse raw JSON so we can coerce the Literal field; then validate.
     try:
-        from ..llm import _client, _DEFAULT_OPTIONS  # type: ignore
+        from ..llm import _DEFAULT_OPTIONS, _client  # type: ignore
         resp = _client().chat(
             model=MODEL_THINKING, messages=messages,
             format="json", options=_DEFAULT_OPTIONS,
@@ -976,7 +971,7 @@ def _run_mdt_debate(ctx: dict) -> tuple[list[MDTPersonaTurn], TreatmentProposal]
 
     chair_raw: dict = {}
     try:
-        from ..llm import _client, _DEFAULT_OPTIONS  # type: ignore
+        from ..llm import _DEFAULT_OPTIONS, _client  # type: ignore
         resp = _client().chat(
             model=MODEL_THINKING, messages=messages,
             format="json", options=_DEFAULT_OPTIONS,

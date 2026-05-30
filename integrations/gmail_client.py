@@ -13,10 +13,10 @@ from __future__ import annotations
 
 import base64
 import logging
+from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email import encoders
 from pathlib import Path
 from typing import Any
 
@@ -42,6 +42,7 @@ DOCTOR_EMAIL      = "krishnahutrik.n@gmail.com"
 # information in person (SPIKES protocol). The patient may receive a neutral
 # Google Chat invite ONLY if PATIENT_DIRECT_COMMS_ENABLED is set to "true".
 import os as _os
+
 PATIENT_DIRECT_COMMS_ENABLED = _os.environ.get(
     "PATIENT_DIRECT_COMMS_ENABLED", "false"
 ).strip().lower() in ("1", "true", "yes")
@@ -355,7 +356,7 @@ class GmailClient:
         }.get(prop.decision, "")
 
         body_lines = [
-            f"MDT TREATMENT OPTIMISATION ALERT",
+            "MDT TREATMENT OPTIMISATION ALERT",
             f"{'─' * 48}",
             f"Patient  : {patient_id}",
             f"Decision : {decision_icon} {prop.decision}",
@@ -370,7 +371,7 @@ class GmailClient:
         if prop.rag_interaction_flags:
             body_lines.append(f"Interaction flags: {', '.join(prop.rag_interaction_flags)}")
         if prop.clinical_narrative:
-            body_lines += ["", f"Clinical narrative:", prop.clinical_narrative[:500]]
+            body_lines += ["", "Clinical narrative:", prop.clinical_narrative[:500]]
         body_lines += [
             "",
             "⚠️ MDT board discussion required — please review and schedule.",

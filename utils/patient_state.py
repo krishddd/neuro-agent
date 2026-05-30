@@ -14,14 +14,13 @@ from __future__ import annotations
 
 import json
 import logging
-from pathlib import Path
+import re
 from typing import Any
 
-import re
-
 from ..config import (
-    PHASE4_DATA_ROOT, REFERENCE_RANGES_PATH,
     BIOMARKER_REQUIRED_CANCERS,
+    PHASE4_DATA_ROOT,
+    REFERENCE_RANGES_PATH,
 )
 from ..memory import WorkingMemory
 from ..utils.schemas import PatientStateVector
@@ -663,7 +662,7 @@ def build_patient_state_vector(
     # ── Source 3a: longitudinal trajectory (Phase 5.3) — first-visit→imputed ──
     longitudinal_count = 0
     try:
-        from .longitudinal_history import load_history, compute_trajectory_features
+        from .longitudinal_history import compute_trajectory_features, load_history
         history = load_history(memory.out_dir, memory.patient_id)
         longitudinal_count = history.visit_count
         # current SoD: prefer raw["sum_of_diameters_mm"] just set above.

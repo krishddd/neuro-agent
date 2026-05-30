@@ -611,7 +611,8 @@ class WorkingMemory:
                     continue
                 padded_path = stages_dir / padded
                 if padded_path.exists() and padded_path.resolve() != p.resolve():
-                    p.unlink(); removed += 1
+                    p.unlink()
+                    removed += 1
                 else:
                     stages_dir.mkdir(parents=True, exist_ok=True)
                     p.rename(padded_path)
@@ -623,7 +624,8 @@ class WorkingMemory:
                 sub = root_to_subdir[name]
                 dup = sub / name
                 if dup.exists() and dup.resolve() != p.resolve():
-                    p.unlink(); removed += 1
+                    p.unlink()
+                    removed += 1
                 else:
                     sub.mkdir(parents=True, exist_ok=True)
                     p.rename(dup)
@@ -632,7 +634,8 @@ class WorkingMemory:
             # 4c. Stray ancient outputs like recist_lesions.json (never canonical).
             if name == "recist_lesions.json":
                 # canonical copy lives in stages/S05_index.json era or not at all
-                p.unlink(); removed += 1
+                p.unlink()
+                removed += 1
 
         if removed:
             log.info("finalize: legacy cleanup removed %d stale root files for %s",

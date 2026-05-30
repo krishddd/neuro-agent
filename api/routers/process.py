@@ -11,13 +11,12 @@ from __future__ import annotations
 import asyncio
 import io
 import json
+import logging
 import re
 import uuid
 import zipfile
 from pathlib import Path
 from typing import Any
-
-import logging
 
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 
@@ -337,7 +336,7 @@ def get_patient_history(patient_id: str) -> dict[str, Any]:
     if not out_dir.exists():
         raise HTTPException(404, f"No outputs found for patient {pid}")
 
-    from ...utils.longitudinal_history import load_history, compute_trajectory_features
+    from ...utils.longitudinal_history import compute_trajectory_features, load_history
 
     history = load_history(out_dir, pid)
     last_sod = history.visits[-1].sum_of_diameters_mm if history.visits else 0.0

@@ -1,0 +1,16 @@
+# Pragmatic ruff config — keeps real bugs strict, ignores stylistic nits
+# that are common in research/agent code.
+line-length = 120
+target-version = "py311"
+
+[lint]
+# Defaults: E, F. Explicitly ignore noisy style codes.
+ignore = [
+    "E402",  # module-level import not at top — common after env-var setup
+    "E741",  # ambiguous variable name (l, I, O)
+    "E501",  # line too long — handled by formatter, not blocking
+]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]    # re-exports
+"tests/**/*.py" = ["F401", "F811"]

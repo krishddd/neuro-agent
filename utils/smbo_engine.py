@@ -30,7 +30,6 @@ from __future__ import annotations
 import json
 import logging
 import time
-from pathlib import Path
 from typing import Any
 
 import numpy as np
@@ -38,7 +37,6 @@ import numpy as np
 from ..config import (
     DRUG_ENCODING_PATH,
     DRUG_TOXICITY_PROFILE_PATH,
-    MODELS_DIR,
     NCCN_GUIDELINES_PATH,
     SMBO_ANCHOR_WEIGHT,
     SMBO_BATCH_SIZE,
@@ -756,7 +754,6 @@ def run_batched_smbo(
     Returns OptimizationResult with top_3_candidates and plot paths.
     """
     from sklearn.ensemble import RandomForestRegressor
-    from sklearn.gaussian_process import GaussianProcessRegressor
 
     rng = np.random.default_rng(42)
     t_start = time.time()
@@ -780,6 +777,7 @@ def run_batched_smbo(
 
     # ── Build SMBO GP (fresh, trained only on drug space) ─────────────────────
     import warnings
+
     from sklearn.exceptions import ConvergenceWarning
 
     gp = _build_smbo_gp()
@@ -800,6 +798,7 @@ def run_batched_smbo(
     convergence_scores: list[float] = [best_score]
 
     import warnings
+
     from sklearn.exceptions import ConvergenceWarning
 
     for iteration in range(budget):
@@ -992,6 +991,7 @@ def run_batched_smbo(
         import matplotlib  # type: ignore
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt  # type: ignore
+
         from ..config import OUTPUTS_DIR, patient_out_dir
 
         # Plots dir — write directly into outputs/<pid>/plots/ when patient_id

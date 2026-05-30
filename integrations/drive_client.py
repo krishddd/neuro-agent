@@ -122,6 +122,7 @@ class DriveClient:
     def _upload_file(self, local_path: Path, parent_id: str) -> str | None:
         """Upload or update a file in Drive; return file id."""
         import mimetypes
+
         from googleapiclient.http import MediaFileUpload
 
         mime, _ = mimetypes.guess_type(local_path.name)

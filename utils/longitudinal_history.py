@@ -33,9 +33,8 @@ import json
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Iterable
 
-from .schemas import LongitudinalHistory, LongitudinalVisit, PatientStateVector
+from .schemas import LongitudinalHistory, LongitudinalVisit
 
 log = logging.getLogger(__name__)
 

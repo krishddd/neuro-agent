@@ -11,12 +11,11 @@ qwen3:14b for tool-call reasoning; gemma4:e4b is used only for image analysis.
 from __future__ import annotations
 
 import json
+import logging
 import time
 import uuid
 from dataclasses import dataclass, field
 from typing import Any, Callable
-
-import logging
 
 from .config import (
     MODEL_PRIMARY,
@@ -27,16 +26,14 @@ from .llm import tool_call
 from .memory import WorkingMemory
 from .tool_schemas import PHASE_TOOLS
 from .tools import dispatch  # registers all sub-agent tools via tools/__init__.py
-from .utils.audit import log as audit_log
-from .utils.audit import stage_timer
 from .utils.approval import (
     ApprovalRecord,
-    ApprovalRejectedError,
-    ApprovalRequiredError,
     archive_markers,
     require_approval,
     write_pending,
 )
+from .utils.audit import log as audit_log
+from .utils.audit import stage_timer
 
 log = logging.getLogger(__name__)
 
@@ -72,7 +69,6 @@ def _synthesis_phase(memory: WorkingMemory) -> None:
     All three synthesis tools just process already-computed memory data — there
     is no reason for the LLM to decide the call order.
     """
-    pid = memory.patient_id
     for tool_name in ("build_timeline", "write_summary", "export_fhir"):
         try:
             result = dispatch(tool_name, memory, {})
@@ -198,7 +194,7 @@ def _treatment_opt_phase(memory: WorkingMemory) -> None:
                 memory.set(WorkingMemory.TREATMENT_PROPOSAL, proposal)
                 # Best-effort doctor notification using SPIKES-routed mailer.
                 try:
-                    from .integrations.gmail_client import GmailClient, DOCTOR_EMAIL
+                    from .integrations.gmail_client import DOCTOR_EMAIL, GmailClient
                     gc = GmailClient()
                     if gc.ready and DOCTOR_EMAIL:
                         gc.send_mdt_alert(

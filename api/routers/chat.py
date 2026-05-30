@@ -7,8 +7,8 @@ from typing import Optional
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 from pydantic import BaseModel, field_validator
 
-from ...config import OUTPUTS_DIR
 from ... import chat_sessions
+from ...config import OUTPUTS_DIR
 from ...memory import WorkingMemory
 from ...tools.chat_agent import answer, stream_answer
 from ...utils.audit import log_access

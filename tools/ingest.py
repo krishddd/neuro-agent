@@ -91,8 +91,8 @@ def _normalize_image(path: Path, out_dir: Path) -> Path | None:
     if ext in _IMAGE_EXT:
         out = out_dir / (path.stem + "_norm.png")
         try:
-            from PIL import Image
             import numpy as np
+            from PIL import Image
 
             with Image.open(path) as im:
                 mode = im.mode

@@ -14,13 +14,12 @@ Registered tools:
 """
 from __future__ import annotations
 
+import logging
+import re
 from pathlib import Path
 from typing import Any
 
 from pydantic import BaseModel, Field
-
-import logging
-import re
 
 log = logging.getLogger(__name__)
 
@@ -611,7 +610,7 @@ def index_rag(memory: WorkingMemory, **_: Any) -> dict[str, Any]:
         # falls back to Chroma while building.
         lightrag_submitted = False
         try:
-            from ..utils import lightrag_store, graph_worker
+            from ..utils import graph_worker, lightrag_store
             if lightrag_store.is_available():
                 wd = lightrag_store.working_dir_for_patient(pid)
                 docs_snapshot = list(docs)

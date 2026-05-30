@@ -147,9 +147,9 @@ def _answer_question(
     history: list[dict[str, Any]],
 ) -> str:
     """RAG retrieval from ChromaDB + Gemma4 answer — no WorkingMemory dependency."""
-    from ..tools.chat_agent import search_chunks
+    from ..config import DISCLAIMER, MODEL_PRIMARY
     from ..llm import chat as llm_chat
-    from ..config import MODEL_PRIMARY, DISCLAIMER
+    from ..tools.chat_agent import search_chunks
 
     # 1. Retrieve top-6 relevant chunks for this patient.
     chunks = search_chunks(patient_id, question, top_k=6)

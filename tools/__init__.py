@@ -43,13 +43,15 @@ def known() -> list[str]:
 
 
 # Import side-effect modules so their @register decorators run.
-from . import ingest  # noqa: E402,F401
-from . import mri_agent  # noqa: E402,F401
-from . import recist_agent  # noqa: E402,F401
-from . import treatment_opt_agent  # noqa: E402,F401  Phase 4 SMBO v3.0
-from . import clinical_trial_match  # noqa: E402,F401  Phase 4 Task 8
-from . import pubmed_evidence       # noqa: E402,F401  Phase 5.5 / Module 3
-from . import faers_check           # noqa: E402,F401  Phase 5.7 / Extra B
-from . import pharma_agent  # noqa: E402,F401
-from . import synthesis_agent  # noqa: E402,F401
-from . import chat_agent  # noqa: E402,F401
+from . import (
+    chat_agent,  # noqa: E402,F401
+    clinical_trial_match,  # noqa: E402,F401  Phase 4 Task 8
+    faers_check,  # noqa: E402,F401  Phase 5.7 / Extra B
+    ingest,  # noqa: E402,F401
+    mri_agent,  # noqa: E402,F401
+    pharma_agent,  # noqa: E402,F401
+    pubmed_evidence,  # noqa: E402,F401  Phase 5.5 / Module 3
+    recist_agent,  # noqa: E402,F401
+    synthesis_agent,  # noqa: E402,F401
+    treatment_opt_agent,  # noqa: E402,F401  Phase 4 SMBO v3.0
+)

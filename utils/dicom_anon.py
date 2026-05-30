@@ -13,13 +13,13 @@ pydicom, so the standard anonymization + windowing pipeline works normally.
 """
 from __future__ import annotations
 
+import logging as _early_log
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 from PIL import Image
 
-import logging as _early_log
 _log = _early_log.getLogger(__name__)
 
 # Track which compressed-DICOM handlers managed to import. Surfaced at

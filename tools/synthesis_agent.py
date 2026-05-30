@@ -19,11 +19,11 @@ from pathlib import Path
 from typing import Any
 
 from ..config import (
-    DISCLAIMER,
-    OUTPUTS_DIR,
-    GMAIL_ENABLED,
-    DRIVE_ENABLED,
     CALENDAR_ENABLED,
+    DISCLAIMER,
+    DRIVE_ENABLED,
+    GMAIL_ENABLED,
+    OUTPUTS_DIR,
 )
 from ..llm import json_call
 from ..memory import WorkingMemory
@@ -376,7 +376,7 @@ def build_timeline(memory: WorkingMemory, **_: Any) -> dict[str, Any]:
                     ))
 
         # Phase 4 treatment optimisation events (if available)
-        from ..utils.schemas import TreatmentProposal, PredictionResult
+        from ..utils.schemas import PredictionResult, TreatmentProposal
         proposal_raw = memory.get(WorkingMemory.TREATMENT_PROPOSAL)
         if proposal_raw:
             try:
@@ -515,7 +515,7 @@ def _summary_context(memory: WorkingMemory) -> dict[str, Any]:
     }
 
     # Phase 4 treatment optimisation context (compact, ≤200 extra tokens)
-    from ..utils.schemas import TreatmentProposal, PredictionResult, ShapResult
+    from ..utils.schemas import PredictionResult, ShapResult, TreatmentProposal
     proposal_raw = memory.get(WorkingMemory.TREATMENT_PROPOSAL)
     if proposal_raw:
         try:
@@ -577,7 +577,7 @@ def write_summary(memory: WorkingMemory, **_: Any) -> dict[str, Any]:
         # Write plain-text files into outputs/<pid>/reports/ —
         # matching reference dataset naming: patient_letter.txt / gp_handover.txt
         from ..config import patient_out_dir
-        out_dir = OUTPUTS_DIR / pid  # for S18 path below (patient root)
+        OUTPUTS_DIR / pid  # for S18 path below (patient root)
         reports_dir = patient_out_dir(pid, "reports")
         letter_path = reports_dir / "patient_letter.txt"
         gp_path = reports_dir / "gp_handover.txt"
@@ -704,15 +704,15 @@ def _write_report_md(memory: WorkingMemory, out_dir: Path) -> Path:
     if recist:
         resp_emoji = {"PD": "🔴", "SD": "🟡", "PR": "🟢", "CR": "🟢", "NE": "⚪"}.get(recist.response, "")
         lines += [
-            f"| Field | Value |",
-            f"|---|---|",
+            "| Field | Value |",
+            "|---|---|",
             f"| Response | {resp_emoji} **{recist.response}** |",
             f"| Baseline sum | {recist.baseline_sum_mm or 'n/a'} mm |",
             f"| Current sum | {recist.current_sum_mm or 'n/a'} mm |",
             f"| Change | {f'{recist.pct_change*100:+.1f}%' if recist.pct_change is not None else 'n/a'} |",
             f"| New lesion detected | {'**YES — automatic PD**' if recist.new_lesion_detected else 'No'} |",
             f"| Confirmation required | {'Yes (CR/PR needs ≥4-week rescan)' if recist.confirmation_required else 'No'} |",
-            f"",
+            "",
             f"*{recist.rationale}*",
         ]
     else:
@@ -727,7 +727,7 @@ def _write_report_md(memory: WorkingMemory, out_dir: Path) -> Path:
         lines += [
             f"**Level:** {level_icon} {urgency.level.upper()} (score {urgency.score}/5)",
             f"**Drivers:** {', '.join(urgency.drivers) or 'none'}",
-            f"",
+            "",
             f"*{urgency.rationale}*",
         ]
     else:
@@ -736,7 +736,9 @@ def _write_report_md(memory: WorkingMemory, out_dir: Path) -> Path:
 
     # Treatment Optimization (Phase 4 SMBO v3.0)
     lines.append("## Treatment Optimization (Phase 4 SMBO v3.0)")
-    from ..utils.schemas import TreatmentProposal as _TP, PredictionResult as _PR, ShapResult as _SH
+    from ..utils.schemas import PredictionResult as _PR
+    from ..utils.schemas import ShapResult as _SH
+    from ..utils.schemas import TreatmentProposal as _TP
     proposal_raw = memory.get(WorkingMemory.TREATMENT_PROPOSAL)
     pred_raw     = memory.get(WorkingMemory.PREDICTION)
     shap_raw     = memory.get(WorkingMemory.SHAP)
@@ -921,8 +923,9 @@ def _write_laboratory_results(memory: WorkingMemory, out_dir: Path) -> None:
     )
     prompt = f"{sys_msg}\n\nLAB TEXT:\n{raw_text[:8000]}"
     try:
-        raw = memory.get("__llm_raw__")  # unused sentinel
+        memory.get("__llm_raw__")  # unused sentinel
         import re as _re
+
         from ..llm import chat as _llm_call
         resp = _llm_call([{"role": "user", "content": prompt}])
         # Strip markdown code fences if present.
@@ -1014,6 +1017,7 @@ def _write_extended(memory: WorkingMemory, out_dir: Path) -> None:
         prompt = f"{sys_msg}\n\nDRUG CONTEXT:\n{ctx[:4000]}\n\npatient_id: {pid}"
         try:
             import re as _re
+
             from ..llm import chat as _llm_call
             resp = _llm_call([{"role": "user", "content": prompt}])
             text = _re.sub(r"```(?:json)?", "", resp).strip().strip("`").strip()
@@ -1033,8 +1037,6 @@ def _write_extended(memory: WorkingMemory, out_dir: Path) -> None:
         "eligible_count": 0,
     }
     if record:
-        diag = record.diagnosis or "unknown"
-        age = record.age or "unknown"
         sys_msg = (
             "You are a clinical trial matching assistant. "
             "Given the patient diagnosis and record, generate a JSON object with: "
@@ -1052,6 +1054,7 @@ def _write_extended(memory: WorkingMemory, out_dir: Path) -> None:
         prompt = f"{sys_msg}\n\nPATIENT:\n{json.dumps(rec_d, default=str)[:3000]}"
         try:
             import re as _re
+
             from ..llm import chat as _llm_call
             resp = _llm_call([{"role": "user", "content": prompt}])
             text = _re.sub(r"```(?:json)?", "", resp).strip().strip("`").strip()
@@ -1079,9 +1082,10 @@ def _write_extended(memory: WorkingMemory, out_dir: Path) -> None:
 # ---------- S11 Q&A examples ----------
 def _write_qa_examples(memory: WorkingMemory, out_dir: Path) -> None:
     """Generate clinical Q&A pairs from memory and write S11_qa_examples.json."""
+    import re as _re
+
     from ..config import MODEL_PRIMARY, RAG_TOP_K
     from ..llm import chat as _llm_call
-    import re as _re
 
     snap = memory.snapshot_for_llm()
     sys_msg = (
@@ -1128,7 +1132,7 @@ def _fhir_bundle(memory: WorkingMemory) -> dict[str, Any]:
     recist = _get(memory, WorkingMemory.RECIST, RECISTAssessment)
     meds = _get(memory, WorkingMemory.MEDICATIONS, MedicationList)
     inter = _get(memory, WorkingMemory.INTERACTIONS, InteractionReport)
-    summary = _get(memory, WorkingMemory.SUMMARY, PatientSummary)
+    _get(memory, WorkingMemory.SUMMARY, PatientSummary)
     urgency = _get(memory, WorkingMemory.URGENCY, UrgencyAssessment)
 
     entries: list[dict[str, Any]] = []

@@ -22,11 +22,11 @@ def test_integrations_imports():
 
 
 def test_tools_imports():
-    import neuro_agent.tools.ingest          # noqa: F401
-    import neuro_agent.tools.mri_agent       # noqa: F401
-    import neuro_agent.tools.recist_agent    # noqa: F401
-    import neuro_agent.tools.pharma_agent    # noqa: F401
-    import neuro_agent.tools.synthesis_agent # noqa: F401
+    import neuro_agent.tools.ingest  # noqa: F401
+    import neuro_agent.tools.mri_agent  # noqa: F401
+    import neuro_agent.tools.pharma_agent  # noqa: F401
+    import neuro_agent.tools.recist_agent  # noqa: F401
+    import neuro_agent.tools.synthesis_agent  # noqa: F401
 
 
 def test_google_chat_router():

@@ -29,7 +29,6 @@ import logging
 import re
 import time
 from datetime import datetime
-from pathlib import Path
 from typing import Any
 from xml.etree import ElementTree as ET
 

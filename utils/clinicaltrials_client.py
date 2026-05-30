@@ -26,7 +26,6 @@ import json
 import logging
 import re
 import time
-from pathlib import Path
 from typing import Any
 
 from ..config import OUTPUTS_DIR

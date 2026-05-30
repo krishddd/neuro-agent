@@ -86,7 +86,7 @@ def report_text(ing: IngestionResult, visit: str) -> str:
 #   - Easy to backup/delete a single patient's data
 #   - The drug interaction KB lives in chroma_db/_shared/
 
-_PATIENT_CLIENTS: dict[str, "chromadb.ClientAPI"] = {}
+_PATIENT_CLIENTS: dict[str, "chromadb.ClientAPI"] = {}  # noqa: F821 — chromadb imported lazily
 _SHARED_CLIENT = None
 _DRUG_KB_INDEXED = False
 

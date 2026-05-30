@@ -17,7 +17,8 @@ from ..config import (
     MODEL_PRIMARY,
     RAG_TOP_K,
 )
-from ..llm import embed, json_call, stream as llm_stream
+from ..llm import embed, json_call
+from ..llm import stream as llm_stream
 from ..memory import WorkingMemory
 from ..utils.audit import stage_timer
 from ..utils.schemas import (

@@ -266,9 +266,6 @@ def _empty_result(reason: str) -> dict[str, Any]:
 def _segment_nnunet(volume: Any, metadata: dict[str, Any]) -> dict[str, Any]:
     try:
         import torch  # type: ignore  # noqa: F401
-        from nnunetv2.inference.predict_from_raw_data import (  # type: ignore
-            nnUNetPredictor,
-        )
     except Exception as exc:
         log.warning("volumetric_seg: nnU-Net not available (%s) — falling back",
                     type(exc).__name__)
@@ -282,7 +279,6 @@ def _segment_nnunet(volume: Any, metadata: dict[str, Any]) -> dict[str, Any]:
 def _segment_monai(volume: Any, metadata: dict[str, Any],
                    mask_out_path: str | Path | None = None) -> dict[str, Any]:
     try:
-        import torch  # type: ignore
         from monai.networks.nets import UNet  # type: ignore  # noqa: F401
     except Exception as exc:
         log.warning("volumetric_seg: MONAI not available (%s)", type(exc).__name__)

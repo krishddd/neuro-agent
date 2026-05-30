@@ -206,7 +206,7 @@ def print_patient_roster() -> None:
     print("=" * 60)
     print(" Patient Email Roster (P001–P020)")
     print("=" * 60)
-    from neuro_agent.integrations.patient_roster import PATIENT_EMAILS, DOCTOR_EMAIL
+    from neuro_agent.integrations.patient_roster import DOCTOR_EMAIL, PATIENT_EMAILS
     print(f"  Doctor : {DOCTOR_EMAIL}")
     print()
     for pid, email in PATIENT_EMAILS.items():
@@ -245,9 +245,9 @@ def run_local_test() -> None:
         )
         with urllib.request.urlopen(req, timeout=60) as resp:
             reply = _json.loads(resp.read())
-        print(f"\n  Question : What is my diagnosis?")
-        print(f"  Patient  : P002 (khadurgam@gmail.com)")
-        print(f"  Reply    :\n")
+        print("\n  Question : What is my diagnosis?")
+        print("  Patient  : P002 (khadurgam@gmail.com)")
+        print("  Reply    :\n")
         text = reply.get("text", "(empty reply)")
         for line in text.splitlines():
             print(f"    {line}")

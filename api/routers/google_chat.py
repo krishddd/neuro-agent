@@ -35,8 +35,8 @@ def _verify_google_jwt(auth_header: str) -> bool:
         return False
     token = auth_header.removeprefix("Bearer ").strip()
     try:
-        from google.oauth2 import id_token
         from google.auth.transport import requests as g_requests
+        from google.oauth2 import id_token
         info = id_token.verify_oauth2_token(
             token, g_requests.Request(), audience=None,
         )

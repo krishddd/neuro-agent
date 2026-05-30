@@ -10,7 +10,6 @@ from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 
-
 # ---------- Ingestion ----------
 FileKind = Literal[
     "mri_image", "mri_report", "prescription", "discharge",

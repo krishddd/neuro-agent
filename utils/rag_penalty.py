@@ -20,7 +20,6 @@ from __future__ import annotations
 import json
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pathlib import Path
 from typing import Any
 
 log = logging.getLogger(__name__)
@@ -151,7 +150,7 @@ def _chroma_lookup(drug_a: str, drug_b: str) -> float:
     try:
         import chromadb  # type: ignore
 
-        from ..config import CHROMA_DIR, CHROMA_COLLECTION_FMT  # noqa: F401
+        from ..config import CHROMA_COLLECTION_FMT, CHROMA_DIR  # noqa: F401
 
         client = chromadb.PersistentClient(path=str(CHROMA_DIR))
         # Try to find a drug-interactions collection (built during ingest phase).

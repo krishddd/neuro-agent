@@ -52,8 +52,6 @@ from ...config import (
     OUTPUTS_DIR,
     SMART_CLIENT_ID,
     SMART_DEFAULT_FHIR_BASE,
-    SMART_REDIRECT_URI,
-    SMART_SCOPES,
 )
 
 log = logging.getLogger(__name__)
