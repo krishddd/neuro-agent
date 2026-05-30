@@ -1,9 +1,11 @@
 name: CD — Build & Push
+# Only runs on version tags (v1.2.3), and only when Docker Hub secrets are set.
+# To enable: add DOCKERHUB_USERNAME and DOCKERHUB_TOKEN repo secrets, then push a tag.
 
 on:
   push:
-    branches: [master, main]
     tags: ["v*.*.*"]
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/neuro-agent
@@ -11,8 +13,17 @@ env:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    # Skip the whole job if Docker Hub creds aren't configured
+    if: ${{ vars.HAS_DOCKERHUB_SECRETS == 'true' || github.event_name == 'workflow_dispatch' }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Verify secrets present
+        run: |
+          if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ] || [ -z "${{ secrets.DOCKERHUB_TOKEN }}" ]; then
+            echo "DOCKERHUB_USERNAME / DOCKERHUB_TOKEN not set — skipping build & push."
+            exit 0
+          fi
 
       - name: Docker metadata
         id: meta
